@@ -1,0 +1,20 @@
+extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+/*
+ * Apttus X-Author for Excel
+ * © 2014 Apttus Inc. All rights reserved.
+ */
+extensions: .aspx .ascx
+<%-- 
+Sample license text.
+--%>
+extensions: .vb
+'*
+'* Apttus X-Author for Excel
+'* © 2014 Apttus Inc. All rights reserved.
+'*
+extensions:  .xml .config .xsd
+<!--
+Apttus X-Author for Excel
+© 2014 Apttus Inc. All rights reserved.
+-->

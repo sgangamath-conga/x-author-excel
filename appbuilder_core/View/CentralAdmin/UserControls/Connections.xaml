@@ -1,0 +1,130 @@
+﻿<UserControl x:Name="UCConnections" 
+             x:Class="Apttus.XAuthor.Core.Connections"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" Margin="5" 
+             Unloaded="UCConnections_Unloaded"
+             Loaded="UCConnections_Loaded">
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/Apttus.XAuthor.Core;Component/View/Assets/Styles.xaml"/>
+    </UserControl.Resources>
+    <Grid Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+            <!--<Image x:Name="imgHeader" Height="50"  Width="50" Source="/Apttus.Xauthor.Core;component/View/CentralAdmin/UserControls/GI_ICON.png" Margin="5"/>-->
+            <Image RenderOptions.BitmapScalingMode="HighQuality" x:Name="imgHeader" Height="40"  Width="40" Source="pack://application:,,,/Apttus.XAuthor.Core;Component/Resources/Connections.png" Margin="5"/>
+            <Label x:Name="lblTitle" Content="Connections" Margin="5" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+        </StackPanel>
+        <Grid x:Name="grdConnections" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Available Connections"
+                   x:Name="lblAvailableConn"
+                   Style="{StaticResource ResourceKey=lblSeparator}"
+                   VerticalAlignment="Stretch"/>
+            <DataGrid Grid.Row="1" Background="White" 
+                          x:Name="dgConnectionList"
+                          CanUserAddRows="false"
+                          Margin="5"
+                          SelectionUnit="Cell"
+                          BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" 
+                          EnableRowVirtualization="False" 
+                          SelectionMode="Single" 
+                          AutoGenerateColumns="False"
+                          HorizontalContentAlignment="Stretch"
+                          VerticalContentAlignment="Stretch" 
+                          GridLinesVisibility="Horizontal"
+                          CanUserResizeRows="False"
+                          HorizontalGridLinesBrush="#FFE0E0E0"
+                          CanUserSortColumns="True">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn  x:Name="colConnectionName"
+                                             Header="Connection Name"
+                                             ClipboardContentBinding="{x:Null}" 
+                                             CanUserResize="False"
+                                             CanUserReorder="False"
+                                             CanUserSort="True"
+                                             SortMemberPath="ConnectionName">
+                        <DataGridTemplateColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="BorderBrush" Value="White"/>
+                            </Style>
+                        </DataGridTemplateColumn.CellStyle>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBox Text="{Binding Path=ConnectionName,
+                                                          Mode=TwoWay,
+                                                          NotifyOnSourceUpdated=True}"
+                                             KeyDown="TextBox_KeyDown"
+                                             Padding="3"
+                                             Margin="3"
+                                             Height="25"
+                                             MouseEnter="TextBox_MouseEnter"
+                                             MouseLeave="TextBox_MouseLeave"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn x:Name="colConnectionHost"
+                                            IsReadOnly="True"
+                                            Header="Host"
+                                            Width="*"
+                                            Binding="{Binding Path=ServerHost,Mode=OneWay,NotifyOnSourceUpdated=False}"
+                                            ClipboardContentBinding="{x:Null}" 
+                                            CanUserResize="False" 
+                                            CanUserReorder="False">
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="BorderBrush" Value="White"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="Padding" Value="5"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTemplateColumn x:Name="colDeleteBtn" 
+                                            Header="Delete Connection" 
+                                            CanUserResize="False" 
+                                            CanUserReorder="False">
+                        <DataGridTemplateColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="BorderBrush" Value="White"/>
+                            </Style>
+                        </DataGridTemplateColumn.CellStyle>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button  Style="{StaticResource ResourceKey=StandardButton}"
+                                         Content="Delete" Tag="{Binding Path=., NotifyOnSourceUpdated=False}"
+                                         Margin="3"
+                                         x:Name="btnDelete"
+                                         Click="btnRemove_Click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</UserControl>

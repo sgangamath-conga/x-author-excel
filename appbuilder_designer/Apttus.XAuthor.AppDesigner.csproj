@@ -1,0 +1,1225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--
+    This section defines project-level properties.
+
+    AssemblyName
+      Name of the output assembly.
+    Configuration
+      Specifies a default value for debug.
+    OutputType
+      Must be "Library" for VSTO.
+    Platform
+      Specifies what CPU the output of this project can run on.
+    NoStandardLibraries
+      Set to "false" for VSTO.
+    RootNamespace
+      In C#, this specifies the namespace given to new files. In VB, all objects are
+      wrapped in this namespace at runtime.
+  -->
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FF0CFC4-60C8-49E3-8997-E7F127E1D6FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>Apttus.XAuthor.AppDesigner</RootNamespace>
+    <AssemblyName>Apttus.XAuthor.AppDesigner</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <DefineConstants>VSTO40</DefineConstants>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <VSTO_TrustAssembliesLocation>true</VSTO_TrustAssembliesLocation>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>publish\</PublishUrl>
+    <InstallUrl />
+    <TargetCulture>en</TargetCulture>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+    <ProductName>Apttus.XAuthor.AppDesigner</ProductName>
+    <PublisherName />
+    <SupportUrl />
+    <FriendlyName>Apttus.XAuthor.AppDesigner</FriendlyName>
+    <OfficeApplicationDescription />
+    <LoadBehavior>3</LoadBehavior>
+  </PropertyGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Office.PIARedist.2007">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Office 2007 Primary Interop Assemblies</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup>
+    <!--
+      OfficeApplication
+        Add-in host application
+    -->
+    <OfficeApplication>Excel</OfficeApplication>
+  </PropertyGroup>
+  <!--
+    This section defines properties that are set when the "Debug" configuration is selected.
+
+    DebugSymbols
+      If "true", create symbols (.pdb). If "false", do not create symbols.
+    DefineConstants
+      Constants defined for the preprocessor.
+    EnableUnmanagedDebugging
+      If "true", starting the debugger will attach both managed and unmanaged debuggers.
+    Optimize
+      If "true", optimize the build output. If "false", do not optimize.
+    OutputPath
+      Output path of project relative to the project file.
+    WarningLevel
+      Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <!--
+    This section defines properties that are set when the "Release" configuration is selected.
+
+    DebugSymbols
+      If "true", create symbols (.pdb). If "false", do not create symbols.
+    DefineConstants
+      Constants defined for the preprocessor.
+    EnableUnmanagedDebugging
+      If "true", starting the debugger will attach both managed and unmanaged debuggers.
+    Optimize
+      If "true", optimize the build output. If "false", do not optimize.
+    OutputPath
+      Output path of project relative to the project file.
+    WarningLevel
+      Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <!--
+    This section specifies references for the project.
+  -->
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Apttus.DynamicsCRM.LoginControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ControlLib\Apttus.DynamicsCRM.LoginControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.IntelligentCloud.Login, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ControlLib\Apttus.IntelligentCloud.Login.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.IntelligentCloudV2.Login, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ControlLib\Apttus.IntelligentCloudV2.Login.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.OAuthLoginControl, Version=3.8.1205.2014, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ControlLib\Apttus.OAuthLoginControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.ProgressIndicator, Version=6.3.415.2013, Culture=neutral, PublicKeyToken=f34d47135ea7baa5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ControlLib\Apttus.ProgressIndicator.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.SettingsManager, Version=8.0.1205.2014, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ControlLib\Apttus.SettingsManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac, Version=4.6.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Autofac.4.6.1\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EO.Base, Version=20.2.19.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\EO.WebBrowser.20.2.19\lib\EO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser, Version=20.2.19.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\EO.WebBrowser.20.2.19\lib\EO.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser.WinForm, Version=20.2.19.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\EO.WebBrowser.WinForm.20.2.19\lib\EO.WebBrowser.WinForm.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebEngine, Version=20.2.19.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\EO.WebBrowser.20.2.19\lib\EO.WebEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.5\lib\net452\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Microsoft.IdentityModel.6.1.7600.16394\lib\net35\Microsoft.IdentityModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.5.2.9\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.5\lib\net452\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ControlLib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <!--
+    This section defines the user source files that are part of the project.
+     
+    A "Compile" element specifies a source file to compile.
+    An "EmbeddedResource" element specifies an .resx file for embedded resources.
+    A "None" element specifies a file that is not to be passed to the compiler (for instance, 
+    a text file or XML file).
+    The "AppDesigner" element specifies the directory where the application properties files
+    can be found.
+  -->
+  <ItemGroup>
+    <Compile Include="CommonCodeBase\AICV2\XAuthorAICV2Login.cs" />
+    <Compile Include="CommonCodeBase\AIC\XAuthorAICLogin.cs" />
+    <Compile Include="CommonCodeBase\BaseCRMLogin.cs" />
+    <Compile Include="CommonCodeBase\CommonInterfaces.cs" />
+    <Compile Include="CommonCodeBase\CRMContainer.cs" />
+    <Compile Include="CommonCodeBase\Dynamics\DynamicsLogin.cs" />
+    <Compile Include="CommonCodeBase\Dynamics\MenuHandler\DynamicsDesignerMenuUpdate.cs" />
+    <Compile Include="CommonCodeBase\Salesforce\MenuHandler\SalesforceDesignerMenuUpdate.cs" />
+    <Compile Include="CommonCodeBase\Salesforce\SalesforceLogin.cs" />
+    <Compile Include="Controller\Actions\AddRowAction\AddRowController.cs" />
+    <Compile Include="Controller\Actions\DataSetAction\DataSetActionController.cs" />
+    <Compile Include="Controller\Actions\DeleteAction\DeleteActionController.cs" />
+    <Compile Include="Controller\Actions\PasteRowAction\PasteRowActionController.cs" />
+    <Compile Include="Controller\Actions\PasteSourceDataAction\IPasteSourceDataActionController.cs" />
+    <Compile Include="Controller\Actions\PasteSourceDataAction\PasteSourceDataActionController.cs" />
+    <Compile Include="Controller\Actions\RuntimeAction\DesignerEditActionController.cs" />
+    <Compile Include="Controller\Actions\SwitchConnectionAction\SwitchConnectionController.cs" />
+    <Compile Include="Controller\AppEdition\AppTypeController.cs" />
+    <Compile Include="Controller\AppSettings\AppSettingsController.cs" />
+    <Compile Include="Controller\AppSync\AppSyncBackgroundWorker.cs" />
+    <Compile Include="Controller\AppSync\DataTypeChangeInfo.cs" />
+    <Compile Include="Controller\AppSync\DesignerAppSyncController.cs" />
+    <Compile Include="Controller\AppSync\FieldDataMismatchController.cs" />
+    <Compile Include="Controller\AppSync\FieldSynchronization.cs" />
+    <Compile Include="Controller\AppSync\FieldUsageInApp.cs" />
+    <Compile Include="Controller\AppSync\MissingFieldItem.cs" />
+    <Compile Include="Controller\AppSync\ObjectSyncController.cs" />
+    <Compile Include="Controller\AppSync\PicklistTypeChangeInfo.cs" />
+    <Compile Include="Controller\AppSync\RecordTypeSyncController.cs" />
+    <Compile Include="Controller\AppSync\RecordTypeSyncModel.cs" />
+    <Compile Include="Controller\DataMigration\DataMigrationController.cs" />
+    <Compile Include="Controller\DataMigration\Edit\DataMigrationMapEditController.cs" />
+    <Compile Include="Controller\DataMigration\Edit\DataMigrationModelChangeTracker.cs" />
+    <Compile Include="Controller\DataMigration\Entities\DataMigrationActionController.cs" />
+    <Compile Include="Controller\DataMigration\Entities\DataMigrationExcelController.cs" />
+    <Compile Include="Controller\DataMigration\Entities\DataMigrationMapController.cs" />
+    <Compile Include="Controller\DataMigration\Entities\DataMigrationMenuController.cs" />
+    <Compile Include="Controller\DataMigration\Entities\DataMigrationMigrateSheetController.cs" />
+    <Compile Include="Controller\DataMigration\Entities\DataMigrationWorkflowController.cs" />
+    <Compile Include="Controller\DataMigration\Entities\ExternalIDSaveMapController.cs" />
+    <Compile Include="Controller\DataMigration\ObjectDependencyResolver.cs" />
+    <Compile Include="Controller\LookAhead\LookAheadDesignerController.cs" />
+    <Compile Include="Controller\LookAhead\LookAheadFieldMapperHelper.cs" />
+    <Compile Include="Controller\MatrixMap\MatrixViewController.cs" />
+    <Compile Include="Controller\SaveMap\SaveMapMatrixFieldController.cs" />
+    <Compile Include="Controller\Validators\DataSourceValidator.cs" />
+    <Compile Include="Controller\Validators\DocumentObjectValidator.cs" />
+    <Compile Include="Controller\Validators\MatrixMapValidator.cs" />
+    <Compile Include="Forms\ApplicationTypeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationTypeView.designer.cs">
+      <DependentUpon>ApplicationTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ApplicationConfigManager.cs" />
+    <Compile Include="Manager\DataMigrationEditManager.cs" />
+    <Compile Include="Manager\DataMigrationManager.cs" />
+    <Compile Include="Modules\CueProvider.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuickApp\UserControls\QuickAppSettingsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuickApp\UserControls\QuickAppSettingsPage.Designer.cs">
+      <DependentUpon>QuickAppSettingsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\XAuthorDesignerResources.Designer.cs" />
+    <Compile Include="UserControls\DataTableExpressionBuilderView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DataTableExpressionBuilderView.Designer.cs">
+      <DependentUpon>DataTableExpressionBuilderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FieldMappingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FieldMappingView.Designer.cs">
+      <DependentUpon>FieldMappingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShowFilterObjectView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShowFilterObjectView.Designer.cs">
+      <DependentUpon>ShowFilterObjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApttusRibbon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ApttusRibbon.Designer.cs">
+      <DependentUpon>ApttusRibbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Actions\CallProcedureAction\CallProcedureController.cs" />
+    <Compile Include="Controller\Actions\CheckInAction\CheckInController.cs" />
+    <Compile Include="Controller\Actions\CheckInAction\ICheckInController.cs" />
+    <Compile Include="Controller\Actions\CheckOutAction\CheckOutController.cs" />
+    <Compile Include="Controller\Actions\CheckOutAction\ICheckOutController.cs" />
+    <Compile Include="Controller\Actions\ClearAction\ClearActionController.cs" />
+    <Compile Include="Controller\Actions\ClearAction\IClearActionController.cs" />
+    <Compile Include="Controller\Actions\InputAction\IInputActionController.cs" />
+    <Compile Include="Controller\Actions\InputAction\InputActionController.cs" />
+    <Compile Include="Controller\Actions\MacroAction\IMacroActionController.cs" />
+    <Compile Include="Controller\Actions\MacroAction\MacroActionController.cs" />
+    <Compile Include="Controller\Actions\QueryAction\QueryActionController.cs" />
+    <Compile Include="Controller\Actions\SaveAction\ISaveActionController.cs" />
+    <Compile Include="Controller\Actions\SaveAction\SaveActionController.cs" />
+    <Compile Include="Controller\Actions\SaveAttachmentAction\ISaveAttachmentController.cs" />
+    <Compile Include="Controller\Actions\SaveAttachmentAction\SaveAttachmentController.cs" />
+    <Compile Include="Controller\CloneApp\CloneAppController.cs" />
+    <Compile Include="Controller\DataTransfer\DataTransferController.cs" />
+    <Compile Include="Controller\ExpressionBuilder\ObjectAndFieldBrowserController.cs" />
+    <Compile Include="Controller\ImportApp\ImportAppController.cs" />
+    <Compile Include="Controller\RetrieveMap\RepeatingGroupController.cs" />
+    <Compile Include="Controller\RetrieveMap\RetrieveMapController.cs" />
+    <Compile Include="Controller\GenericListUI\IGenericListUIController.cs" />
+    <Compile Include="Controller\GenericListUI\GenericListUIController.cs" />
+    <Compile Include="Controller\Actions\RetrieveAction\RetrieveActionController.cs" />
+    <Compile Include="Controller\Actions\RetrieveAction\IRetrieveActionController.cs" />
+    <Compile Include="Controller\SaveMap\SaveMapController.cs" />
+    <Compile Include="Controller\SaveMap\SaveMapRetrieveFieldController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\Validators\ActionsValidator.cs" />
+    <Compile Include="Controller\Validators\WorkflowValidator.cs" />
+    <Compile Include="Controller\Validators\IValidator.cs" />
+    <Compile Include="Controller\Validators\RetrieveMapValidator.cs" />
+    <Compile Include="Controller\Validators\SaveMapValidator.cs" />
+    <Compile Include="Controller\Validators\ValidationResult.cs" />
+    <Compile Include="Controller\Workflow\WorkflowTriggerController.cs" />
+    <Compile Include="Controller\Workflow\WorkflowController.cs" />
+    <Compile Include="Forms\ApttusAddModifyActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApttusAddModifyActions.Designer.cs">
+      <DependentUpon>ApttusAddModifyActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ApplicationDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationDefinition.Designer.cs">
+      <DependentUpon>ApplicationDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ApttusAboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApttusAboutForm.Designer.cs">
+      <DependentUpon>ApttusAboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ApttusOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApttusOptionsForm.Designer.cs">
+      <DependentUpon>ApttusOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\AddRow\AddRowActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\AddRow\AddRowActionView.Designer.cs">
+      <DependentUpon>AddRowActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\DataMigration\DataSetAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\DataMigration\DataSetAction.Designer.cs">
+      <DependentUpon>DataSetAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\DeleteAction\DeleteActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\DeleteAction\DeleteActionView.Designer.cs">
+      <DependentUpon>DeleteActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\PasteRowAction\PasteRowActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\PasteRowAction\PasteRowActionView.designer.cs">
+      <DependentUpon>PasteRowActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\PasteSourceDataAction\PasteSourceDataActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\PasteSourceDataAction\PasteSourceDataActionView.Designer.cs">
+      <DependentUpon>PasteSourceDataActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\SwitchConnectionActionModel\SwitchConnectionActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\SwitchConnectionActionModel\SwitchConnectionActionView.Designer.cs">
+      <DependentUpon>SwitchConnectionActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AppSettings\AppSettingsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AppSettings\AppSettingsView.Designer.cs">
+      <DependentUpon>AppSettingsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AppSync\AppSync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AppSync\AppSync.Designer.cs">
+      <DependentUpon>AppSync.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AppSync\SummaryViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AppSync\SummaryViewer.Designer.cs">
+      <DependentUpon>SummaryViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AppSync\FieldsMismatchViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AppSync\FieldsMismatchViewer.Designer.cs">
+      <DependentUpon>FieldsMismatchViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AppSync\FieldsMissingViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AppSync\FieldsMissingViewer.Designer.cs">
+      <DependentUpon>FieldsMissingViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AppSync\ObjectsMissingViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AppSync\ObjectsMissingViewer.Designer.cs">
+      <DependentUpon>ObjectsMissingViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationExternalIDViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationExternalIDViewer.Designer.cs">
+      <DependentUpon>DataMigrationExternalIDViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationFieldsViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationFieldsViewer.designer.cs">
+      <DependentUpon>DataMigrationFieldsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationLookupViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationLookupViewer.Designer.cs">
+      <DependentUpon>DataMigrationLookupViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationHelp.Designer.cs">
+      <DependentUpon>DataMigrationHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationSettings.Designer.cs">
+      <DependentUpon>DataMigrationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataMigration\DataMigrationWizard.Designer.cs">
+      <DependentUpon>DataMigrationWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataMigration\DMDependencyIdentifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataMigration\DMDependencyIdentifier.Designer.cs">
+      <DependentUpon>DMDependencyIdentifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataMigration\DMExpressionBuilderHost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataMigration\DMExpressionBuilderHost.Designer.cs">
+      <DependentUpon>DMExpressionBuilderHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataMigration\MultiSelectListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataMigration\MultiSelectListForm.Designer.cs">
+      <DependentUpon>MultiSelectListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExpressionBuilder\ObjectAndFieldBrowserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExpressionBuilder\ObjectAndFieldBrowserView.Designer.cs">
+      <DependentUpon>ObjectAndFieldBrowserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\InputAction\InputActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\InputAction\InputActionView.Designer.cs">
+      <DependentUpon>InputActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataTransfer\DataTransferView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataTransfer\DataTransferView.Designer.cs">
+      <DependentUpon>DataTransferView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ErrorMessageViewer\ErrorMessageModel.cs" />
+    <Compile Include="Forms\ErrorMessageViewer\ErrorMessageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ErrorMessageViewer\ErrorMessageViewer.Designer.cs">
+      <DependentUpon>ErrorMessageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ApttusFieldsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ApttusFieldsView.Designer.cs">
+      <DependentUpon>ApttusFieldsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ApplicationHelper.cs" />
+    <Compile Include="Helpers\TaskPaneHelper.cs" />
+    <Compile Include="Manager\ValidationManager.cs" />
+    <Compile Include="QuickApp\ListApp.cs" />
+    <Compile Include="QuickApp\ParentChildApp.cs" />
+    <Compile Include="QuickApp\QuickAppBase.cs" />
+    <Compile Include="QuickApp\QuickAppManager.cs" />
+    <Compile Include="QuickApp\Forms\QuickAppWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickApp\Forms\QuickAppWizard.Designer.cs">
+      <DependentUpon>QuickAppWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickApp\Forms\ExpressionBuilderHost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickApp\Forms\ExpressionBuilderHost.Designer.cs">
+      <DependentUpon>ExpressionBuilderHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickApp\UserControls\RecordSelectionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuickApp\UserControls\RecordSelectionPage.Designer.cs">
+      <DependentUpon>RecordSelectionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickApp\UserControls\ObjectSelectionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuickApp\UserControls\ObjectSelectionPage.Designer.cs">
+      <DependentUpon>ObjectSelectionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickApp\UserControls\QuickAppSelectionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuickApp\UserControls\QuickAppSelectionPage.Designer.cs">
+      <DependentUpon>QuickAppSelectionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickApp\WizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Filters.cs" />
+    <Compile Include="Utils\AppDefinitionUtil.cs" />
+    <Compile Include="View\Actions\CallProcedureAction\CallProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\CallProcedureAction\CallProcedure.Designer.cs">
+      <DependentUpon>CallProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\CheckInAction\CheckInView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\CheckInAction\CheckInView.Designer.cs">
+      <DependentUpon>CheckInView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\CheckOutAction\CheckOutView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\CheckOutAction\CheckOutView.Designer.cs">
+      <DependentUpon>CheckOutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\ClearAction\ClearActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\ClearAction\ClearActionView.Designer.cs">
+      <DependentUpon>ClearActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\MacroAction\MacroActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\MacroAction\MacroActionView.Designer.cs">
+      <DependentUpon>MacroActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\QueryAction\QueryActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\QueryAction\QueryActionView.Designer.cs">
+      <DependentUpon>QueryActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\RetrieveAction\RetrieveActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\RetrieveAction\RetrieveActionView.Designer.cs">
+      <DependentUpon>RetrieveActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\SaveAction\SaveActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\SaveAction\SaveActionView.Designer.cs">
+      <DependentUpon>SaveActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ExpressionBuilderView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ExpressionBuilderView.Designer.cs">
+      <DependentUpon>ExpressionBuilderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\SaveAttachmentAction\SaveAttachmentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\SaveAttachmentAction\SaveAttachmentView.Designer.cs">
+      <DependentUpon>SaveAttachmentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Actions\SearchAndSelectAction\SearchAndSelectActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\SearchAndSelectAction\SearchAndSelectActionView.Designer.cs">
+      <DependentUpon>SearchAndSelectActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CloneApp\CloneAppView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CloneApp\CloneAppView.Designer.cs">
+      <DependentUpon>CloneAppView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExpressionBuilder\QueryLabelView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExpressionBuilder\QueryLabelView.Designer.cs">
+      <DependentUpon>QueryLabelView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\External Library\ExternalLibraryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\External Library\ExternalLibraryView.designer.cs">
+      <DependentUpon>ExternalLibraryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ImportApp\ImportAppView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ImportApp\ImportAppView.Designer.cs">
+      <DependentUpon>ImportAppView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LookAheadUI\LookAheadDesignerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LookAheadUI\LookAheadDesignerView.Designer.cs">
+      <DependentUpon>LookAheadDesignerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LookAheadUI\LookAheadPropController.cs" />
+    <Compile Include="View\LookAheadUI\LookAheadPropUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LookAheadUI\LookAheadPropUI.Designer.cs">
+      <DependentUpon>LookAheadPropUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LookupObjectSelection\LookupObjectSelectionUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LookupObjectSelection\LookupObjectSelectionUI.Designer.cs">
+      <DependentUpon>LookupObjectSelectionUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MatrixMap\MatrixComponentFilterWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MatrixMap\MatrixComponentFilterWindow.Designer.cs">
+      <DependentUpon>MatrixComponentFilterWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MatrixMap\MatrixFieldView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MatrixMap\MatrixFieldView.designer.cs">
+      <DependentUpon>MatrixFieldView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MatrixMap\ucMatrixView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MatrixMap\ucMatrixView.Designer.cs">
+      <DependentUpon>ucMatrixView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RetrieveMap\RetrieveMapCellValidation.cs" />
+    <Compile Include="View\GenericListUI\IGenericListUIView.cs" />
+    <Compile Include="Forms\NewApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewApplication.Designer.cs">
+      <DependentUpon>NewApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaveMap\SaveMapMatrixFieldView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SaveMap\SaveMapMatrixFieldView.Designer.cs">
+      <DependentUpon>SaveMapMatrixFieldView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaveMap\SaveMapView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SaveMap\SaveMapView.Designer.cs">
+      <DependentUpon>SaveMapView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaveMap\SaveMapRetrieveFieldView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SaveMap\SaveMapRetrieveFieldView.Designer.cs">
+      <DependentUpon>SaveMapRetrieveFieldView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Workflow\WorkflowTriggerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Workflow\WorkflowTriggerView.Designer.cs">
+      <DependentUpon>WorkflowTriggerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Workflow\WorkflowDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Workflow\WorkflowDesigner.Designer.cs">
+      <DependentUpon>WorkflowDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GenericListUI\GenericListUIView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GenericListUI\GenericListUIView.Designer.cs">
+      <DependentUpon>GenericListUIView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ExcelHelper.cs" />
+    <Compile Include="Helpers\ProxyHelper.cs" />
+    <Compile Include="Manager\ActionManager.cs" />
+    <Compile Include="MenuDesigner\MenuManager.cs" />
+    <Compile Include="MenuDesigner\MenuUtilcs.cs" />
+    <Compile Include="MenuDesigner\UI\Controller\MenuController.cs" />
+    <Compile Include="MenuDesigner\UI\Controller\UserProfileController.cs" />
+    <Compile Include="MenuDesigner\UI\Model\IModelMenu.cs" />
+    <Compile Include="MenuDesigner\UI\Model\ModelMenu.cs" />
+    <Compile Include="MenuDesigner\UI\Model\Visibility.cs" />
+    <Compile Include="MenuDesigner\UI\View\AppBuilder.Designer.cs" />
+    <Compile Include="MenuDesigner\UI\View\IMenuView.cs" />
+    <Compile Include="MenuDesigner\UI\View\MenuHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDesigner\UI\View\MenuHome.Designer.cs">
+      <DependentUpon>MenuHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDesigner\UI\View\MenuMediator.cs" />
+    <Compile Include="MenuDesigner\UI\View\PermissionUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDesigner\UI\View\PermissionUI.Designer.cs">
+      <DependentUpon>PermissionUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDesigner\UI\View\VisibleCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDesigner\UI\View\VisibleCondition.Designer.cs" />
+    <Compile Include="Modules\ApttusCommandBarManager.cs" />
+    <Compile Include="Modules\ApttusObjectManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThisAddInImpl.cs" />
+    <Compile Include="Utils\NameValidationUtil.cs" />
+    <Compile Include="Utils\GoogleSchemaUtil.cs" />
+    <Compile Include="Utils\XlationUtil.cs" />
+    <Compile Include="View\RetrieveMap\ucRetrieveMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\RetrieveMap\ucRetrieveMap.Designer.cs">
+      <DependentUpon>ucRetrieveMap.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ApttusRibbon.resx">
+      <DependentUpon>ApttusRibbon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApttusAddModifyActions.resx">
+      <DependentUpon>ApttusAddModifyActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApplicationDefinition.resx">
+      <DependentUpon>ApplicationDefinition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApttusAboutForm.resx">
+      <DependentUpon>ApttusAboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApttusOptionsForm.resx">
+      <DependentUpon>ApttusOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApplicationTypeView.resx">
+      <DependentUpon>ApplicationTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickApp\UserControls\QuickAppSettingsPage.resx">
+      <DependentUpon>QuickAppSettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\XAuthorDesignerResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\XAuthorDesignerResources-jp.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DataTableExpressionBuilderView.resx">
+      <DependentUpon>DataTableExpressionBuilderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FieldMappingView.resx">
+      <DependentUpon>FieldMappingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShowFilterObjectView.resx">
+      <DependentUpon>ShowFilterObjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\AddRow\AddRowActionView.resx">
+      <DependentUpon>AddRowActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\DataMigration\DataSetAction.resx">
+      <DependentUpon>DataSetAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\DeleteAction\DeleteActionView.resx">
+      <DependentUpon>DeleteActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\PasteRowAction\PasteRowActionView.resx">
+      <DependentUpon>PasteRowActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\PasteSourceDataAction\PasteSourceDataActionView.resx">
+      <DependentUpon>PasteSourceDataActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\SwitchConnectionActionModel\SwitchConnectionActionView.resx">
+      <DependentUpon>SwitchConnectionActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AppSettings\AppSettingsView.resx">
+      <DependentUpon>AppSettingsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AppSync\AppSync.resx">
+      <DependentUpon>AppSync.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AppSync\SummaryViewer.resx">
+      <DependentUpon>SummaryViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AppSync\FieldsMismatchViewer.resx">
+      <DependentUpon>FieldsMismatchViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AppSync\FieldsMissingViewer.resx">
+      <DependentUpon>FieldsMissingViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AppSync\ObjectsMissingViewer.resx">
+      <DependentUpon>ObjectsMissingViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataMigration\DataMigrationFieldsViewer.resx">
+      <DependentUpon>DataMigrationFieldsViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataMigration\DataMigrationHelp.resx">
+      <DependentUpon>DataMigrationHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataMigration\DataMigrationLookupViewer.resx">
+      <DependentUpon>DataMigrationLookupViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataMigration\DataMigrationSettings.resx">
+      <DependentUpon>DataMigrationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataMigration\DataMigrationWizard.resx">
+      <DependentUpon>DataMigrationWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataMigration\MultiSelectListForm.resx">
+      <DependentUpon>MultiSelectListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExpressionBuilder\ObjectAndFieldBrowserView.resx">
+      <DependentUpon>ObjectAndFieldBrowserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\InputAction\InputActionView.resx">
+      <DependentUpon>InputActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataTransfer\DataTransferView.resx">
+      <DependentUpon>DataTransferView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorMessageViewer\ErrorMessageViewer.resx">
+      <DependentUpon>ErrorMessageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ApttusFieldsView.resx">
+      <DependentUpon>ApttusFieldsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickApp\Forms\QuickAppWizard.resx">
+      <DependentUpon>QuickAppWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickApp\Forms\ExpressionBuilderHost.resx">
+      <DependentUpon>ExpressionBuilderHost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickApp\UserControls\RecordSelectionPage.resx">
+      <DependentUpon>RecordSelectionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickApp\UserControls\ObjectSelectionPage.resx">
+      <DependentUpon>ObjectSelectionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickApp\UserControls\QuickAppSelectionPage.resx">
+      <DependentUpon>QuickAppSelectionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\CallProcedureAction\CallProcedure.resx">
+      <DependentUpon>CallProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\CheckInAction\CheckInView.resx">
+      <DependentUpon>CheckInView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\CheckOutAction\CheckOutView.resx">
+      <DependentUpon>CheckOutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\ClearAction\ClearActionView.resx">
+      <DependentUpon>ClearActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\MacroAction\MacroActionView.resx">
+      <DependentUpon>MacroActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\QueryAction\QueryActionView.resx">
+      <DependentUpon>QueryActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\RetrieveAction\RetrieveActionView.resx">
+      <DependentUpon>RetrieveActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\SaveAction\SaveActionView.resx">
+      <DependentUpon>SaveActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ExpressionBuilderView.resx">
+      <DependentUpon>ExpressionBuilderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\SaveAttachmentAction\SaveAttachmentView.resx">
+      <DependentUpon>SaveAttachmentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Actions\SearchAndSelectAction\SearchAndSelectActionView.resx">
+      <DependentUpon>SearchAndSelectActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CloneApp\CloneAppView.resx">
+      <DependentUpon>CloneAppView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExpressionBuilder\QueryLabelView.resx">
+      <DependentUpon>QueryLabelView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\External Library\ExternalLibraryView.resx">
+      <DependentUpon>ExternalLibraryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ImportApp\ImportAppView.resx">
+      <DependentUpon>ImportAppView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LookAheadUI\LookAheadDesignerView.resx">
+      <DependentUpon>LookAheadDesignerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LookAheadUI\LookAheadPropUI.resx">
+      <DependentUpon>LookAheadPropUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LookupObjectSelection\LookupObjectSelectionUI.resx">
+      <DependentUpon>LookupObjectSelectionUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MatrixMap\MatrixComponentFilterWindow.resx">
+      <DependentUpon>MatrixComponentFilterWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MatrixMap\MatrixFieldView.resx">
+      <DependentUpon>MatrixFieldView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MatrixMap\ucMatrixView.resx">
+      <DependentUpon>ucMatrixView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SaveMap\SaveMapMatrixFieldView.resx">
+      <DependentUpon>SaveMapMatrixFieldView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SaveMap\SaveMapView.resx">
+      <DependentUpon>SaveMapView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SaveMap\SaveMapRetrieveFieldView.resx">
+      <DependentUpon>SaveMapRetrieveFieldView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Workflow\WorkflowTriggerView.resx">
+      <DependentUpon>WorkflowTriggerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Workflow\WorkflowDesigner.resx">
+      <DependentUpon>WorkflowDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GenericListUI\GenericListUIView.resx">
+      <DependentUpon>GenericListUIView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDesigner\UI\View\AppBuilder.resx" />
+    <EmbeddedResource Include="MenuDesigner\UI\View\MenuHome.resx">
+      <DependentUpon>MenuHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDesigner\UI\View\PermissionUI.resx">
+      <DependentUpon>PermissionUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDesigner\UI\View\VisibleCondition.resx" />
+    <EmbeddedResource Include="Forms\NewApplication.resx">
+      <DependentUpon>NewApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RetrieveMap\ucRetrieveMap.resx">
+      <DependentUpon>ucRetrieveMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="appbuilder_designer.licenseheader" />
+    <None Include="Apttus.XAuthor.AppDesigner.pfx" />
+    <None Include="Apttus.XAuthor.AppDesigner_TemporaryKey.pfx" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ThisAddIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="Resources\MigrationTemplate.xlsm" />
+    <None Include="ThisAddIn.Designer.xml">
+      <DependentUpon>ThisAddIn.cs</DependentUpon>
+    </None>
+    <Compile Include="ThisAddIn.Designer.cs">
+      <DependentUpon>ThisAddIn.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\PrestoSchema.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlLib\Apttus.DynamicsCRM.LoginControl.dll" />
+    <Content Include="ControlLib\Apttus.IntelligentCloud.Login.dll" />
+    <Content Include="ControlLib\Apttus.IntelligentCloudV2.Login.dll" />
+    <Content Include="ControlLib\Apttus.OAuthLoginControl.dll" />
+    <Content Include="ControlLib\Apttus.ProgressIndicator.dll" />
+    <Content Include="ControlLib\Apttus.ProgressIndicator.xml" />
+    <Content Include="ControlLib\Apttus.SettingsManager.dll" />
+    <Content Include="ControlLib\Microsoft.WindowsAPICodePack.dll" />
+    <None Include="Resources\%24this.Icon.ico" />
+    <Content Include="Resources\cellSelectionIcon.png" />
+    <None Include="Resources\x-auth-check.png" />
+    <None Include="Resources\parent_child.png" />
+    <None Include="Resources\single_object_list.png" />
+    <None Include="Resources\UpArrowActions.png" />
+    <None Include="Resources\levels.png" />
+    <None Include="Resources\DownArrowActions.png" />
+    <None Include="Resources\Clone.png" />
+    <None Include="Resources\config_icon.png" />
+    <Content Include="Resources\LA_Blank.jpg" />
+    <Content Include="Resources\ok_icon.png" />
+    <None Include="Resources\cancel_icon.png" />
+    <None Include="Resources\LA_Filled.jpg" />
+    <None Include="Resources\LA_Empty.jpg" />
+    <None Include="Resources\x-author_full-logo.png" />
+    <None Include="Resources\x-author.ico" />
+    <None Include="Resources\splash_narrow_grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xauthor-ExcelLogo.png" />
+    <None Include="Resources\UpArrow.png" />
+    <None Include="Resources\DownArrow.png" />
+    <None Include="Resources\CreateFormWithMultipleItems.jpg" />
+    <None Include="Resources\CreateFormBlankForm.jpg" />
+    <None Include="Resources\CreateFormBlankForm.bmp" />
+    <None Include="Resources\X-Author_Logo.ico" />
+    <None Include="Resources\X-Author_120x120.png" />
+    <None Include="Resources\welcome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\appbuilder_core\Apttus.XAuthor.Core.csproj">
+      <Project>{6ff19b34-4d89-4631-8353-e685f72ee577}</Project>
+      <Name>Apttus.XAuthor.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\appbuilder_main\Apttus.XAuthor.ExtensionLib\Apttus.XAuthor.ExtensionLib.csproj">
+      <Project>{6b50bc68-4471-42d4-972c-40986ad065bf}</Project>
+      <Name>Apttus.XAuthor.ExtensionLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Apttus.XAuthor.AppDesigner_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4BE4335E0414D9BE5479145154B1115951B88CC0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>
+    </ManifestTimestampUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>VSTO40;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>VSTO40;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <!-- Include the build rules for a C# project. -->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- Include additional build rules for an Office application add-in. -->
+  <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- This section defines VSTO properties that describe the host-changeable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="Excel" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Excel" Language="cs" TemplatesPath="VSTOTemplates" DebugInfoExeName="#Software\Microsoft\Office\16.0\Excel\InstallRoot\Path#excel.exe" DebugInfoCommandLine="/x " AddItemTemplatesGuid="{51063C3A-E220-4D12-8922-BDA915ACD783}" />
+        <Host Name="Excel" GeneratedCodeNamespace="Apttus.XAuthor.AppDesigner" IconIndex="0">
+          <HostItem Name="ThisAddIn" Code="ThisAddIn.cs" CanonicalName="AddIn" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.cs" />
+        </Host>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.2 Tools\resgen"  "$(ProjectDir)Resources\XAuthorDesignerResources.resx"  "$(ProjectDir)\$(OutDir)XAuthorDesignerResources.resources"
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.2 Tools\resgen"  "$(ProjectDir)Resources\XAuthorDesignerResources-jp.resx"  "$(ProjectDir)\$(OutDir)XAuthorDesignerResources.ja-JP.resources"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

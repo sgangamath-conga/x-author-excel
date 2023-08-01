@@ -1,0 +1,3568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RIBBON_splitbtnSave_Label" xml:space="preserve">
+    <value>Save App</value>
+  </data>
+  <data name="RIBBON_mnuApplication_Label" xml:space="preserve">
+    <value>Apps</value>
+  </data>
+  <data name="OPTIONS_OptionsCap_ShowMsg" xml:space="preserve">
+    <value>- Apply changes</value>
+  </data>
+  <data name="RIBBON_groupMigrate_Label" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="RIBBON_groupBuild_Label" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="RIBBON_btnValidate_Label" xml:space="preserve">
+    <value>Sync App</value>
+  </data>
+  <data name="COMMON_SwitchConnection_Text" xml:space="preserve">
+    <value>Switch Connection</value>
+  </data>
+  <data name="RIBBON_btnSearchSelect_Label" xml:space="preserve">
+    <value>Search and Select</value>
+  </data>
+  <data name="RIBBON_btnSaveMap_Label" xml:space="preserve">
+    <value>Save Map</value>
+  </data>
+  <data name="RIBBON_btnSaveAttachmentAction_Label" xml:space="preserve">
+    <value>Save Attachment</value>
+  </data>
+  <data name="RIBBON_btnSaveAs_Label" xml:space="preserve">
+    <value>Save As (Clone)</value>
+  </data>
+  <data name="COMMON_DisplayMap_Text" xml:space="preserve">
+    <value>Display Map</value>
+  </data>
+  <data name="COMMON_Settings_Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="COMMON_Edit_Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="COMMON_Preview_Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="RIBBON_btnPasteRow_Label" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="RIBBON_btnMatrixMap_Label" xml:space="preserve">
+    <value>Matrix Map</value>
+  </data>
+  <data name="RIBBON_btnMacroAction_Label" xml:space="preserve">
+    <value>Macro</value>
+  </data>
+  <data name="RIBBON_btnGallerySupport_Label" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="RIBBON_btnForm_Label" xml:space="preserve">
+    <value>Forms</value>
+  </data>
+  <data name="RIBBON_btnExport_Label" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="RIBBON_btnExecuteQuery_Label" xml:space="preserve">
+    <value>Query</value>
+  </data>
+  <data name="RIBBON_btnDataLoader_Label" xml:space="preserve">
+    <value>Source Data</value>
+  </data>
+  <data name="CONNENTRY_btnConnect_Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="COMMON_Clear_Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="RIBBON_btnCheckOut_Label" xml:space="preserve">
+    <value>Check-Out</value>
+  </data>
+  <data name="RIBBON_btnCheckIn_Label" xml:space="preserve">
+    <value>Check-In</value>
+  </data>
+  <data name="RIBBON_btnCallProcedure_Label" xml:space="preserve">
+    <value>Salesforce Method</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RIBBON_btnAbout_Label" xml:space="preserve">
+    <value>About X-Author Excel...</value>
+  </data>
+  <data name="RIBBON_AccessGroup_Label" xml:space="preserve">
+    <value>Common</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="COMMON_SelectedObjects_Text" xml:space="preserve">
+    <value>Selected Objects</value>
+  </data>
+  <data name="APPDEF_lblRH_Text" xml:space="preserve">
+    <value>Row Header:</value>
+  </data>
+  <data name="APPDEF_lblObjectSelection_Text" xml:space="preserve">
+    <value>Select Objects</value>
+  </data>
+  <data name="APPDEF_lblLegend_Text" xml:space="preserve">
+    <value>* operations are auto-saved</value>
+  </data>
+  <data name="COMMON_SalesforceObject_Text" xml:space="preserve">
+    <value>Salesforce Objects</value>
+  </data>
+  <data name="APPDEF_lblFilterFieldsGrid_Text" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="APPDEF_lblFieldsGrid_Text" xml:space="preserve">
+    <value>Fields for Selected Object</value>
+  </data>
+  <data name="APPDEF_lblFields_Text" xml:space="preserve">
+    <value>Select Fields</value>
+  </data>
+  <data name="APPDEF_lblData_Text" xml:space="preserve">
+    <value>Transaction:</value>
+  </data>
+  <data name="APPDEF_lblCH_Text" xml:space="preserve">
+    <value>Column Header:</value>
+  </data>
+  <data name="APPDEF_grpHierarchical_Text" xml:space="preserve">
+    <value>Objects Hierarchy</value>
+  </data>
+  <data name="APPDEF_grpCrossTab_Text" xml:space="preserve">
+    <value>Cross Tab </value>
+  </data>
+  <data name="COMMON_Apply_Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="APPDEF_btnSaveAndClose_Text" xml:space="preserve">
+    <value>Save and Close</value>
+  </data>
+  <data name="APPDEF_btnRemoveObject_Text" xml:space="preserve">
+    <value>Remove Object *</value>
+  </data>
+  <data name="APPDEF_btnAddParentObject_Text" xml:space="preserve">
+    <value>Add Parent Object *</value>
+  </data>
+  <data name="APPDEF_btnAddObject_Text" xml:space="preserve">
+    <value>Add Child Object *</value>
+  </data>
+  <data name="APPDEF_btnAddCrossTab_Text" xml:space="preserve">
+    <value>Add Cross Tab *</value>
+  </data>
+  <data name="COMMON_btnClose_Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ABOUT_lblAboutDescription_Text" xml:space="preserve">
+    <value>Conga X-Author for Excel intelligently interacts between Microsoft Excel, Chatter, and Salesforce using embedded configurable ribbons. The technology allows all tasks performed within a Microsoft Excel Document to be shared and completely captured in any Structured Data System including Salesforce, without the need to go into Salesforce or Chatter.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="ABOUT_lblCopyrightInfo_Text" xml:space="preserve">
+    <value>Copyright ©2022 Conga. All Rights Reserved.</value>
+  </data>
+  <data name="ABOUT_version_Text" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="COMMON _btnCreate_Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="COMMON_btnCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="COMMON_btnDelete_AMPText" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="COMMON_btnEdit_AMPText" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="COMMON_ActionName_Text" xml:space="preserve">
+    <value>Action Name :</value>
+  </data>
+  <data name="ADDMODACTION_colType_HeaderText" xml:space="preserve">
+    <value>Action Type</value>
+  </data>
+  <data name="COMMON_Actions_Text" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="OPTIONSFORM_chkProxyAuthenticated_Text" xml:space="preserve">
+    <value>Authenticated?</value>
+  </data>
+  <data name="OPTIONSFORM_chkSaveTokenLocally_Text" xml:space="preserve">
+    <value>Store session token locally?</value>
+  </data>
+  <data name="OPTIONSFORM_groupBox1_Text" xml:space="preserve">
+    <value>Proxy Settings</value>
+  </data>
+  <data name="OPTIONSFORM_groupBox3_Text" xml:space="preserve">
+    <value>Session Settings</value>
+  </data>
+  <data name="OPTIONSFORM_grpAppSettings_Text" xml:space="preserve">
+    <value>Format Options</value>
+  </data>
+  <data name="COMMON_Header_Text" xml:space="preserve">
+    <value>Header</value>
+  </data>
+  <data name="OPTIONSFORM_grpListApp_Text" xml:space="preserve">
+    <value>List App</value>
+  </data>
+  <data name="OPTIONSFORM_grpParentChildApp_Text" xml:space="preserve">
+    <value>Parent Child App</value>
+  </data>
+  <data name="COMMON_DisplayFields_Text" xml:space="preserve">
+    <value>Display Fields</value>
+  </data>
+  <data name="COMMON_SaveFields_Text" xml:space="preserve">
+    <value>Save Fields</value>
+  </data>
+  <data name="OPTIONSFORM_label3_Text" xml:space="preserve">
+    <value>Font </value>
+  </data>
+  <data name="OPTIONSFORM_label4_Text" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="OPTIONSFORM_label5_Text" xml:space="preserve">
+    <value>Fill Color</value>
+  </data>
+  <data name="OPTIONSFORM_label6_Text" xml:space="preserve">
+    <value>Text Color</value>
+  </data>
+  <data name="COMMON_StartCol_Text" xml:space="preserve">
+    <value>Start Col :</value>
+  </data>
+  <data name="COMMON_StartRow_Text" xml:space="preserve">
+    <value>Start Row :</value>
+  </data>
+  <data name="OPTIONSFORM_lblProxyHost_Text" xml:space="preserve">
+    <value>Proxy address to use:</value>
+  </data>
+  <data name="OPTIONSFORM_lblProxyPort_Text" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="OPTIONSFORM_lblProxyUserName_Text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="COMMON_WorkSheetTitle_Text" xml:space="preserve">
+    <value>Worksheet Title</value>
+  </data>
+  <data name="OPTIONSFORM_rbManualProxy_Text" xml:space="preserve">
+    <value>Manual proxy configuration</value>
+  </data>
+  <data name="OPTIONSFORM_rbNoProxy_Text" xml:space="preserve">
+    <value>No proxy</value>
+  </data>
+  <data name="OPTIONSFORM_rbSystemProxy_Text" xml:space="preserve">
+    <value>Use system proxy </value>
+  </data>
+  <data name="COMMON_QuickApp_Text" xml:space="preserve">
+    <value>Quick App</value>
+  </data>
+  <data name="OPTIONSFORM_txtFont_Text" xml:space="preserve">
+    <value>Calibri, 16pt</value>
+  </data>
+  <data name="COMMON_Calibri11_Text" xml:space="preserve">
+    <value>Calibri, 11pt</value>
+  </data>
+  <data name="NEWAPP_btnBrowse_Text" xml:space="preserve">
+    <value>&amp;Browse...</value>
+  </data>
+  <data name="COMMON_Create_AMPText" xml:space="preserve">
+    <value>&amp;Create</value>
+  </data>
+  <data name="NEWAPP_groupBox1_Text" xml:space="preserve">
+    <value>Select Template</value>
+  </data>
+  <data name="NEWAPP_label1_Text" xml:space="preserve">
+    <value>App Name :</value>
+  </data>
+  <data name="NEWEXPRESSDESIGNER_label1_Text" xml:space="preserve">
+    <value>Express Configuration Name :</value>
+  </data>
+  <data name="NEWAPP_rbExisting_Text" xml:space="preserve">
+    <value>Existing</value>
+  </data>
+  <data name="COMMON_New_Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="ERRVIEWER_Description_HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ERRVIEWER_EntityName_HeaderText" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="ERRVIEWER_EntityType_HeaderText" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="ERRVIEWER_ErrorNo_HeaderText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="QAWIZARD_btnBack_Text" xml:space="preserve">
+    <value>&lt; &amp;Back</value>
+  </data>
+  <data name="QAWIZARD_btnNext_Text" xml:space="preserve">
+    <value>&amp;Next &gt;</value>
+  </data>
+  <data name="QAWIZARD_lblPageTitle_Text" xml:space="preserve">
+    <value>Build a Quick App</value>
+  </data>
+  <data name="ExpressWizard_lblPageTitle_Text" xml:space="preserve">
+    <value>Express Configuration : Define</value>
+  </data>
+  <data name="QAOBJSEL_lblLoadingFields_Text" xml:space="preserve">
+    <value>Loading Fields. Please Wait...</value>
+  </data>
+  <data name="QAOBJSEL_lblObject_Text" xml:space="preserve">
+    <value>Parent Object :</value>
+  </data>
+  <data name="QAAPPSEL_lblListAppDescription_Text" xml:space="preserve">
+    <value>Allows for retrieval, editing, and saving of data for a list of records for one object based on user selected fields.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="QAAPPSEL_lblParentChild_Text" xml:space="preserve">
+    <value>Parent Child</value>
+  </data>
+  <data name="QAAPPSEL_lblPCDescription_Text" xml:space="preserve">
+    <value>Allows for retrieval, editing, and saving of data for both a parent record and a list of child object records based on user selected fields.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="QAAPPSEL_lblSelectAppType_Text" xml:space="preserve">
+    <value>Select App Type :</value>
+  </data>
+  <data name="NEWEXPRESSDESIGNERSEL_lblSelectAppType_Text" xml:space="preserve">
+    <value>Configuration Type :</value>
+  </data>
+  <data name="QAAPPSEL_lblSingleObject_Text" xml:space="preserve">
+    <value>Single Object List</value>
+  </data>
+  <data name="QAAPPSETT_txtRetrieveMenuButton_Text" xml:space="preserve">
+    <value>Retrieve</value>
+  </data>
+  <data name="QAAPPSETT_txtMaxColumnWidth_Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="QAAPPSETT_label3_Text" xml:space="preserve">
+    <value>Save Data Button Label :</value>
+  </data>
+  <data name="QAAPPSETT_label2_Text" xml:space="preserve">
+    <value>Retrieve Data Button Label :</value>
+  </data>
+  <data name="QAAPPSETT_label1_Text" xml:space="preserve">
+    <value>Group Label :</value>
+  </data>
+  <data name="QAAPPSETT_groupBoxWorksheet_Text" xml:space="preserve">
+    <value>Worksheet Settings</value>
+  </data>
+  <data name="QAAPPSETT_groupBox2_Text" xml:space="preserve">
+    <value>Menu Settings</value>
+  </data>
+  <data name="QAAPPSETT_groupBox1_Text" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="QAAPPSETT_chkViewGridLines_Text" xml:space="preserve">
+    <value>View Gridlines</value>
+  </data>
+  <data name="QAAPPSETT_chkEditInExcel_Text" xml:space="preserve">
+    <value>Enable App Launch from {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="QAAPPSETT_chkDeleteRow_Text" xml:space="preserve">
+    <value>Enable Delete Row</value>
+  </data>
+  <data name="QAAPPSETT_chkAddRow_Text" xml:space="preserve">
+    <value>Enable Add Row</value>
+  </data>
+  <data name="COMMON_Display_Text" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="QARECSEL_DisplayOrder_HeaderText" xml:space="preserve">
+    <value>Display Order</value>
+  </data>
+  <data name="COMMON_SelectAll_Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="QARECSEL_label3_Text" xml:space="preserve">
+    <value>Action :</value>
+  </data>
+  <data name="QARECSEL_ResultFields_HeaderText" xml:space="preserve">
+    <value>Result Fields</value>
+  </data>
+  <data name="COMMON_SearchField_Text" xml:space="preserve">
+    <value>Search Fields</value>
+  </data>
+  <data name="MNUHOME_AppTitle" xml:space="preserve">
+    <value>Caption for the menu designer</value>
+    <comment>X-Author Designer</comment>
+  </data>
+  <data name="MNUHOME_Availability" xml:space="preserve">
+    <value>Availability...</value>
+  </data>
+  <data name="MNUHOME_btnAddButton" xml:space="preserve">
+    <value>Add Button</value>
+  </data>
+  <data name="MNUHOME_btnAddGroup" xml:space="preserve">
+    <value>Add Group</value>
+  </data>
+  <data name="COMMON_CreateActionflow_Text" xml:space="preserve">
+    <value>Create Action Flow</value>
+  </data>
+  <data name="COMMON_Delete_Text" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Delete Button caption</comment>
+  </data>
+  <data name="MNUHOME_lblProperties" xml:space="preserve">
+    <value>Details</value>
+    <comment>properties caption for the menu designer</comment>
+  </data>
+  <data name="MNUHOME_lblWF" xml:space="preserve">
+    <value>Assign Action Flow</value>
+  </data>
+  <data name="MNUHOME_mnuDesignerAddLabel" xml:space="preserve">
+    <value>Add Groups and Buttons</value>
+  </data>
+  <data name="MNUHOME_msgDuplicate" xml:space="preserve">
+    <value>Duplicate item. Please check. </value>
+  </data>
+  <data name="MNUHOME_msgMaxMenuItems" xml:space="preserve">
+    <value>Max Menu Items limit exceeded. </value>
+  </data>
+  <data name="MNUHOME_titleMaxMenuItems" xml:space="preserve">
+    <value>Max Menu Items. </value>
+  </data>
+  <data name="MNUHOME_msgMaxMenuGroups" xml:space="preserve">
+    <value>Max Menu Groups limit exceeded. </value>
+  </data>
+  <data name="MNUHOME_titleMaxMenuGroups" xml:space="preserve">
+    <value>Max Menu Groups. </value>
+  </data>
+  <data name="MNUHOME_permission" xml:space="preserve">
+    <value>Permissions...</value>
+  </data>
+  <data name="MNUHOME_promptforDeleteMenuGroup" xml:space="preserve">
+    <value>group has menu items. Do you want to delete?</value>
+  </data>
+  <data name="MNUHOME_selectGroupButtons" xml:space="preserve">
+    <value>Select Group or Button then Define Attributes</value>
+  </data>
+  <data name="MNUHOME_selectUserProfile" xml:space="preserve">
+    <value>User profile UI select UP label</value>
+    <comment>Select user profile</comment>
+  </data>
+  <data name="MNUHOME_TitleDuplicate" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="COMMON_UserMenu_Text" xml:space="preserve">
+    <value>User Menus</value>
+  </data>
+  <data name="MNUHOME_userProfile" xml:space="preserve">
+    <value>caption for the UP UI</value>
+    <comment>User Profile</comment>
+  </data>
+  <data name="UCEXPRVIEW_lblFilterLogic_Text" xml:space="preserve">
+    <value>Filter Logic :</value>
+  </data>
+  <data name="UCEXPRVIEW_lblObjectAndFields_Text" xml:space="preserve">
+    <value>Object and Field</value>
+  </data>
+  <data name="UCEXPRVIEW_lblOperator_Text" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="UCEXPRVIEW_lblValue_Text" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="UCEXPRVIEW_lblValueType_Text" xml:space="preserve">
+    <value>Value Type</value>
+  </data>
+  <data name="UCEXPRVIEW_lnkAddRemoveFilterLogic_Text" xml:space="preserve">
+    <value>Add Filter Logic</value>
+  </data>
+  <data name="UCFLDSMAPVIEW_label1_Text" xml:space="preserve">
+    <value>Field Mappings :</value>
+  </data>
+  <data name="UCFLDSMAPVIEW_label2_Text" xml:space="preserve">
+    <value>Target Fields</value>
+  </data>
+  <data name="UCFLDSMAPVIEW_label3_Text" xml:space="preserve">
+    <value>Source Fields</value>
+  </data>
+  <data name="COMMON_btnSave_Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ADDROWACTION_cboInputType_Items" xml:space="preserve">
+    <value>Action Flow Step Input</value>
+  </data>
+  <data name="ADDROWACTION_cboInputType_Items1" xml:space="preserve">
+    <value>Cell Reference</value>
+  </data>
+  <data name="COMMON_NumberOfRows_Text" xml:space="preserve">
+    <value>Number of Rows</value>
+  </data>
+  <data name="COMMON_UserInput_Text" xml:space="preserve">
+    <value>User Input</value>
+  </data>
+  <data name="COMMON_AddRowAction_Text" xml:space="preserve">
+    <value>Add Row Action</value>
+  </data>
+  <data name="ADDROWACTION_grpRecords_Text" xml:space="preserve">
+    <value>Number Of Records</value>
+  </data>
+  <data name="COMMON_Name_Text" xml:space="preserve">
+    <value>Name : </value>
+  </data>
+  <data name="COMMON_SaveMap_Text" xml:space="preserve">
+    <value>Save Map:</value>
+  </data>
+  <data name="COMMON_ListObject_Text" xml:space="preserve">
+    <value>List Object :</value>
+  </data>
+  <data name="ADDROWACTION_label5_Text" xml:space="preserve">
+    <value>Input Type :</value>
+  </data>
+  <data name="COMMON_Bottom_Text" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="COMMON_Top_Text" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="CALLPROCACTION_chkEnableCache_Text" xml:space="preserve">
+    <value>Enable Cache</value>
+  </data>
+  <data name="CALLPROCACTION_chkHasParams_Text" xml:space="preserve">
+    <value>Has parameters</value>
+  </data>
+  <data name="CALLPROCACTION_chkReturnValue_Text" xml:space="preserve">
+    <value>Has return value</value>
+  </data>
+  <data name="CALLPROCACTION_groupBox1_Text" xml:space="preserve">
+    <value>Action Details</value>
+  </data>
+  <data name="CALLPROCACTION_groupMethod_Text" xml:space="preserve">
+    <value>Salesforce Method Details</value>
+  </data>
+  <data name="CALLPROCACTION_groupParams_Text" xml:space="preserve">
+    <value>Specify Parameters</value>
+  </data>
+  <data name="CALLPROCACTION_label1_Text" xml:space="preserve">
+    <value>Method :</value>
+  </data>
+  <data name="CALLPROCACTION_label3_Text" xml:space="preserve">
+    <value>Salesforce Method Action</value>
+  </data>
+  <data name="CALLPROCACTION_lblClassName_Text" xml:space="preserve">
+    <value>Class :</value>
+  </data>
+  <data name="CALLPROCACTION_lblReturnType_Text" xml:space="preserve">
+    <value>Return type :</value>
+  </data>
+  <data name="CALLPROCACTION_lnkAddParam_Text" xml:space="preserve">
+    <value>Add Param</value>
+  </data>
+  <data name="COMMON_ClearAll_Text" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="CHECKINACTION_gbCheckIn_Text" xml:space="preserve">
+    <value>Check In File As Attachment</value>
+  </data>
+  <data name="COMMON_FileName_Text" xml:space="preserve">
+    <value>File Name :</value>
+  </data>
+  <data name="COMMON_Object_Text" xml:space="preserve">
+    <value>Object :</value>
+  </data>
+  <data name="CHECKOUTACTION_gbCheckIn_Text" xml:space="preserve">
+    <value>Check Out File from attachment</value>
+  </data>
+  <data name="COMMON_Cancel_AMPText" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="CLEARACTION_Index_HeaderText" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="CLEARACTION_label1_Text" xml:space="preserve">
+    <value>Clear Fields Action</value>
+  </data>
+  <data name="CLEARACTION_label3_Text" xml:space="preserve">
+    <value>Display / Save Map :</value>
+  </data>
+  <data name="CLEARACTION_label5_Text" xml:space="preserve">
+    <value>Save Map Objects</value>
+  </data>
+  <data name="CLEARACTION_ObjectType_HeaderText" xml:space="preserve">
+    <value>Object Type</value>
+  </data>
+  <data name="COMMON_MapName_HeaderText" xml:space="preserve">
+    <value>Map Name</value>
+  </data>
+  <data name="MACROACTION_groupBox1_Text" xml:space="preserve">
+    <value>Macro Action</value>
+  </data>
+  <data name="MACROACTION_lblMacroName_Text" xml:space="preserve">
+    <value>Macro Name :</value>
+  </data>
+  <data name="PASTEACTION_groupBox1_Text" xml:space="preserve">
+    <value>Paste Action</value>
+  </data>
+  <data name="PASTEACTION_label4_Text" xml:space="preserve">
+    <value>Add row location : </value>
+  </data>
+  <data name="PASTEACTION_rdPasteAll_Text" xml:space="preserve">
+    <value>Paste All</value>
+  </data>
+  <data name="PASTEACTION_rdPasteValues_Text" xml:space="preserve">
+    <value>Paste Values Only</value>
+  </data>
+  <data name="PASTEDATAACTION_chkInputFileName_Text" xml:space="preserve">
+    <value>Input Source File at runtime</value>
+  </data>
+  <data name="COMMON_PasteSourceData_Text" xml:space="preserve">
+    <value>Paste Source Data</value>
+  </data>
+  <data name="PASTEDATAACTION_label2_Text" xml:space="preserve">
+    <value>Source File Name :</value>
+  </data>
+  <data name="QUERYACTION_cboType_Items" xml:space="preserve">
+    <value>SELECT</value>
+  </data>
+  <data name="QUERYACTION_groupActionDetail_Text" xml:space="preserve">
+    <value>Query Action</value>
+  </data>
+  <data name="QUERYACTION_label5_Text" xml:space="preserve">
+    <value>Max records :</value>
+  </data>
+  <data name="COMMON_Type_Text" xml:space="preserve">
+    <value>Type :</value>
+  </data>
+  <data name="RETRIEVEACTION_groupBox1_Text" xml:space="preserve">
+    <value>Display Action</value>
+  </data>
+  <data name="SAVEACTION_chkEnableCollisionDetection_Text" xml:space="preserve">
+    <value>Enable Collision Detection</value>
+  </data>
+  <data name="SAVEACTION_chkEnablePartialSave_Text" xml:space="preserve">
+    <value>Enable Partial Save</value>
+  </data>
+  <data name="SAVEACTION_gbSaveAction_Text" xml:space="preserve">
+    <value>Save Action</value>
+  </data>
+  <data name="SAVEATTACTION_cbCustomSheets_Text" xml:space="preserve">
+    <value>Custom Sheet Selection</value>
+  </data>
+  <data name="SAVEATTACTION_chkProvideNameAtRuntime_Text" xml:space="preserve">
+    <value>Use Runtime Filename</value>
+  </data>
+  <data name="SAVEATTACTION_gbSaveAttachment_Text" xml:space="preserve">
+    <value>Save Attachment Action</value>
+  </data>
+  <data name="SAVEATTACTION_label5_Text" xml:space="preserve">
+    <value>Include Sheets :</value>
+  </data>
+  <data name="SAVEATTACTION_rbExcel_Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="SAVEATTACTION_rbPDF_Text" xml:space="preserve">
+    <value>PDF</value>
+  </data>
+  <data name="SAVEATTACTION_rdoAddNew_Text" xml:space="preserve">
+    <value>Add New</value>
+  </data>
+  <data name="SAVEATTACTION_rdoOverrite_Text" xml:space="preserve">
+    <value>Overwrite</value>
+  </data>
+  <data name="SSACTION_DataType_HeaderText" xml:space="preserve">
+    <value>DataType</value>
+  </data>
+  <data name="COMMON_DefaultValue_Text" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="COMMON_FieldLabel_Text" xml:space="preserve">
+    <value>Field Label</value>
+  </data>
+  <data name="SSACTION_label2_Text" xml:space="preserve">
+    <value>Searchable Fields</value>
+  </data>
+  <data name="SSACTION_label3_Text" xml:space="preserve">
+    <value>Fields to Display in Search Results</value>
+  </data>
+  <data name="SSACTION_label4_Text" xml:space="preserve">
+    <value>Result Selection :</value>
+  </data>
+  <data name="SSACTION_lblPageSize_Text" xml:space="preserve">
+    <value>Results per Page :</value>
+  </data>
+  <data name="SSACTION_rbMultipleRecords_Text" xml:space="preserve">
+    <value>Multiple</value>
+  </data>
+  <data name="SSACTION_rbSingleRecord_Text" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="SSACTION_ResultHeader_HeaderText" xml:space="preserve">
+    <value>Header Name</value>
+  </data>
+  <data name="SSACTION_ResultSort_HeaderText" xml:space="preserve">
+    <value>Sort By</value>
+  </data>
+  <data name="SSACTION_SearchCheckBox_HeaderText" xml:space="preserve">
+    <value>Searchable</value>
+  </data>
+  <data name="COMMON_Up_Text" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="COMMON_Filters_Text" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="COMMON_Options_Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="SWITCHCONNACTION_groupBox1_Text" xml:space="preserve">
+    <value>Switch Connection Action</value>
+  </data>
+  <data name="SWITCHCONNACTION_lblSwitchTo_Text" xml:space="preserve">
+    <value>Switch Connection Name :</value>
+  </data>
+  <data name="COMMON_Save_AMPText" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="APPSETTVIEW_chkAllRecordsSaveSuccess_Text" xml:space="preserve">
+    <value>When all records are saved successfully in a Save Action</value>
+  </data>
+  <data name="APPSETTVIEW_chkAutoSizeColumn_Text" xml:space="preserve">
+    <value>Auto Size Column Width</value>
+  </data>
+  <data name="APPSETTVIEW_chkDisablePrint_Text" xml:space="preserve">
+    <value>Disable Print</value>
+  </data>
+  <data name="APPSETTVIEW_chkDisableRichtextEditing_Text" xml:space="preserve">
+    <value>Disable Rich Text editing</value>
+  </data>
+  <data name="APPSETTVIEW_chkDisableSaveLocalFile_Text" xml:space="preserve">
+    <value>Disable local Save File</value>
+  </data>
+  <data name="COMMON_DisplayFilters_Text" xml:space="preserve">
+    <value>Display Filters</value>
+  </data>
+  <data name="APPSETTVIEW_chkSuppressDependent_Text" xml:space="preserve">
+    <value>When no records are retrieved for a parent object from a Query Action</value>
+  </data>
+  <data name="APPSETTVIEW_chkSuppressNoOfRecords_Text" xml:space="preserve">
+    <value>When no records are retrieved from a Query Action</value>
+  </data>
+  <data name="APPSETTVIEW_chkSuppressSave_Text" xml:space="preserve">
+    <value>When no records are found to save in a Save Action</value>
+  </data>
+  <data name="COMMON_Password_Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="COMMON_Format_Text" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="APPSETTVIEW_grpDataMigration_Text" xml:space="preserve">
+    <value>Suppress Messages</value>
+  </data>
+  <data name="COMMON_General_Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="APPSETTVIEW_grpProtectSheet_Text" xml:space="preserve">
+    <value>Protect Sheet Setting </value>
+  </data>
+  <data name="COMMON_MaxColumnWidth_Text" xml:space="preserve">
+    <value>Max Column Width :</value>
+  </data>
+  <data name="COMMON_AppSettings_Text" xml:space="preserve">
+    <value>App Settings</value>
+  </data>
+  <data name="CLONEAPPVIEW_lblTitle" xml:space="preserve">
+    <value>Clone App</value>
+  </data>
+  <data name="CLONEAPPVIEW_btnClone_Text" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="CLONEAPPVIEW_chkOpenAfterClone_Text" xml:space="preserve">
+    <value>Open Application after Cloning</value>
+  </data>
+  <data name="COMMON_AppDetails_Text" xml:space="preserve">
+    <value>App Details</value>
+  </data>
+  <data name="CLONEAPPVIEW_lblAppName_Text" xml:space="preserve">
+    <value>Clone App Name :</value>
+  </data>
+  <data name="COMMON_Version_Text" xml:space="preserve">
+    <value>Version :</value>
+  </data>
+  <data name="DATATRANSVIEW_label1_Text" xml:space="preserve">
+    <value>Source Excel Sheet :</value>
+  </data>
+  <data name="DATATRANSVIEW_SourceRange_HeaderText" xml:space="preserve">
+    <value>Source Range</value>
+  </data>
+  <data name="DATATRANSVIEW_SourceSheet_HeaderText" xml:space="preserve">
+    <value>Source Sheet</value>
+  </data>
+  <data name="DATATRANSVIEW_TargetRange_HeaderText" xml:space="preserve">
+    <value>Target Range</value>
+  </data>
+  <data name="DATATRANSVIEW_TargetSheet_HeaderText" xml:space="preserve">
+    <value>Target Sheet</value>
+  </data>
+  <data name="OBJFIELDBROWSEVIEW_btnSave_Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="COMMON_DataType_Text" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="COMMON_FieldId_Text" xml:space="preserve">
+    <value>Field Id</value>
+  </data>
+  <data name="QUERYLABELVIEW_lblLabel_Text" xml:space="preserve">
+    <value>Assign a label for this filter (applies to User Input)</value>
+  </data>
+  <data name="IMPORTAPPVIEW_btnBrowseApp_Text" xml:space="preserve">
+    <value>Browse App</value>
+  </data>
+  <data name="COMMON_Import_Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="IMPORTAPPVIEW_chkOpenAfterImport_Text" xml:space="preserve">
+    <value>Open Application after Import</value>
+  </data>
+  <data name="IMPORTAPPVIEW_lblAppName_Text" xml:space="preserve">
+    <value>Import App Name :</value>
+  </data>
+  <data name="COMMON_Remove_Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="COMMON_IsActive_Text" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_chkFieldMapping_Text" xml:space="preserve">
+    <value>Enable Field Mapping</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_chkRefreshData_Text" xml:space="preserve">
+    <value>Refresh data on every load</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_cmdCurrentSelection_Text" xml:space="preserve">
+    <value>Get Current Selection</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_groupBox4_Text" xml:space="preserve">
+    <value>Column Mapping</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_label1_Text" xml:space="preserve">
+    <value>Mapped Field :</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_label10_Text" xml:space="preserve">
+    <value>At runtime, the mapped field below will be populated with the record ID from the above Search and Select Action</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_label11_Text" xml:space="preserve">
+    <value>Configure a Search and Select Data Source</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_label12_Text" xml:space="preserve">
+    <value>Configure an Excel Data Source</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_label2_Text" xml:space="preserve">
+    <value>Current Selected Range :</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_label3_Text" xml:space="preserve">
+    <value>Highlight the excel data range (excluding headers)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKAHEADPROPUI_label4_Text" xml:space="preserve">
+    <value>Search and Select Actions</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_label5_Text" xml:space="preserve">
+    <value>Primary Return Column</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_label6_Text" xml:space="preserve">
+    <value>Selected Excel Columns</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_label7_Text" xml:space="preserve">
+    <value>Secondary Column Target Field</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKAHEADPROPUI_label8_Text" xml:space="preserve">
+    <value>Secondary Column</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKAHEADPROPUI_label9_Text" xml:space="preserve">
+    <value>Mapped Record ID field</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_lblReference_Text" xml:space="preserve">
+    <value>New Range :</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_radAdvanced_Text" xml:space="preserve">
+    <value>Multi Column</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_radBasic_Text" xml:space="preserve">
+    <value>Single Column</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_tbExcel_Text" xml:space="preserve">
+    <value>Excel (Offline)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="COMMON_SearchandSelect_Text" xml:space="preserve">
+    <value>Search And Select Action</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_btnOK_Text" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_label1_Text" xml:space="preserve">
+    <value>Create a Matrix Mapping</value>
+  </data>
+  <data name="COMMON_ObjectName_Text" xml:space="preserve">
+    <value>Object Name</value>
+  </data>
+  <data name="COMMON_FieldName_Text" xml:space="preserve">
+    <value>Field Name</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_rboCol_Text" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_rboData_Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_rboRow_Text" xml:space="preserve">
+    <value>Row</value>
+  </data>
+  <data name="UCMATRIXVIEW_Applyfilter_HeaderText" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="UCMATRIXVIEW_btnExtendComponent_Text" xml:space="preserve">
+    <value>Extend Section</value>
+  </data>
+  <data name="UCMATRIXVIEW_cboObjectType_Items" xml:space="preserve">
+    <value>Individual</value>
+  </data>
+  <data name="UCMATRIXVIEW_cboObjectType_Items1" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="UCMATRIXVIEW_colRenderingType_HeaderText" xml:space="preserve">
+    <value>Render Type</value>
+  </data>
+  <data name="UCMATRIXVIEW_ComponentsTabPage_Text" xml:space="preserve">
+    <value>Sections</value>
+  </data>
+  <data name="COMMON_Fields_Text" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="UCRETRIEVEMAP_btnAddSaveField_Text" xml:space="preserve">
+    <value>Add to Save Map</value>
+  </data>
+  <data name="COMMON_Ascending_Text" xml:space="preserve">
+    <value>Ascending</value>
+  </data>
+  <data name="COMMON_Descending_Text" xml:space="preserve">
+    <value>Descending</value>
+  </data>
+  <data name="UCRETRIEVEMAP_dataGridViewImageColumn1_HeaderText" xml:space="preserve">
+    <value>TA</value>
+  </data>
+  <data name="UCRETRIEVEMAP_groupBox2_Text" xml:space="preserve">
+    <value>Mapped Details</value>
+  </data>
+  <data name="UCRETRIEVEMAP_groupBox4_Text" xml:space="preserve">
+    <value>Total fields</value>
+  </data>
+  <data name="UCRETRIEVEMAP_label1_Text" xml:space="preserve">
+    <value>Group by field 2:</value>
+  </data>
+  <data name="UCRETRIEVEMAP_label2_Text" xml:space="preserve">
+    <value>Sort by field 2:</value>
+  </data>
+  <data name="UCRETRIEVEMAP_label4_Text" xml:space="preserve">
+    <value>Group layout :</value>
+  </data>
+  <data name="COMMON_Layout_Text" xml:space="preserve">
+    <value>Layout :</value>
+  </data>
+  <data name="UCRETRIEVEMAP_lblGridName_Text" xml:space="preserve">
+    <value>Objects :</value>
+  </data>
+  <data name="UCRETRIEVEMAP_lblGroupBy_Text" xml:space="preserve">
+    <value>Group by field 1:</value>
+  </data>
+  <data name="UCRETRIEVEMAP_lblSortBy_Text" xml:space="preserve">
+    <value>Sort by field 1:</value>
+  </data>
+  <data name="UCRETRIEVEMAP_lblSpacing_Text" xml:space="preserve">
+    <value>Group spacing :</value>
+  </data>
+  <data name="UCRETRIEVEMAP_rboHorizontal_Text" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="UCRETRIEVEMAP_rboVertical_Text" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="COMMON_FilterBy_Text" xml:space="preserve">
+    <value>Filter by:</value>
+  </data>
+  <data name="COMMON_SectionName_Text" xml:space="preserve">
+    <value>Section Name</value>
+  </data>
+  <data name="SMRETFIELDVIEW_RetrieveFieldName_HeaderText" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="SAVEMAPVIEW_btnAddMatrixFields_Text" xml:space="preserve">
+    <value>Add Matrix Map Sections</value>
+  </data>
+  <data name="SAVEMAPVIEW_btnAddOtherFields_Text" xml:space="preserve">
+    <value>Add Other Fields</value>
+  </data>
+  <data name="SAVEMAPVIEW_btnAddRetrieveFields_Text" xml:space="preserve">
+    <value>Add Display Map Fields</value>
+  </data>
+  <data name="COMMON_RemoveField_Text" xml:space="preserve">
+    <value>Remove Fields</value>
+  </data>
+  <data name="COMMON_Location_Text" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="COMMON_FieldType_Text" xml:space="preserve">
+    <value>Field Type</value>
+  </data>
+  <data name="SAVEMAPVIEW_gbPreloadOptions_Text" xml:space="preserve">
+    <value>Preloaded Grid</value>
+  </data>
+  <data name="SAVEMAPVIEW_gbSaveFields_Text" xml:space="preserve">
+    <value>Mapped Fields</value>
+  </data>
+  <data name="SAVEMAPVIEW_lblPreloadRows_Text" xml:space="preserve">
+    <value>Preloaded Rows</value>
+  </data>
+  <data name="SAVEMAPVIEW_lblRepeatingObjects_Text" xml:space="preserve">
+    <value>List Object (Preloaded Rows)</value>
+  </data>
+  <data name="SAVEMAPVIEW_llPreloadedRows_Text" xml:space="preserve">
+    <value>Show Preloaded Grid</value>
+  </data>
+  <data name="COMMON_Condition_Text" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="COMMON_AddStep_Text" xml:space="preserve">
+    <value>Add Step</value>
+  </data>
+  <data name="WFDESIGNER_addConditionToolStripMenuItem_Text" xml:space="preserve">
+    <value>Make Condition</value>
+  </data>
+  <data name="WFDESIGNER_chkDisplayCPQActions_Text" xml:space="preserve">
+    <value>Display Conga CPQ Actions</value>
+  </data>
+  <data name="WFDESIGNER_chkExternalInput_Text" xml:space="preserve">
+    <value>Get External Input</value>
+  </data>
+  <data name="WFDESIGNER_chkPersistData_Text" xml:space="preserve">
+    <value>Persist Data as Output</value>
+  </data>
+  <data name="WFDESIGNER_chkProvideInput_Text" xml:space="preserve">
+    <value>Provide Input</value>
+  </data>
+  <data name="WFDESIGNER_chkToggleAction_Text" xml:space="preserve">
+    <value>OR Move to Step</value>
+  </data>
+  <data name="COMMON_AddAction_Text" xml:space="preserve">
+    <value>Add Action</value>
+  </data>
+  <data name="WFDESIGNER_groupActionInput_Text" xml:space="preserve">
+    <value>Action Input</value>
+  </data>
+  <data name="WFDESIGNER_groupActionOutput_Text" xml:space="preserve">
+    <value>Action Output</value>
+  </data>
+  <data name="WFDESIGNER_groupActions_Text" xml:space="preserve">
+    <value>Select Action</value>
+  </data>
+  <data name="WFDESIGNER_groupCondition_Text" xml:space="preserve">
+    <value>Make Conditional</value>
+  </data>
+  <data name="WFDESIGNER_groupMoveStep_Text" xml:space="preserve">
+    <value>MoveStep</value>
+  </data>
+  <data name="WFDESIGNER_groupStep_Text" xml:space="preserve">
+    <value>Step</value>
+  </data>
+  <data name="COMMON_ActionFlow_Text" xml:space="preserve">
+    <value>Action Flow</value>
+  </data>
+  <data name="WFDESIGNER_label1_Text" xml:space="preserve">
+    <value>Step Name :</value>
+  </data>
+  <data name="WFDESIGNER_label2_Text" xml:space="preserve">
+    <value>Action :</value>
+  </data>
+  <data name="WFDESIGNER_label4_Text" xml:space="preserve">
+    <value>Connect to :</value>
+  </data>
+  <data name="WFDESIGNER_lblWFName_Text" xml:space="preserve">
+    <value>Action Flow Name :</value>
+  </data>
+  <data name="WFDESIGNER_remActiontoolStripMenuItem_Text" xml:space="preserve">
+    <value>Remove Action</value>
+  </data>
+  <data name="WFDESIGNER_removeConditionToolStripMenuItem_Text" xml:space="preserve">
+    <value>Remove Condition</value>
+  </data>
+  <data name="COMMON_StepUp_Text" xml:space="preserve">
+    <value>Remove Step</value>
+  </data>
+  <data name="WFDESIGNER_stepDownToolStripMenuItem_Text" xml:space="preserve">
+    <value>Step Down</value>
+  </data>
+  <data name="WFDESIGNER_stepUpToolStripMenuItem_Text" xml:space="preserve">
+    <value>Step Up</value>
+  </data>
+  <data name="COREMULTILINEVIEW_lblValue_Text" xml:space="preserve">
+    <value>Values:
+- one per line
+- no commas 
+   required</value>
+  </data>
+  <data name="COREMULTILINEVIEW_btnCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_ResultHeader_HeaderText" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_ModifiedOn_HeaderText" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_lblSearch_Text" xml:space="preserve">
+    <value>Search by App Name :</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_Id_HeaderText" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_chkMyApps_Text" xml:space="preserve">
+    <value>My Apps</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_btnSelect_Text" xml:space="preserve">
+    <value>&amp;Select</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_btnSearch_Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_AppName_HeaderText" xml:space="preserve">
+    <value>App Name</value>
+  </data>
+  <data name="COREADDCUSTROWVIEW_lblRows_Text" xml:space="preserve">
+    <value>Number of rows</value>
+  </data>
+  <data name="COREADDCUSTROWVIEW_lblMessage_Text" xml:space="preserve">
+    <value>Range [1 - 10,000]</value>
+  </data>
+  <data name="CORECOMMON_btnCancel_Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="COREADDCUSTROWVIEW_btnAdd_Text" xml:space="preserve">
+    <value>&amp;Add</value>
+  </data>
+  <data name="COREWAITWINDOWVIEW_MessageLabel_Text" xml:space="preserve">
+    <value>Processing...</value>
+  </data>
+  <data name="ERROR_ResourceIdNotFound" xml:space="preserve">
+    <value>Resource ID [0] is not valid. Your resource file may be old and requires updating. Contact a system administrator for assistance.</value>
+  </data>
+  <data name="MNUHOME_chkShowAddRow" xml:space="preserve">
+    <value>Display Add Row</value>
+  </data>
+  <data name="MNUHOME_chkMatrixAddColumn" xml:space="preserve">
+    <value>Display Add Column</value>
+  </data>
+  <data name="MNUHOME_ChkShowDeleteRow" xml:space="preserve">
+    <value>Display Delete Row from {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="MNUHOME_ChkShowChatter" xml:space="preserve">
+    <value>Display Chatter</value>
+  </data>
+  <data name="ADDINIMP_SetupMissingCap_ShowMsg" xml:space="preserve">
+    <value>X-Auhor for excel</value>
+  </data>
+  <data name="ADDINIMP_SetupMissing_ShowMsg" xml:space="preserve">
+    <value>Setup is missing prerequisites :\n\n\nThis add-in requires .Net framework 4.5. You must install .Net framework 4.5 version.\n Go to http://msdn.microsoft.com/en-us/vstudio/hh487283.aspx?fwLinkID=224419</value>
+  </data>
+  <data name="ADDIN_CompatibilityCap_ErrorMsg" xml:space="preserve">
+    <value>Update available</value>
+  </data>
+  <data name="ADDIN_Compatibility_ErrorMsg" xml:space="preserve">
+    <value>A newer version of {0} is available for download.\n\nThis may cause compatibility issues when creating and running apps.\n\nPlease contact your administrator to update.</value>
+  </data>
+  <data name="ADDIN_Login_ErrorMsg" xml:space="preserve">
+    <value>An error occurred during login.</value>
+  </data>
+  <data name="ADDIN_PermissionCap_ErrorMsg" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="COMMON_LoginFailed_ErrorMsg" xml:space="preserve">
+    <value>Login failed</value>
+  </data>
+  <data name="ADDIN_Permission_ErrorMsg" xml:space="preserve">
+    <value>You do not have sufficient permissions to use {0} .\nPlease contact your administrator.</value>
+  </data>
+  <data name="APPHELPER_MetadataCap_ErrorMsg" xml:space="preserve">
+    <value>App Create : Metadata</value>
+  </data>
+  <data name="APPHELPER_Metadata_ErrorMsg" xml:space="preserve">
+    <value>App failed to insert app metadata, please select a new app</value>
+  </data>
+  <data name="APPSCHEMA_WorkflowCap_ErrorMsg" xml:space="preserve">
+    <value>Resolve Output</value>
+  </data>
+  <data name="APPSCHEMA_Workflow_ErrorMsg" xml:space="preserve">
+    <value>Couldn't resolve ouput name from workflow</value>
+  </data>
+  <data name="APTSOPTIONS_OptionsCap_ShowMsg" xml:space="preserve">
+    <value>- Apply changes</value>
+  </data>
+  <data name="COMMONS_AreYouSure_ShowMsg" xml:space="preserve">
+    <value>Are you sure you want to close without saving the changes?</value>
+  </data>
+  <data name="CHECKINCTL_NoAttachmentCap_ErrorMsg" xml:space="preserve">
+    <value>Check In as attachment</value>
+  </data>
+  <data name="CHECKINCTL_NoAttachment_ErrorMsg" xml:space="preserve">
+    <value>No Record available to Check In file as Attachment.</value>
+  </data>
+  <data name="COREADDROW_CustomRowCap_ErrorMsg" xml:space="preserve">
+    <value>Add Custom Rows</value>
+  </data>
+  <data name="COREADDROW_CustomRow_ErrorMsg" xml:space="preserve">
+    <value>Please enter a number between 1 and 10,000</value>
+  </data>
+  <data name="COREAPPCONTL_AppCreatCap_ErrorMsg" xml:space="preserve">
+    <value>Application Create : Save Error</value>
+  </data>
+  <data name="COREAPPCONTL_AppExists_ErrorMsg" xml:space="preserve">
+    <value>App name already exists, please select a different name.</value>
+  </data>
+  <data name="COREAPPCONTL_AppInsertErr_ErrorMsg" xml:space="preserve">
+    <value>INSERT Error - Message: {0} </value>
+    <comment>{0} Value will be retrieved from salesforce</comment>
+  </data>
+  <data name="COREAPPCONTL_CloneCaption_ErrorMsg" xml:space="preserve">
+    <value>Clone App Error</value>
+  </data>
+  <data name="COREAPPCONTL_ExtractCaption_ErrorMsg" xml:space="preserve">
+    <value>Extraction Error</value>
+  </data>
+  <data name="COREAPPCONTL_InternalError_ErrorMsg" xml:space="preserve">
+    <value>Internal Error due to unique id mismatch, please try again.</value>
+  </data>
+  <data name="COREAPPCONTL_LoadCaption_ErrorMsg" xml:space="preserve">
+    <value>Load Application Error</value>
+  </data>
+  <data name="CORECARTMODEL_InputObjCap_ErrorMsg" xml:space="preserve">
+    <value>Action flow Input</value>
+  </data>
+  <data name="CORECARTMODEL_InputObj_ErrorMsg" xml:space="preserve">
+    <value>Required object {0} is missing. Please select it from Sales Force Objects UI</value>
+  </data>
+  <data name="COREEXPREBUILDHELPER_InputFiltCap_ErrorMsg" xml:space="preserve">
+    <value>Query Dependency Validation</value>
+  </data>
+  <data name="COREEXPREBUILDHELPER_InputFilt_ErrorMsg" xml:space="preserve">
+    <value>No records retrieved for  {0}\n\n Reason: No records retrieved for the dependent object ( {1} )</value>
+  </data>
+  <data name="CORESEARCHNSELECT_SaveActionCap_ErrorMsg" xml:space="preserve">
+    <value>Save Action</value>
+  </data>
+  <data name="CORESEARCHNSELECT_SaveAction_ErrorMsg" xml:space="preserve">
+    <value>You cannot save search action without selecting search and result fields. Please select atleast one search and result field.</value>
+  </data>
+  <data name="COREUTILS_ConvertFontCap_ErrorMsg" xml:space="preserve">
+    <value>Convert Font</value>
+  </data>
+  <data name="EXCEHELPER_Log_ErrorMsg" xml:space="preserve">
+    <value>Error details have been logged in the X-Author log file.</value>
+  </data>
+  <data name="EXCELHLP_MacroErrorCap_ShowMsg" xml:space="preserve">
+    <value>Macro Error</value>
+  </data>
+  <data name="EXCELHLP_MacroError_ShowMsg" xml:space="preserve">
+    <value>Trust access to the VBA project object model is not enabled in Trust Center Settings in Excel</value>
+  </data>
+  <data name="IMPORTAPPCTL_ExcepCap_ErrorMsg" xml:space="preserve">
+    <value>Import App Error</value>
+  </data>
+  <data name="INPUTACTION_DelRecCap_ShowMsg" xml:space="preserve">
+    <value>Delete Row</value>
+  </data>
+  <data name="INPUTACTION_DelRec_ShowMsg" xml:space="preserve">
+    <value>Are you sure, you want to delete the selected row ?</value>
+  </data>
+  <data name="INPUTACTION_VariableEmptyCap_ShowMsg" xml:space="preserve">
+    <value>Variable Name</value>
+  </data>
+  <data name="INPUTACTION_VariableEmpty_ShowMsg" xml:space="preserve">
+    <value>Variable Name cannot be empty</value>
+  </data>
+  <data name="INPUTACTION_VariableExists_ShowMsg" xml:space="preserve">
+    <value>Variable Name with same name already exists. Please provide a different name</value>
+  </data>
+  <data name="INPUTACTION_VariableValidCap_ShowMsg" xml:space="preserve">
+    <value>Variable Count</value>
+  </data>
+  <data name="INPUTACTION_VariableValid_ShowMsg" xml:space="preserve">
+    <value>InputAction cannot contain more than 7 variables</value>
+  </data>
+  <data name="COMMON_LookAheadProperties_ErrorMsg" xml:space="preserve">
+    <value>Look Ahead Dialog</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKAHEAD_ValidVal_ErrorMsg" xml:space="preserve">
+    <value>Please select or enter a valid value</value>
+  </data>
+  <data name="MATRIXFLDVW_DataFieldCap_ErrorMsg" xml:space="preserve">
+    <value>DataField</value>
+  </data>
+  <data name="MATRIXFLDVW_DataField_ErrorMsg" xml:space="preserve">
+    <value>Data Field has no relation with Row field or column field</value>
+  </data>
+  <data name="COMMON_SaveMenu_Text" xml:space="preserve">
+    <value>Save Menu</value>
+  </data>
+  <data name="MULCAPTUREVW_Val_ErrorMsg" xml:space="preserve">
+    <value>Validation Error</value>
+  </data>
+  <data name="OBJECTFIELDVEW_LookupCap_ErrorMsg" xml:space="preserve">
+    <value>Expression Builder</value>
+  </data>
+  <data name="OBJECTFIELDVEW_Lookup_ErrorMsg" xml:space="preserve">
+    <value>Object relating to field "{0}" (Id = {1} ) is not included in this app. You can add this object from Objects menu.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="QUERYLBLVEW_LableLengthCap_ErrorMsg" xml:space="preserve">
+    <value>Filter Label</value>
+  </data>
+  <data name="QUERYLBLVEW_LableLength_ErrorMsg" xml:space="preserve">
+    <value>Label length ( {0} ) too long. Max length allowed is {1} characters.</value>
+  </data>
+  <data name="QUICKAPP_AppNameExistsCap_ErrorMsg" xml:space="preserve">
+    <value>Build App</value>
+  </data>
+  <data name="QUICKAPP_AppNameExists_ErrorMsg" xml:space="preserve">
+    <value>App Name already exists, please enter a unique name.</value>
+  </data>
+  <data name="QUICKAPP_CreatingCap_ErrorMsg" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="QUICKAPP_CreatingInstru_ErrorMsg" xml:space="preserve">
+    <value>More About Error</value>
+  </data>
+  <data name="QUICKAPP_Creating_ErrorMsg" xml:space="preserve">
+    <value>Error while creating Quick App</value>
+  </data>
+  <data name="RECSELPAGE_DisplayFieldCap_ErrorMsg" xml:space="preserve">
+    <value>Display Field</value>
+  </data>
+  <data name="RECSELPAGE_DisplayField_ErrorMsg" xml:space="preserve">
+    <value>Please select at least one Display Field</value>
+  </data>
+  <data name="RECSELPAGE_OrderSeqCap_ErrorMsg" xml:space="preserve">
+    <value>Incorrect Ordering</value>
+  </data>
+  <data name="RECSELPAGE_OrderSeq_ErrorMsg" xml:space="preserve">
+    <value>Ordering of Display field should be sequential</value>
+  </data>
+  <data name="RECSELPAGE_ResultFieldCap_ErrorMsg" xml:space="preserve">
+    <value>Result Field</value>
+  </data>
+  <data name="RECSELPAGE_ResultField_ErrorMsg" xml:space="preserve">
+    <value>Please select at least one Result Field</value>
+  </data>
+  <data name="RECSELPAGE_SearchFieldCap_ErrorMsg" xml:space="preserve">
+    <value>Search Field</value>
+  </data>
+  <data name="RECSELPAGE_SearchField_ErrorMsg" xml:space="preserve">
+    <value>Please select at least one Search Field</value>
+  </data>
+  <data name="RECSELPAGE_UnsupportedFieldType_ErrorMsg" xml:space="preserve">
+    <value>Unsupported field(s) selected as Search/Result Field</value>
+  </data>
+  <data name="RECSELPAGE_UnsupportedFieldTypeCap_ErrorMsg" xml:space="preserve">
+    <value>Search/Result Field</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_GroupCap_ShowMsg" xml:space="preserve">
+    <value>Grouping</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_Group_ShowMsg" xml:space="preserve">
+    <value>Group by field should be the first field in the grid for effective looking of grouping</value>
+  </data>
+  <data name="RETRIEVEMAP_SuccessCap_ShowMsg" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="RETRIEVEMAP_Success_ShowMsg" xml:space="preserve">
+    <value>Display Map saved successfully</value>
+  </data>
+  <data name="RETRIEVEMAP_TargetIndCap_ErrorMsg" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="RETRIEVEMAP_TargetInd_ErrorMsg" xml:space="preserve">
+    <value>Invalid Target Index, please recreate the map again</value>
+  </data>
+  <data name="RIBBON_EditModeCap_ErrorMsg" xml:space="preserve">
+    <value>Excel Edit Mode</value>
+  </data>
+  <data name="RIBBON_InvalidConn_ShowMsg" xml:space="preserve">
+    <value>Invalid connection URL, please provide valid URL and try again.</value>
+  </data>
+  <data name="RIBBON_MacroExists_ShowMsg" xml:space="preserve">
+    <value>Macro(s) exists in the workbook and it is recommended to save it as a Macro-Enabled (.xlsm) extension.\nClick Yes to save the workbook as Macro-Enabled workbook.\nClick No will not save the App. Please delete the Macro(s) and retry Save</value>
+  </data>
+  <data name="RIBBON_SheetProtect_ErrorMsg" xml:space="preserve">
+    <value>The password provided in  "App Settings" does not match the password used to protect the following sheets\n\n</value>
+  </data>
+  <data name="RIBBON_SwitchApp_ErrorMsg" xml:space="preserve">
+    <value>Template file for the App is missing. Please contact to your system administrator or create template for this App.</value>
+  </data>
+  <data name="RIBBON_SwitchConCap_ErrorMsg" xml:space="preserve">
+    <value>App Open</value>
+  </data>
+  <data name="RIBBON_SwitchCon_ErrorMsg" xml:space="preserve">
+    <value>App  {0}  is already open. Please close the file and reopen the App</value>
+  </data>
+  <data name="RIBBON_TemplateMissing_ErrorMsg" xml:space="preserve">
+    <value>Load App Error : Missing template file</value>
+  </data>
+  <data name="SAVEMAPVEW_PreRowLoadCap_ErrorMsg" xml:space="preserve">
+    <value>Preloaded Row Limit</value>
+  </data>
+  <data name="SAVEMAPVEW_PreRowLoad_ErrorMsg" xml:space="preserve">
+    <value>Please enter a number between 0 and 10,000</value>
+  </data>
+  <data name="WORKFLOW_DataName_ErrorMsg" xml:space="preserve">
+    <value>Data name is already used, please provide unique name.</value>
+  </data>
+  <data name="ADDMODACT_btnDelete_Click_WarnMsg" xml:space="preserve">
+    <value>Are you sure you want to delete selected " {0}  "?</value>
+  </data>
+  <data name="COMMON_AddRow_Text" xml:space="preserve">
+    <value>Add Row</value>
+  </data>
+  <data name="ADDROWACTVIEW_ValidateStaticInputValue_InfoMsg" xml:space="preserve">
+    <value>Invalid Number of rows. Please provide a valid number to add rows.</value>
+  </data>
+  <data name="APPDEFFORM_btnRemoveObjectCAP_Click_InfoMsg" xml:space="preserve">
+    <value>Remove Object</value>
+  </data>
+  <data name="APPDEFFORM_btnRemoveObject_Click_InfoMsg" xml:space="preserve">
+    <value>This object is used by a map or action, hence cannot be removed</value>
+  </data>
+  <data name="APPSETVIEW_btnSave_Click_InfoMsg" xml:space="preserve">
+    <value>Application Settings saved successfully</value>
+  </data>
+  <data name="APPSETVIEW_ValidateColumnWidthMAX_InfoMsg" xml:space="preserve">
+    <value>Max Column cannot be more than 255. Please provide a value less than 255.</value>
+  </data>
+  <data name="APPSETVIEW_ValidateColumnWidth_InfoMsg" xml:space="preserve">
+    <value>Max Column must be greater than zero. Please provide a valid value.</value>
+  </data>
+  <data name="COREAPPCONTL_CloneAppCAP_InfoMsg" xml:space="preserve">
+    <value>App Clone</value>
+  </data>
+  <data name="COREAPPCONTL_CloneApp_InfoMsg" xml:space="preserve">
+    <value>App cloned successfully</value>
+  </data>
+  <data name="GENERICLISTUICTL_Delete_WarnMsg" xml:space="preserve">
+    <value>Are you sure you want to delete selected  {0} ?</value>
+  </data>
+  <data name="IMPORTAPPCTL_ImportAppCAP_InfoMsg" xml:space="preserve">
+    <value>App Import</value>
+  </data>
+  <data name="IMPORTAPPCTL_ImportApp_InfoMsg" xml:space="preserve">
+    <value>App imported successfully</value>
+  </data>
+  <data name="COMMON_DataSource_Text" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="LOOKAHEADPROPCTL_Detach_InfoMsg" xml:space="preserve">
+    <value>Look Ahead removed successfully</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKAHEADPROPCTL_PopulateUI_InfoMsg" xml:space="preserve">
+    <value>Could not resolve field's object while processing search and select actions. Please contact your {0} Administrator</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKAHEADPROPUIFORM_btnApply_ClickWARN_InfoMsg" xml:space="preserve">
+    <value>Please set at least one property as active otherwise this feature will be inactive at runtime.</value>
+  </data>
+  <data name="LOOKAHEADPROPUIFORM_btnApply_Click_InfoMsg" xml:space="preserve">
+    <value>Look Ahead for “{0}” configured successfully. You will still need to Save the Display Map.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="COMMON_MatrixSection_Text" xml:space="preserve">
+    <value>Matrix Section</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_btnOK_Click_InfoMsg" xml:space="preserve">
+    <value>Section Name cannot be empty. Please provide section name</value>
+  </data>
+  <data name="NEWAPPFORM_btnCreate_ClickCAP_InfoMsg" xml:space="preserve">
+    <value>Application Create: File Selection</value>
+  </data>
+  <data name="NEWAPPFORM_btnCreate_Click_InfoMsg" xml:space="preserve">
+    <value>Please click Browse and select a file</value>
+  </data>
+  <data name="PASTESRCDATAVIEW_PasteActionView_Load_InfoMsg" xml:space="preserve">
+    <value>No Source Data is configured which is required for Paste Source Data Action to execute. Please configure source data.</value>
+  </data>
+  <data name="COMMON_SearchableFieldLimit_InfoMsg" xml:space="preserve">
+    <value>You have exceeded max limit of {0} for Searchable fields</value>
+  </data>
+  <data name="RIBBON_btnExport_ClickCAP_InfoMsg" xml:space="preserve">
+    <value>X-Author App Export</value>
+  </data>
+  <data name="RIBBON_btnExport_Click_InfoMsg" xml:space="preserve">
+    <value>App exported successfully.\n\nExport Location: {0}</value>
+  </data>
+  <data name="RIBBON_btnQuickAppEdit_Click_InfoMsg" xml:space="preserve">
+    <value>This App cannot be edited in Quick App wizard.Please use other X-Author Designer capabilities for this.</value>
+  </data>
+  <data name="RIBBON_btnValidate_ClickCAP_InfoMsg" xml:space="preserve">
+    <value>App Validator</value>
+  </data>
+  <data name="RIBBON_btnValidate_Click_InfoMsg" xml:space="preserve">
+    <value>App is valid</value>
+  </data>
+  <data name="RIBBON_splitbtnSave_ClickCAP_InfoMsg" xml:space="preserve">
+    <value>App Save</value>
+  </data>
+  <data name="RIBBON_splitbtnSave_Click_InfoMsg" xml:space="preserve">
+    <value>App saved successfully</value>
+  </data>
+  <data name="UCMATRIXVIEW_btnExtendComponent_ClickEMPTY_InfoMsg" xml:space="preserve">
+    <value>No Intersecting row or column found. Intersecting row and column are needed to extend a section</value>
+  </data>
+  <data name="UCMATRIXVIEW_btnExtendComponent_ClickSELECTION_InfoMsg" xml:space="preserve">
+    <value>Please select one Section to extend from the Matrix Section Grid</value>
+  </data>
+  <data name="UCMATRIXVIEW_btnRemove_ClickCAP_WarnMsg" xml:space="preserve">
+    <value>Matrix Sections</value>
+  </data>
+  <data name="UCMATRIXVIEW_btnRemove_Click_WarnMsg" xml:space="preserve">
+    <value>This " {0} " is bound to a Data mapping and can only be removed once the Data mapping has been removed.</value>
+  </data>
+  <data name="UCMATRIXVIEW_btnSave_Click_InfoMsg" xml:space="preserve">
+    <value>Matrix Map Saved successfully</value>
+  </data>
+  <data name="VALIDMANG_ValidationLookup_WarnMsg" xml:space="preserve">
+    <value>Id and Name fields for the same lookup object cannot be added together in the Save Map. We have removed " {0} " field(s) for " {1} ". Please select either one of them.</value>
+  </data>
+  <data name="COMMON_Workflow_Text" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="WOKRFLOWACT_chkProvideInput_CheckedChanged_WarnMsg" xml:space="preserve">
+    <value>Please select an Action</value>
+  </data>
+  <data name="WORKFLOWDESFORM_btnSaveWorkflow_ClickEMPTY_InfoMsg" xml:space="preserve">
+    <value>Action Flow Saved Successfully.</value>
+  </data>
+  <data name="CONST_DESIGNER_PRODUCT_NAME" xml:space="preserve">
+    <value>X-Author Designer</value>
+  </data>
+  <data name="CONST_MESSAGE_EDITMODE" xml:space="preserve">
+    <value>X-Author detected that an Excel cell has focus and is being edited. Please exit editing the Excel cell before continuing with this action.</value>
+  </data>
+  <data name="RIBBON_SwitchConApp_ErrorMsg" xml:space="preserve">
+    <value>App </value>
+  </data>
+  <data name="EDITACTIONCTL_Activating_ErrorMsg" xml:space="preserve">
+    <value>For Activating this feature \n\n- Ensure that user selection is within the X-Author Grid.\n- Contact X-Author App Designer to ensure (Grid is associated with a Save Map, Layout is vertical, Data is not grouped).</value>
+  </data>
+  <data name="MENUCTL_PropertyChg_ErrorMsg" xml:space="preserve">
+    <value>Invalid Name</value>
+  </data>
+  <data name="WORKFLOWDESFORM_SaveEmpty_ErrorMsg" xml:space="preserve">
+    <value>Cannot save empty Action Flow.</value>
+  </data>
+  <data name="ADDINIMP_NotifyLoginConnected_ShowMsg" xml:space="preserve">
+    <value>Connected to Conga</value>
+  </data>
+  <data name="ADDINIMP_NotifyLoginWelcome_ShowMsg" xml:space="preserve">
+    <value>Welcome Back {0}! \nConnected to {1} as {2}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="QAWIZARD_lblPageSubTitle_ObjectSelection_Text" xml:space="preserve">
+    <value>Select an Object and Fields.</value>
+  </data>
+  <data name="ADDROWACTVIEW_cboObject_Validating_ErrorMsg" xml:space="preserve">
+    <value>Please select an object.</value>
+  </data>
+  <data name="ADDROWACTVIEW_cboSaveMap_Validating_ErrorMsg" xml:space="preserve">
+    <value>Please select a savemap.</value>
+  </data>
+  <data name="ADDROWACTVIEW_txtActionName_Validating_ErrorMsg" xml:space="preserve">
+    <value>Action Name cannot be empty.</value>
+  </data>
+  <data name="ADDROWACTVIEW_txtValue_ValidatingCannotEmpty_ErrorMsg" xml:space="preserve">
+    <value>cannot be emtpy.</value>
+  </data>
+  <data name="ADDROWACTVIEW_txtValue_ValidatingInvalidCell_ErrorMsg" xml:space="preserve">
+    <value>Invalid Cell Reference</value>
+  </data>
+  <data name="ADDROWACTVIEW_txtValue_ValidatingStaticInput_ErrorMsg" xml:space="preserve">
+    <value>Static Input</value>
+  </data>
+  <data name="COMMON_NameCannotBeEmpty_ErrorMsg" xml:space="preserve">
+    <value>Name cannot be empty</value>
+  </data>
+  <data name="CALLPROCACTION_cboReturnObject_Validating_ErrorMsg" xml:space="preserve">
+    <value>Return object cannot be empty</value>
+  </data>
+  <data name="CALLPROCACTION_txtMethod_Validating_ErrorMsg" xml:space="preserve">
+    <value>Method name cannot be empty</value>
+  </data>
+  <data name="CONST_ACTIONNAMEREQUIRED" xml:space="preserve">
+    <value>Action Name is Required</value>
+  </data>
+  <data name="CONST_ACTIONSAVEMESSAGE" xml:space="preserve">
+    <value>Action Saved Successfully.</value>
+  </data>
+  <data name="GENERICLISTUICTL_DeleteSelect_WarnMsg" xml:space="preserve">
+    <value>Select a record(s) to delete</value>
+  </data>
+  <data name="GENERICLISTUICTL_Edit_WarnMsg" xml:space="preserve">
+    <value>Select a record for editing</value>
+  </data>
+  <data name="IMPORTAPPCTL_ImportAppCap_WarnMsg" xml:space="preserve">
+    <value>App Import : Overwrite App</value>
+  </data>
+  <data name="IMPORTAPPCTL_ImportApp_WarnMsg" xml:space="preserve">
+    <value>{0} already exists. Do you wish to overwrite the existing app with the imported App?</value>
+  </data>
+  <data name="LOOKAHEADPROPCTL_ApplyGetCurrent_InfoMsg" xml:space="preserve">
+    <value>Please select GetCurrent Selection button to select the data source</value>
+  </data>
+  <data name="LOOKAHEADPROPCTL_ApplyInvalidRange_InfoMsg" xml:space="preserve">
+    <value>Invalid Range selection for Multi Column. Please select a valid range or select GetCurrent Selection button to select the data source</value>
+  </data>
+  <data name="LOOKAHEADPROPCTL_ApplySingleColumn_InfoMsg" xml:space="preserve">
+    <value>Please select single column data source</value>
+  </data>
+  <data name="LOOKAHEADPROPCTL_ApplyValidAction_InfoMsg" xml:space="preserve">
+    <value>Please select a valid action</value>
+  </data>
+  <data name="LOOKAHEADPROPCTL_ApplyValidField_InfoMsg" xml:space="preserve">
+    <value>Please select a valid field</value>
+  </data>
+  <data name="LOOKAHEADPROPCTL_DetachNoDataSource_InfoMsg" xml:space="preserve">
+    <value>There is no Look Ahead associated on {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKAHEADPROPCTL_GetMultiColumns_InfoMsg" xml:space="preserve">
+    <value>Please select at least two or more columns for Advanced Excel Data Source properties.</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_btnOK_ClickColLookUp_WarnMsg" xml:space="preserve">
+    <value>Column Lookup cannot be emtpy. Please select a Column Lookup Value.</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_btnOK_ClickLookUpCap_WarnMsg" xml:space="preserve">
+    <value>Lookup Value</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_btnOK_ClickRowColLookUp_WarnMsg" xml:space="preserve">
+    <value>Row Lookup and Column Lookup cannot be same. Please select a different Row and Column Lookup Values.</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_btnOK_ClickRowLookUp_WarnMsg" xml:space="preserve">
+    <value>Row Lookup cannot be emtpy. Please select a Row Lookup Value.</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_btnOK_Click_WarnMsg" xml:space="preserve">
+    <value>This Section name ' {0} ' is already used for object ' {1} '. Please use different Section name for object ' {2} '.</value>
+  </data>
+  <data name="MENUCTL_Save_InfoMsg" xml:space="preserve">
+    <value>Menu saved successfully</value>
+  </data>
+  <data name="PASTEROWACTVIEW_cboListObject_Validating_InfoMsg" xml:space="preserve">
+    <value>List Object is Required</value>
+  </data>
+  <data name="PASTEROWACTVIEW_cboSaveMap_Validating_InfoMsg" xml:space="preserve">
+    <value>Save Map is Required</value>
+  </data>
+  <data name="QAAPPSEL_ValidatePageAppNameInvalid_ErrorMsg" xml:space="preserve">
+    <value>App Name contains invalid characters.</value>
+  </data>
+  <data name="QAAPPSEL_ValidatePageAppName_ErrorMsg" xml:space="preserve">
+    <value>App Name cannot be blank.</value>
+  </data>
+  <data name="QAAPPSEL_ValidatePageAppType_ErrorMsg" xml:space="preserve">
+    <value>Please select an App Type</value>
+  </data>
+  <data name="QAAPPSETT_ValidatePageGroupLabel_ErrorMsg" xml:space="preserve">
+    <value>Group Label cannot be empty. Please provide a valid Group Label.</value>
+  </data>
+  <data name="QAAPPSETT_ValidatePageInvalidColumn_ErrorMsg" xml:space="preserve">
+    <value>Invalid Max Column Width. Please provide a valid column width.</value>
+  </data>
+  <data name="QAAPPSETT_ValidatePageRetrieveButton_ErrorMsg" xml:space="preserve">
+    <value>Retrieve Data Button Label cannot be empty. Please provide a valid Label.</value>
+  </data>
+  <data name="QAAPPSETT_ValidatePageSaveButton_ErrorMsg" xml:space="preserve">
+    <value>Save Data Button Label cannot be empty. Please provide a valid Label.</value>
+  </data>
+  <data name="RETRIEVEACTIONVIEW_cmbRetrieveMap_Validating_Text" xml:space="preserve">
+    <value>Display Map is required.</value>
+  </data>
+  <data name="SAVEACTVIEW_cmbSaveMap_Validating_InfoMsg" xml:space="preserve">
+    <value>Save map field is Required</value>
+  </data>
+  <data name="SAVEACTVIEW_txtBatchSize_Validating_InfoMsg" xml:space="preserve">
+    <value>Batch Size should be between 1 and 200</value>
+  </data>
+  <data name="SAVEATTACHVIEW_cboObject_Validating_ErrorMsg" xml:space="preserve">
+    <value>Object Name is Required</value>
+  </data>
+  <data name="SAVEATTACHVIEW_txtFileName_Validating_ErrorMsg" xml:space="preserve">
+    <value>File Name is Required</value>
+  </data>
+  <data name="SWITCHCONNACTIONVIEW_txtSwitchConnectionName_Validating_ErrorMsg" xml:space="preserve">
+    <value>Switch Connection Name is Required</value>
+  </data>
+  <data name="WORKFLOWDESFORM_cbActions_Validating_ErrorMsg" xml:space="preserve">
+    <value>Select a Action from list.</value>
+  </data>
+  <data name="WORKFLOWDESFORM_cbMoveAction_Validating_ErrorMsg" xml:space="preserve">
+    <value>Select a Step from list.</value>
+  </data>
+  <data name="WORKFLOWDESFORM_txtCondition_Validating_ErrorMsg" xml:space="preserve">
+    <value>Condition is required.</value>
+  </data>
+  <data name="WORKFLOWDESFORM_txtPersistDataName_Validating_ErrorMsg" xml:space="preserve">
+    <value>Data Name is required.</value>
+  </data>
+  <data name="WORKFLOWDESFORM_txtStep_Validating_ErrorMsg" xml:space="preserve">
+    <value>Step Name is required.</value>
+  </data>
+  <data name="WORKFLOWDESFORM_txtWFName_Validating_ErrorMsg" xml:space="preserve">
+    <value>Action Flow Name is required.</value>
+  </data>
+  <data name="COREMULTILINEVIEW_btnSave_Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_Title" xml:space="preserve">
+    <value>Select App</value>
+  </data>
+  <data name="COMMON_AutoExecuteRegular_Text" xml:space="preserve">
+    <value>Auto Execute\n(Regular)</value>
+  </data>
+  <data name="COMMON_AutoExecuteSalesforce_Text" xml:space="preserve">
+    <value>Auto Execute\n(Launch from {0})</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="DATATRANSVIEW_Title" xml:space="preserve">
+    <value>Data Loading</value>
+  </data>
+  <data name="IMPORTAPPCTL_Title" xml:space="preserve">
+    <value>Import App</value>
+  </data>
+  <data name="MANAGECONNECTION_Title" xml:space="preserve">
+    <value>Manage Connections</value>
+  </data>
+  <data name="MANAGECONNECTION_lblAvailableConnections" xml:space="preserve">
+    <value>Available Connections</value>
+  </data>
+  <data name="MANAGECONNECTION_btn_revoke" xml:space="preserve">
+    <value>Revoke</value>
+  </data>
+  <data name="MANAGECONNECTION_btn_CreateNew" xml:space="preserve">
+    <value>Create a new Connection</value>
+  </data>
+  <data name="COMMON_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="MANAGECONNECTION_btn_Authorize" xml:space="preserve">
+    <value>Authorize</value>
+  </data>
+  <data name="COMMON_Examples" xml:space="preserve">
+    <value>Examples:</value>
+  </data>
+  <data name="QAWIZARD_lblPageSubTitle_AppSelection_Text" xml:space="preserve">
+    <value>Provide App name and select App type.</value>
+  </data>
+  <data name="ExpressWizard_lblPageSubTitle_AppSelection_Text" xml:space="preserve">
+    <value>Setup a new Express Configuration</value>
+  </data>
+  <data name="QAWIZARD_lblPageSubTitle_RecordSelection_Text" xml:space="preserve">
+    <value>Select Field Options.</value>
+  </data>
+  <data name="COMMON_ChildObject_Text" xml:space="preserve">
+    <value>Child Object:</value>
+  </data>
+  <data name="MATRIXMAPPING_tblRenderingType" xml:space="preserve">
+    <value>Rendering Type</value>
+  </data>
+  <data name="MATRIXMAPPING_tblSortField" xml:space="preserve">
+    <value>Sort field</value>
+  </data>
+  <data name="LOOKAHEADPROPUI_Title" xml:space="preserve">
+    <value>Look Ahead</value>
+  </data>
+  <data name="RETRIEVEMAP_Title" xml:space="preserve">
+    <value>Add Display Fields</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_Title" xml:space="preserve">
+    <value>Add Matrix Section</value>
+  </data>
+  <data name="SAVEMAPVIEW_SubTitle" xml:space="preserve">
+    <value>Add fields to Save Map</value>
+  </data>
+  <data name="QAWIZARD_lblPageTitleEdit_Text" xml:space="preserve">
+    <value>Editing App : </value>
+  </data>
+  <data name="ODWIZARD_lblPageTitleEdit_Text" xml:space="preserve">
+    <value>Editing On Demand Wizard : </value>
+  </data>
+  <data name="QAWIZARD_lblPageSubTitle_AppSetting_Text" xml:space="preserve">
+    <value>Provide App Settings.</value>
+  </data>
+  <data name="EDSettings_lblPageSubTitle_AppSetting_Text" xml:space="preserve">
+    <value>You can configure additional options and click on Finish to build the Express Configuration.</value>
+  </data>
+  <data name="ADDMODACTION_btnDelete_Click_ErrorMsg" xml:space="preserve">
+    <value>Error(s) while deleting a action...</value>
+  </data>
+  <data name="COMMON_Finish_Text" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_lblTitle_Text" xml:space="preserve">
+    <value>Select App</value>
+  </data>
+  <data name="SAVEMAPVIEW_HidePreloadedRows_Text" xml:space="preserve">
+    <value>Hide Preloaded Grid</value>
+  </data>
+  <data name="UCEXPRVIEW_ClearFilterLogic_Text" xml:space="preserve">
+    <value>Clear Filter Logic</value>
+  </data>
+  <data name="COMMON_STARTMENU_NEWAPP" xml:space="preserve">
+    <value>New App</value>
+  </data>
+  <data name="COMMON_STARTMENU_OPENAPP" xml:space="preserve">
+    <value>Open App</value>
+  </data>
+  <data name="CONST_MACRONAMEREQUIRED" xml:space="preserve">
+    <value>Macro Name field is Required</value>
+  </data>
+  <data name="CONST_OBJFIELDNAMEREQUIRED" xml:space="preserve">
+    <value>Object field is mandatory</value>
+  </data>
+  <data name="WORKFLOWDESFORM_lbl_definestep" xml:space="preserve">
+    <value>Define Step</value>
+  </data>
+  <data name="WORKFLOWCONTROLLER_DataName_ErrorMsg" xml:space="preserve">
+    <value>Action Output for {0} under Step {1} is not configured correctly {2} Please select Step {3} from Left Navigation pane and click Apply button.</value>
+  </data>
+  <data name="WORKFLOWCONTROLLER_InvalidAction_ErrorMsg" xml:space="preserve">
+    <value>Action for Step {0} is not configured correctly {1} Please select Step {2} from Left Navigation pane and click Apply button.</value>
+  </data>
+  <data name="WORKFLOWCONTROLLER_EmptyInput_ErrorMsg" xml:space="preserve">
+    <value>Action Input for {0} under Step {1} is not configured correctly {2} Please select Step {3} from Left Navigation pane and click Apply button.</value>
+  </data>
+  <data name="WORKFLOWCONTROLLER_PROVIDEINPUT_ErrorMsg" xml:space="preserve">
+    <value>Action {0} under Step {1} expects Input Data {2} Please select Step {3} from Left Navigation pane click Provide Input and Apply button.</value>
+  </data>
+  <data name="WORKFLOWCONTROLLER_DEFINESTEP_ErrorMsg" xml:space="preserve">
+    <value>{0} Step is not configured correctly {1} Please select {2} from Left Navigation pane and click Apply button.</value>
+  </data>
+  <data name="NEWAPP_Title" xml:space="preserve">
+    <value>New Application</value>
+  </data>
+  <data name="WFDESIGNER_MoveTo_Text" xml:space="preserve">
+    <value>Move To</value>
+  </data>
+  <data name="WFDESIGNER_chkToggleActionStep_Text" xml:space="preserve">
+    <value>OR Select Action</value>
+  </data>
+  <data name="COMMON_ApplyAction_text" xml:space="preserve">
+    <value>Apply Action</value>
+  </data>
+  <data name="WORKFLOWDESFORM_lbl_definecondition" xml:space="preserve">
+    <value>Define Condition</value>
+  </data>
+  <data name="MATRIXMAPPING_tblColumnLookup" xml:space="preserve">
+    <value>Column Lookup</value>
+  </data>
+  <data name="MATRIXMAPPING_tblRowLookup" xml:space="preserve">
+    <value>Row Lookup</value>
+  </data>
+  <data name="MNUHOME_tblIcon" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="MNUHOME_tblOrder" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="MNUHOME_tblToolTip" xml:space="preserve">
+    <value>ToolTip</value>
+  </data>
+  <data name="ERR_ResourceIdNotFound" xml:space="preserve">
+    <value>Resource Id Not Found</value>
+  </data>
+  <data name="SAVEMAPCTL_Save_InfoMsg" xml:space="preserve">
+    <value>Save Map saved successfully</value>
+  </data>
+  <data name="COREABSADAPTER_SetWaitMessage_Msg" xml:space="preserve">
+    <value>Performing " {0} " operation on {3}. Processing  {1}  of  {2} ...</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="MANAGECONNECTION_LoginURL_Text" xml:space="preserve">
+    <value>Login URL</value>
+  </data>
+  <data name="OAUTHLOGINFORM_AuthorizationUri_ErrorMsg" xml:space="preserve">
+    <value> was not able to get authorization URI from the server. This may be due to a missing or mismatch with the authorization URI. Please contact Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_Denied_ErrorMsg" xml:space="preserve">
+    <value>You have been denied authorization to the application. You will be prompted again for authorization next time you try to login.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_InactiveOrg_ErrorMsg" xml:space="preserve">
+    <value>You have been denied authorization to the application. This may be due to the Org to which you're trying to connect is locked, closed, or suspended. Please contact your SFDC System Administrator or Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_InactiveUser_ErrorMsg" xml:space="preserve">
+    <value>You have been denied authorization to the application. This may be due to the User is inactive. Please contact your SFDC System Administrator or Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_InvalidClient_ErrorMsg" xml:space="preserve">
+    <value>You have an invalid client Id to access the application. Please contact Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_InvalidGrant_ErrorMsg" xml:space="preserve">
+    <value> was not able to get you authenticated due to invalid grant access. This may be due to either IP restriction or inavalid login hours in your Org. Please contact your SFDC System Administrator or Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_LimitExceed_ErrorMsg" xml:space="preserve">
+    <value>You have been denied authorization to the application. This may be due to number of logins exceeded. Please contact your SFDC System Administrator or Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_ProgressBar_Label" xml:space="preserve">
+    <value>Connecting as {0}, Please wait…</value>
+  </data>
+  <data name="OAUTHLOGINFORM_ProgressStatus_Text" xml:space="preserve">
+    <value>Connected to Conga, Please wait...</value>
+  </data>
+  <data name="MANAGECONNECTION_ConnectionNameExists_ErrorMsg" xml:space="preserve">
+    <value>Connection name {0}  already exists, please choose another connection name.</value>
+  </data>
+  <data name="MANAGECONNECTION_ConnectionName_ErrorMsg" xml:space="preserve">
+    <value>Please enter a connection name.</value>
+  </data>
+  <data name="MANAGECONNECTION_QualifiedURL_ErrorMsg" xml:space="preserve">
+    <value>Please enter a valid fully qualified URL that starts with https://</value>
+  </data>
+  <data name="MANAGECONNECTION_RemoveListCap_ErrorMsg" xml:space="preserve">
+    <value>{0}  - Remove Connection</value>
+  </data>
+  <data name="MANAGECONNECTION_RemoveList_ErrorMsg" xml:space="preserve">
+    <value>Do you like to remove this connection from the list?</value>
+  </data>
+  <data name="MANAGECONNECTION_RevokeValCap_ErrorMsg" xml:space="preserve">
+    <value> - Revoke Access</value>
+  </data>
+  <data name="MANAGECONNECTION_RevokeVal_ErrorMsg" xml:space="preserve">
+    <value>If you revoke this user's access, this user must authenticate this installation of {0} again before logging in. Would you like to Continue?</value>
+  </data>
+  <data name="MANAGECONNECTION_UserRevoke_ErrorMsg" xml:space="preserve">
+    <value>User Access Revoked.</value>
+  </data>
+  <data name="MANAGECONNECTION_ValidURL_ErrorMsg" xml:space="preserve">
+    <value>Please enter a valid URL.</value>
+  </data>
+  <data name="ACTIONVALIDTOR_ValidateDeleteACTFLOW_InfoMsg" xml:space="preserve">
+    <value>is used by following ActionFlow(s) :</value>
+  </data>
+  <data name="ACTIONVALID_ValidateSaveAttachment_ErrMsg" xml:space="preserve">
+    <value>Sheet: {0} for Action: {1} is either renamed or deleted, Please rename sheet or add again.</value>
+  </data>
+  <data name="ACTVALIDATOR_CanDeleteInputActionSS_InfoMsg" xml:space="preserve">
+    <value>{0} created in {1} - InputAction, is used by {2}  - SearchAndSelect Action. {3} \nHence this action cannot be deleted</value>
+  </data>
+  <data name="ACTVALIDATOR_CanDeleteInputAction_InfoMsg" xml:space="preserve">
+    <value>{0} created in {1} - InputAction, is used by {2}  - QueryAction. {3} \nHence this action cannot be deleted</value>
+  </data>
+  <data name="APPCTL_CloneAppOverwrite_InfoMsg" xml:space="preserve">
+    <value>App Clone : Overwrite App</value>
+  </data>
+  <data name="APPCTL_CloneApp_InfoMsg" xml:space="preserve">
+    <value>{0} already exists. Do you wish to overwrite the existing app with the cloned App?</value>
+  </data>
+  <data name="APTTUSFIELDVIEW_dgvFields_DataSourceChangedEdition_Msg" xml:space="preserve">
+    <value>Attachment fields are not supported in this edition.</value>
+  </data>
+  <data name="APTTUSFIELDVIEW_dgvFields_DataSourceChangedNotSupported_Msg" xml:space="preserve">
+    <value>This field is currently not supported.</value>
+  </data>
+  <data name="APTTUSFIELDVIEW_dgvFields_DataSourceChangedRichText_Msg" xml:space="preserve">
+    <value>Rich Text fields are not supported in this edition.</value>
+  </data>
+  <data name="APTTUSFIELDVIEW_dgvFields_DataSourceChangedUsed_Msg" xml:space="preserve">
+    <value>This field cannot be removed, it is being used in a map or action</value>
+  </data>
+  <data name="APTTUSOBJMAN_HandleErrorLoginDialog_InfoMsg" xml:space="preserve">
+    <value>Conga Server Host could not be resolved. Check your settings in the login dialog.</value>
+  </data>
+  <data name="APTTUSOBJMAN_InsertMetaSheet_ErrMsg" xml:space="preserve">
+    <value>Insert Metadata Sheet</value>
+  </data>
+  <data name="COMMON_AddValues_Text" xml:space="preserve">
+    <value>Add Value(s)</value>
+  </data>
+  <data name="COMMON_Disconnected_Msg" xml:space="preserve">
+    <value>Disconnected successfully!</value>
+  </data>
+  <data name="COMMON_DisplayMapError_ErrMsg" xml:space="preserve">
+    <value>Display Map Error: </value>
+  </data>
+  <data name="COMMON_HenceCanNot_Msg" xml:space="preserve">
+    <value>, hence cannot be deleted.</value>
+  </data>
+  <data name="COMMON_IsUsedBy_Msg" xml:space="preserve">
+    <value>is used by</value>
+  </data>
+  <data name="COMMON_LogOutCAP_InfoMsg" xml:space="preserve">
+    <value>You have been disconnected from Conga successfully.</value>
+  </data>
+  <data name="COMMON_NoCondition_Text" xml:space="preserve">
+    <value>No Condition</value>
+  </data>
+  <data name="COMMON_PartOf_Msg" xml:space="preserve">
+    <value>as SaveFields, part of {0} - SaveMap, hence cannot be deleted.</value>
+  </data>
+  <data name="COMMON_ProcessUpdateResultsCode_Msg" xml:space="preserve">
+    <value>Error Status Code: </value>
+  </data>
+  <data name="COMMON_ProcessUpdateResultsField_Msg" xml:space="preserve">
+    <value>Fields affecting Error: </value>
+  </data>
+  <data name="COMMON_ProcessUpdateResultsMsg_Msg" xml:space="preserve">
+    <value>Error Message: </value>
+  </data>
+  <data name="COMMON_RetrieveACTValidate_Msg" xml:space="preserve">
+    <value>- Retrieve Action(s), hence cannot be deleted.</value>
+  </data>
+  <data name="COMMON_RetrieveMapHas_Text" xml:space="preserve">
+    <value> - RetrieveMap has</value>
+  </data>
+  <data name="COMMON_UpdateValues_Text" xml:space="preserve">
+    <value>Update Value(s)</value>
+  </data>
+  <data name="COREENCRYPTHELP_Encrypt_ErrMsg" xml:space="preserve">
+    <value>The specified element was not found</value>
+  </data>
+  <data name="COREENCRYPTIONHELP_Doc_Text" xml:space="preserve">
+    <value>Doc</value>
+  </data>
+  <data name="COREMULTILINECAPTVIEW_IntializeAndBindView_Msg" xml:space="preserve">
+    <value>Enter values for  {0}.{1}</value>
+  </data>
+  <data name="EXPREBUILDVIEW_ValidateFiltersLogicIncorrect_Msg" xml:space="preserve">
+    <value>Filter logic is incorrect.</value>
+  </data>
+  <data name="EXPREBUILDVIEW_ValidateFiltersLogic_Msg" xml:space="preserve">
+    <value>Filter #  {0}  condition is defined but not referenced in the filter logic.</value>
+  </data>
+  <data name="EXPREBUILDVIEW_ValidateFiltersNotValid_Msg" xml:space="preserve">
+    <value>Filter #  {0}  is not a valid filter.</value>
+  </data>
+  <data name="EXPREBUILDVIEW_ValidateFiltersParentheses_Msg" xml:space="preserve">
+    <value>Your filter must use parentheses around successive AND and OR expressions.</value>
+  </data>
+  <data name="EXPRESSIONBUILDVIEW_SaveExpression_ErrMsg" xml:space="preserve">
+    <value>Invalid Expression on following row(s):</value>
+  </data>
+  <data name="EXPRESSIONBUILDVIEW_ValidateFilterValuesCellRef_ErrMsg" xml:space="preserve">
+    <value>Please provide valid Excel Cell Reference for {0} field in filter Value.</value>
+  </data>
+  <data name="EXPRESSIONBUILDVIEW_ValidateFilterValuesExists_ErrMsg" xml:space="preserve">
+    <value>Name Range does not exists.</value>
+  </data>
+  <data name="EXPRESSIONBUILDVIEW_ValidateFilterValuesNameRange_ErrMsg" xml:space="preserve">
+    <value>Name Range are not supported for selected operator in cell reference.</value>
+  </data>
+  <data name="EXPRESSIONBUILDVIEW_ValidateFilterValuesValidFormat_ErrMsg" xml:space="preserve">
+    <value>Please provide valid date in mm/dd/yyyy format for {0} field in filter Value.</value>
+  </data>
+  <data name="EXPRESSIONBUILDVIEW_ValidateFilterValuesValidValue_ErrMsg" xml:space="preserve">
+    <value>Please provide valid Input Value for {0} field in filter Value.</value>
+  </data>
+  <data name="EXPRESSIONBUILDVIEW_ValidateFilterValues_ErrMsg" xml:space="preserve">
+    <value>Multiple values are not supported for selected operator in cell reference.</value>
+  </data>
+  <data name="IMPORTAPPCTL_ImportAppTemplate_ErrMsg" xml:space="preserve">
+    <value>Excel Template not found</value>
+  </data>
+  <data name="IMPORTAPPCTL_ImportApp_ErrMsg" xml:space="preserve">
+    <value>XML file not found</value>
+  </data>
+  <data name="MATRIXMAPVALID_MatrixHas_Text" xml:space="preserve">
+    <value> - MatrixMap has</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputBool_ErrMsg" xml:space="preserve">
+    <value>X-Author found following invalid boolean value(s) for this field:\ns {0}\n\nPlease fix them before proceeding</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputDate_ErrMsg" xml:space="preserve">
+    <value>X-Author found following invalid date value(s) for this field:\n{0}\n\nPlease fix them before proceeding</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputInOp_ErrMsg" xml:space="preserve">
+    <value>'in' operator not supported for the selected field's datatype.</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputnumeric_ErrMsg" xml:space="preserve">
+    <value>X-Author found following non-numeric value(s) for this field:\n{0}\n\nPlease fix them before proceeding</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputStringCAP_ErrMsg" xml:space="preserve">
+    <value>Validation Warning</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputString_ErrMsg" xml:space="preserve">
+    <value>Following values contain a comma: \n  {0}  \n\n  X-Author will assume that your actual value(s) have a comma. Are you sure you want to proceed?</value>
+  </data>
+  <data name="OBJSELPAGE_ValidatePageSel_Text" xml:space="preserve">
+    <value>Object Selection</value>
+  </data>
+  <data name="OBJSELPAGE_ValidatePageSel_WarnMsg" xml:space="preserve">
+    <value>Please select a {0} Object</value>
+  </data>
+  <data name="QUICKAPPMAN_BuildApplicationConfigureDisplayMap_Msg" xml:space="preserve">
+    <value>Creating DisplayMap ...</value>
+  </data>
+  <data name="QUICKAPPMAN_BuildApplicationConfigureMenu_Msg" xml:space="preserve">
+    <value>Creating MenuItems ...</value>
+  </data>
+  <data name="QUICKAPPMAN_BuildApplicationConfigureNewApp_Msg" xml:space="preserve">
+    <value>Creating New App ...</value>
+  </data>
+  <data name="QUICKAPPMAN_BuildApplicationConfigureRetrieval_Msg" xml:space="preserve">
+    <value>Creating Data Retrieval Actions ...</value>
+  </data>
+  <data name="QUICKAPPMAN_BuildApplicationConfigureSaveApp_Msg" xml:space="preserve">
+    <value>Saving App ...</value>
+  </data>
+  <data name="QUICKAPPMAN_BuildApplicationConfigureSaveMap_Msg" xml:space="preserve">
+    <value>Creating SaveMap If needed ...</value>
+  </data>
+  <data name="QUICKAPPMAN_BuildApplicationConfigureWork_Msg" xml:space="preserve">
+    <value>Configuring Action flows ...</value>
+  </data>
+  <data name="QUICKAPPMAN_BuildApplicationConfigure_Msg" xml:space="preserve">
+    <value>Configuring Objects ...</value>
+  </data>
+  <data name="REPEATINGGRPCTL_IsRetrieveFieldPartOfSaveMapRemovedCAP_InfoMsg" xml:space="preserve">
+    <value>Update Field</value>
+  </data>
+  <data name="REPEATINGGRPCTL_IsRetrieveFieldPartOfSaveMapRemoved_InfoMsg" xml:space="preserve">
+    <value>{0} is part of save map, do you want to remove the field from this display map and save map ?</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_ValidateCellDenyOverrideSave_ErrMsg" xml:space="preserve">
+    <value>You cannot use this cell as a Display Field because it is already used as a Save Field. Cells cannot be used as both Display and Save fields.</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_ValidateCellDenyOverride_ErrMsg" xml:space="preserve">
+    <value>You cannot use this cell as a Save Field because it is already used as a Display Field. Cells cannot be used as both Display and Save fields.</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_ValidateCellDenyFieldsTODiffDM_ErrMsg" xml:space="preserve">
+    <value>You cannot add a field of one display map in another display map.</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_ValidateCellOBJAdd_InfoMsg" xml:space="preserve">
+    <value>A field of {0} object cannot be added besides a field of {1} object</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_ValidateCellOBJOverRide_InfoMsg" xml:space="preserve">
+    <value>A field of {0} object cannot be overridden by a field of {1} object</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_ValidateCellROW_InfoMsg" xml:space="preserve">
+    <value>{0} object is already a part of a row, so cannot be added to another row</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_ValidateCell_InfoMsg" xml:space="preserve">
+    <value>{0} {1} cell field cannot be added besides or replaced with {2} cell field</value>
+  </data>
+  <data name="RETRIEVEMAPVALID_ValidateRepeatingGroup_ErrMsg" xml:space="preserve">
+    <value>Field {0} for {1} is either moved or deleted from Sheet, Please remove field from Display Map or add again.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogConnFailedTitle_InfoMsg" xml:space="preserve">
+    <value>Check your internet connectivity!</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogConnFailed_InfoMsg" xml:space="preserve">
+    <value>Conga X-Author for Excel could not connect to {0}. Check whether your computer is online.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="MSDynamics_RUNTIMEEXCELOGHELP_ErrorLogConnFailed_InfoMsg" xml:space="preserve">
+    <value>Conga X-Author for Excel could not connect to Microsoft Dynamics. Check whether your computer is online.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogExc_InfoMsg" xml:space="preserve">
+    <value>{2} returned the exception code {0}.\n {1}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogLoginCredDes_InfoMsg" xml:space="preserve">
+    <value>Invalid username, password, security token; or user locked out.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogLoginCredTitle_InfoMsg" xml:space="preserve">
+    <value>Invalid login credentials!</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogLoginCred_InfoMsg" xml:space="preserve">
+    <value>Conga Server Host could not be resolved. Check your settings in the options dialog.\n\nClick here to open Options dialog.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogProxyTitle_InfoMsg" xml:space="preserve">
+    <value>Check your Conga proxy settings!</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogProxy_InfoMsg" xml:space="preserve">
+    <value>Your proxy requires authentication. Please provide credentials at the login dialog.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogSessionExpTitle_InfoMsg" xml:space="preserve">
+    <value>Session Expired</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogSessionExp_InfoMsg" xml:space="preserve">
+    <value>Your current session has expired. Please click Connect to login again.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogSessionSettingTitle_InfoMsg" xml:space="preserve">
+    <value>Check your settings!</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogSessionSetting_InfoMsg" xml:space="preserve">
+    <value>Unable to send request to server. \rThe server name or address could not be resolved.</value>
+  </data>
+  <data name="SAVEMAPCTL_UpdateRows_ErrMsg" xml:space="preserve">
+    <value>AddRow Error</value>
+  </data>
+  <data name="SAVEMAPVALIDATOR_ValidateSaveMapDIS_InfoMsg" xml:space="preserve">
+    <value>Display Map '{0}' requires Id column for '{1}' grid</value>
+  </data>
+  <data name="SAVEMAPVALIDATOR_ValidateSaveMapSave_InfoMsg" xml:space="preserve">
+    <value>Save Map '{0}' requires Id column for '{1}' grid</value>
+  </data>
+  <data name="SAVEMAPVALID_ValidateDeleteClear_ErrMsg" xml:space="preserve">
+    <value>is used by following Clear Action(s) : </value>
+  </data>
+  <data name="SAVEMAPVALID_ValidateDeleteSave_ErrMsg" xml:space="preserve">
+    <value>is used by following Save Action(s) : </value>
+  </data>
+  <data name="SAVEMAPVALID_ValidateSaveMapDelete_ErrMsg" xml:space="preserve">
+    <value>Field {0} for {1} is either moved or deleted from Sheet, Please remove field from Save Map or add again.</value>
+  </data>
+  <data name="SSACTVIEWVALID_txtActionName_Validating_ErrMsg" xml:space="preserve">
+    <value>Action name is mandatory</value>
+  </data>
+  <data name="VALIDMAN_ValidateApp_ErrMsg" xml:space="preserve">
+    <value>Error while saving the App...</value>
+  </data>
+  <data name="WORKFLOWVALID_ValidateDeleteUser_ErrMsg" xml:space="preserve">
+    <value>is used by following User Menu :</value>
+  </data>
+  <data name="Application_Import_Msg" xml:space="preserve">
+    <value>X-Author Application Import</value>
+  </data>
+  <data name="DATATRANSVW_Transfer_Msg" xml:space="preserve">
+    <value>X-Author Data Transfer</value>
+  </data>
+  <data name="EXPRESSIONBLD_AdvanceFilters_Msg" xml:space="preserve">
+    <value>Your filter must use parentheses around successive AND and OR expressions.</value>
+  </data>
+  <data name="EXPRESSIONBLD_FilterLogic_Msg" xml:space="preserve">
+    <value>Filter logic is incorrect.</value>
+  </data>
+  <data name="OBJECTSEL_ValidatePage_ErrorMsg" xml:space="preserve">
+    <value>Please select a {0} Object</value>
+  </data>
+  <data name="QUICKAPP_UpdateDataRetrie_InfoMsg" xml:space="preserve">
+    <value>Updating Data Retrieval Actions ...</value>
+  </data>
+  <data name="QUICKAPP_UpdateDM_InfoMsg" xml:space="preserve">
+    <value>Updating DisplayMap ...</value>
+  </data>
+  <data name="QUICKAPP_UpdateSalesObj_InfoMsg" xml:space="preserve">
+    <value>Updating Objects ...</value>
+  </data>
+  <data name="QUICKAPP_UpdateSaveMP_InfoMsg" xml:space="preserve">
+    <value>Updating SaveMap If needed ...</value>
+  </data>
+  <data name="QUICKAPP_Update_InfoMsg" xml:space="preserve">
+    <value>Updating App :</value>
+  </data>
+  <data name="ShowAll_Msg" xml:space="preserve">
+    <value>Show All</value>
+  </data>
+  <data name="MANAGECONNECTION_Ribbon_Title" xml:space="preserve">
+    <value>Manage Connection...</value>
+  </data>
+  <data name="COMMON_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="CLEARACTION_AppObject_HeaderText" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="EDITION_APP_TYPE" xml:space="preserve">
+    <value>App Type</value>
+    <comment>Need JPN xlation</comment>
+  </data>
+  <data name="EDITION_APP_TYPE_VALIDATION_MSG" xml:space="preserve">
+    <value>Please Select App Type</value>
+    <comment>Need JPN xlation</comment>
+  </data>
+  <data name="EDITION_DATAMIGRATION" xml:space="preserve">
+    <value>Data Migration</value>
+    <comment>Need JPN xlation</comment>
+  </data>
+  <data name="EDITION_POWERADMIN" xml:space="preserve">
+    <value>Power Admin</value>
+    <comment>Need JPN xlation</comment>
+  </data>
+  <data name="EDITION_PRESTO" xml:space="preserve">
+    <value>Presto</value>
+    <comment>Need JPN xlation</comment>
+  </data>
+  <data name="EDITION_READONLY" xml:space="preserve">
+    <value>Reporting</value>
+    <comment>Need JPN xlation</comment>
+  </data>
+  <data name="EDITION_SELECT_APP_TYPE" xml:space="preserve">
+    <value>Select App Type</value>
+    <comment>Need JPN xlation</comment>
+  </data>
+  <data name="EDTION_ENTERPRISE" xml:space="preserve">
+    <value>Enterprise</value>
+    <comment>Need JPN xlation</comment>
+  </data>
+  <data name="MACROACTION_chkMacroOutput_Text" xml:space="preserve">
+    <value>Terminate Action Flow conditionally</value>
+  </data>
+  <data name="MACROACTION_lblTip_Text" xml:space="preserve">
+    <value>[ If the macro returns true, action flow will be terminated. ]</value>
+  </data>
+  <data name="SAVEATTACTION_rbCellReferenceFileName_Text" xml:space="preserve">
+    <value>Use Cell Reference as File Name</value>
+  </data>
+  <data name="SAVEATTACTION_rbManualFileName_Text" xml:space="preserve">
+    <value>Manually Provide File Name</value>
+  </data>
+  <data name="SAVEATTACTION_rbRunTimeFileName_Text" xml:space="preserve">
+    <value>Use Runtime File Name</value>
+  </data>
+  <data name="CHECKINACTION_CellRef_Text" xml:space="preserve">
+    <value>Use Cell Reference as File Name</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="CHECKINACTION_ManualName_Text" xml:space="preserve">
+    <value>Manually Provide File Name</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="CHECKINACTION_RuntimeFileName_Text" xml:space="preserve">
+    <value>Use Runtime Filename</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="ADDROWACTVIEW_cboInputType_Validating_ErrorMsg" xml:space="preserve">
+    <value>Please select an Input Type.</value>
+  </data>
+  <data name="RIBBON_LoadAppCap_ErrorMsg" xml:space="preserve">
+    <value>Load Application Error</value>
+  </data>
+  <data name="RIBBON_LoadApp_ErrorMsg" xml:space="preserve">
+    <value>Failed to open app. Possible reasons could be :\n\n 1. You are trying to open the app designed with a higher version of X-Author Designer. Your client version: {0} \n\n 2. Template file for the application is missing. Please contact to your X-Author Designer. \n\n Check the product error log for more details.</value>
+  </data>
+  <data name="MATRIXFIELDVIEW_btnOK_Click_Dependent_InfoMsg" xml:space="preserve">
+    <value>Dependent Update field cannot be empty. Please provide Dependent Update field value.</value>
+  </data>
+  <data name="WFDESIGNER_chkSuppressSaveMessage_Text" xml:space="preserve">
+    <value>Suppress Save Message</value>
+  </data>
+  <data name="DataSetActionView_lblOperation_Text" xml:space="preserve">
+    <value>Operation :</value>
+  </data>
+  <data name="DataSetActionView_lblTargetObject_Text" xml:space="preserve">
+    <value>Target Object :</value>
+  </data>
+  <data name="DataSetActionView_rboANDOperation_Text" xml:space="preserve">
+    <value>AND Operation</value>
+  </data>
+  <data name="DataSetActionView_rboOROperation_Text" xml:space="preserve">
+    <value>OR Operation</value>
+  </data>
+  <data name="DATASETACTION_btnOK_Click_Cap_Text" xml:space="preserve">
+    <value>Dataset</value>
+  </data>
+  <data name="COMMON_Update_Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_btnFileOpen_Click_Cap_InfoMsg" xml:space="preserve">
+    <value>Refresh External Library</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_btnFileOpen_Click_InfoMsg" xml:space="preserve">
+    <value>An External library with name : " {0} " already exist. Do you want to replace it ?</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_CanUpdateLibrary_Cap_ErrMsg" xml:space="preserve">
+    <value>Errors while updating external library ...</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_CanUpdateLibrary_ErrMsg" xml:space="preserve">
+    <value>App references actions which no longer exists in updated Assembly.</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_ExternalActionName_Text" xml:space="preserve">
+    <value>External Action</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_ExternalLibraryName_Text" xml:space="preserve">
+    <value>External Library</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_lblLoadExternalLibrary_Text" xml:space="preserve">
+    <value>Load External Library :</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_lblTitle_Text" xml:space="preserve">
+    <value>External Library</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_ValidateAssembly_BadImage_ErrMsg" xml:space="preserve">
+    <value>Selected File is not an assembly. Please select correct assembly file.</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_ValidateAssembly_Caption_ErrMsg" xml:space="preserve">
+    <value>Assembly Failed</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_ValidateAssembly_FileLoad_ErrMsg" xml:space="preserve">
+    <value>Selected assembly is already loaded. Please select correct assembly file.</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_ValidateAssembly_FileNotFound_ErrMsg" xml:space="preserve">
+    <value>Selected Assembly Not Found. Please select correct assembly file.</value>
+  </data>
+  <data name="EXTERNALACTIONVIEW_ValidateAssembly_Unknown_ErrMsg" xml:space="preserve">
+    <value>Unknown error occured while loading assembly.</value>
+  </data>
+  <data name="DataSetActionView_lbDataSet_Text" xml:space="preserve">
+    <value>Data Set Action</value>
+  </data>
+  <data name="RIBBON_btnDataSet_Label" xml:space="preserve">
+    <value>Data Set</value>
+  </data>
+  <data name="RIBBON_btnExternalLibrary_Label" xml:space="preserve">
+    <value>External Library</value>
+  </data>
+  <data name="CHANGE_APPTYPE_TITLE" xml:space="preserve">
+    <value>Change App Type</value>
+    <comment>need xlation</comment>
+  </data>
+  <data name="CHANGE_APPTYPE_WARNING" xml:space="preserve">
+    <value>Changing the App Type will deactivate the App and require re-activation. Do you want to continue?</value>
+    <comment>need xlation</comment>
+  </data>
+  <data name="COMMON_STARTMENU_CHANGE_EDITION" xml:space="preserve">
+    <value>Change App Type</value>
+    <comment>need xlation</comment>
+  </data>
+  <data name="EDIT_APPTYPE_WARNING_MSG" xml:space="preserve">
+    <value>Please open App for changing the App Type. </value>
+    <comment>need xlation</comment>
+  </data>
+  <data name="DataSourceValidator_checkSheetChange_Msg" xml:space="preserve">
+    <value>Following sheets have been either deleted or renamed. Please reconfigure Source Data\n\n</value>
+  </data>
+  <data name="DataSourceValidator_checkSheetChange__Source_Msg" xml:space="preserve">
+    <value>Source Sheets: [{0}]\n</value>
+  </data>
+  <data name="DataSourceValidator_checkSheetChange__Target_Msg" xml:space="preserve">
+    <value>Target Sheets: [{0}]\n</value>
+  </data>
+  <data name="APPSETTVIEW_chkEnableRowHL_Text" xml:space="preserve">
+    <value>Highlight Unsaved Records</value>
+    <comment>jpn translation required</comment>
+  </data>
+  <data name="APPSETTVIEW_setRowColor_Text" xml:space="preserve">
+    <value>Fill Color for Unsaved Records:</value>
+    <comment>jpn translation required</comment>
+  </data>
+  <data name="EDITIONUI_ERROR" xml:space="preserve">
+    <value>Invalid App Edition Information.  Please contact your {0} Administrator.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="APPSETTVIEW_ValidatePicklist_Text" xml:space="preserve">
+    <value>Ignore Picklist Validation During Save</value>
+  </data>
+  <data name="CHANGEAPPTYPE_EDITION_VIOLATION" xml:space="preserve">
+    <value>Changing the App Type from {0} to {1} is not permitted.  Please refer to the X-Author for Excel User Guide - License Manager for more detail.</value>
+    <comment>need xlation</comment>
+  </data>
+  <data name="CHANGE_EDITION_CAPTION" xml:space="preserve">
+    <value>Change App Type</value>
+    <comment>need xlation</comment>
+  </data>
+  <data name="APPDEF_AddLoadMoreLink_Text" xml:space="preserve">
+    <value>...Load More</value>
+  </data>
+  <data name="DELETEACTION_Prompt_Message" xml:space="preserve">
+    <value>Prompt confirmation message before deleting record(s)</value>
+  </data>
+  <data name="DELETEACTION_Warning_TEXT" xml:space="preserve">
+    <value>Warning : Delete Action will delete all records retreived for {0} if there are no filters defined</value>
+  </data>
+  <data name="COMMON_DeleteAction_Text" xml:space="preserve">
+    <value>Delete Action</value>
+  </data>
+  <data name="DELETEACTVIEW_cboMap_Validating_ErrorMsg" xml:space="preserve">
+    <value>SaveMap is required</value>
+  </data>
+  <data name="DELETEACTVIEW_cboObject_Validating_ErrorMsg" xml:space="preserve">
+    <value>Object is required</value>
+  </data>
+  <data name="QAAPPSETT_chkSaveSheets_Text" xml:space="preserve">
+    <value>Enable for Google Sheets</value>
+  </data>
+  <data name="APPSETTVIEW_lblMaxAttachmentSize_Text" xml:space="preserve">
+    <value>Max. Attachment Size (in MB) :</value>
+  </data>
+  <data name="COREABSADAPTER_SetWaitMessage_Attachments_Msg" xml:space="preserve">
+    <value>Performing " {0} " operation on {3}. Processing  {1} Attachments of  {2} Attachments ...</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="MACROACTION_chkDisableExcelEvents_Text" xml:space="preserve">
+    <value>Disable Excel Events during execution</value>
+  </data>
+  <data name="GOOGSCHEMA_InvalidQuery_Cap" xml:space="preserve">
+    <value>Invalid Query</value>
+  </data>
+  <data name="GOOGSCHEMA_InvalidQuery_Msg" xml:space="preserve">
+    <value>Failed to save for Sheets; invalid query</value>
+  </data>
+  <data name="OPTIONSFORM_grpLanguage_Text" xml:space="preserve">
+    <value>Language Preference</value>
+  </data>
+  <data name="OPTIONSFORM_lblLanguage_Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="OPTIONSFORM_ExcelCloseMessage_Text" xml:space="preserve">
+    <value>Please Close existing all excel instance and restart Excel for Langauge changes to take effect.</value>
+  </data>
+  <data name="CAD_Settings_Title" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="RIBBON_btnDataMigrationAppEdit_Click_InfoMsg1" xml:space="preserve">
+    <value>This App cannot be edited using Data Migration wizard. Please use other X-Author Designer capabilities for this.</value>
+  </data>
+  <data name="DMMultiSelect_btnDeSelect_Text" xml:space="preserve">
+    <value>&lt;&lt;</value>
+  </data>
+  <data name="DMMultiSelect_btnSearch_Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="DMMultiSelect_btnSelect_Text" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="DMMultiSelect_grpAvailableObjects_Text" xml:space="preserve">
+    <value>Available Objects</value>
+  </data>
+  <data name="DMMultiSelect_grpObjectsToAdd_Text" xml:space="preserve">
+    <value>Objects To Add</value>
+  </data>
+  <data name="DM_AddLookups_Text" xml:space="preserve">
+    <value>Add Lookups</value>
+  </data>
+  <data name="DM_AddObject_Text" xml:space="preserve">
+    <value>Add Objects</value>
+  </data>
+  <data name="DM_AppNameValidation_Text" xml:space="preserve">
+    <value>You must specify a name for your application before saving.</value>
+  </data>
+  <data name="DM_AppName_Text" xml:space="preserve">
+    <value>App Name :</value>
+  </data>
+  <data name="DM_ClickHere_Text" xml:space="preserve">
+    <value>click here.</value>
+  </data>
+  <data name="DM_CreateApp_Text" xml:space="preserve">
+    <value>Create App</value>
+  </data>
+  <data name="DM_DashaboardDescription_Text" xml:space="preserve">
+    <value>Define and update your data migration app. Start by adding objects. To learn more</value>
+  </data>
+  <data name="DM_DashbordTitle_Text" xml:space="preserve">
+    <value>Data Migration Wizard</value>
+  </data>
+  <data name="DM_ErrorInSavingAppCaption_Text" xml:space="preserve">
+    <value>Error in Saving App </value>
+  </data>
+  <data name="DM_ExternalIDValidation_Text" xml:space="preserve">
+    <value>You must set an External Field for all Objects before saving.</value>
+  </data>
+  <data name="DM_FetchingObjectDetail_Text" xml:space="preserve">
+    <value>Fetching Object Details ...</value>
+  </data>
+  <data name="DM_FilterDependencyForObjectRemoval_Text" xml:space="preserve">
+    <value>This Object is included in one or more Filter Criteria. You must delete the associated filters before you can delete this object.</value>
+  </data>
+  <data name="DM_LookupDescription_Text" xml:space="preserve">
+    <value>Use this screen to view and add the suggested lookup fields for the objects included in the dashboard.</value>
+  </data>
+  <data name="DM_ObjectRemovalConfirmationCaption_Text" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="DM_ObjectRemovalConfirmation_Text" xml:space="preserve">
+    <value>Are you sure you want to remove this object ?</value>
+  </data>
+  <data name="DM_SequenceNumberUniqueValidation_Text" xml:space="preserve">
+    <value>You must specify a unique sequence for each Object in the application before saving.</value>
+  </data>
+  <data name="DM_SequenceNumberValidation_Text" xml:space="preserve">
+    <value>{2}. Object {0} dependent on object {1}, hence the sequencing of object {0} cannot be before object {1}.\n\n</value>
+  </data>
+  <data name="DM_UniqueObjectNameValidation_Text" xml:space="preserve">
+    <value>You must specify a unique Object name for each Object in the application before saving.</value>
+  </data>
+  <data name="DM_UpdateApp_Text" xml:space="preserve">
+    <value>Update App</value>
+  </data>
+  <data name="DM_WorkflowChangeCaption_Text" xml:space="preserve">
+    <value>Action Flow Changes</value>
+  </data>
+  <data name="DM_WorkflowChange_Text" xml:space="preserve">
+    <value>Click 'See details' below to view a list of changes to Actions Flows for this app. Actions removed from flows have not been deleted from the app.</value>
+  </data>
+  <data name="DM_LookupID_Text" xml:space="preserve">
+    <value>Lookup Field ID</value>
+  </data>
+  <data name="DM_LookupName_Text" xml:space="preserve">
+    <value>Field Name</value>
+  </data>
+  <data name="DM_lookupObjectName_Text" xml:space="preserve">
+    <value>Object Name</value>
+  </data>
+  <data name="DM_WizlblAction_Text" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="DM_WizlblCopy_Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="DM_WizlblExternalID_Text" xml:space="preserve">
+    <value>External Field</value>
+  </data>
+  <data name="DM_WizlblFields_Text" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="DM_WizlblFilter_Text" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="DM_WizlblLookup_Text" xml:space="preserve">
+    <value>Lookup Fields</value>
+  </data>
+  <data name="DM_WizlblName_Text" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="DM_WizlblObject_Text" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="DM_WizlblRemove_Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="DM_WizlblSequence_Text" xml:space="preserve">
+    <value>Load Sequence</value>
+  </data>
+  <data name="DM_btnSettings_Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="DM_AtleastOneObjectNeededValidation_Text" xml:space="preserve">
+    <value>You must add at least one Object in the application before saving.</value>
+  </data>
+  <data name="DM_Increment_by_one_ErrMsg" xml:space="preserve">
+    <value>Invalid Object Sequence. Sequence value should be incremental by one only.</value>
+  </data>
+  <data name="DMSettings_lblExportallSuffix_Text" xml:space="preserve">
+    <value>Export All Suffix :</value>
+  </data>
+  <data name="DMSettings_lblExportSelectiveSuffix_Text" xml:space="preserve">
+    <value>Export Selective Suffix :</value>
+  </data>
+  <data name="DMSettings_lblSettingsDescription_Text" xml:space="preserve">
+    <value>The following text will be displayed for Data Migration Export buttons in your app.</value>
+  </data>
+  <data name="DMSettings_txtExportAll_Validating_ErrorMsg" xml:space="preserve">
+    <value>Export All  Suffix cannot be empty.</value>
+  </data>
+  <data name="DMSettings_txtExportSelective_Validating_ErrorMsg" xml:space="preserve">
+    <value>Export Selective Suffix cannot be empty.</value>
+  </data>
+  <data name="APTTUSFIELDS_CIRCULARREFERENCE_ErrMsg" xml:space="preserve">
+    <value>Circular References are not suported. Hence remove the circular reference between {0} and {1} by deselecting {2} ({3}) field.</value>
+  </data>
+  <data name="CIRCULAR_REFERENCE_MSG" xml:space="preserve">
+    <value>Circular reference</value>
+  </data>
+  <data name="DM_WizardCloseConfirmation_Text" xml:space="preserve">
+    <value>Are you sure you want to close the Wizard? Any unsaved data will be lost.</value>
+  </data>
+  <data name="RETRIEVEMAPVALID_ValidateDocumentRepeatingGroup_ErrMsg" xml:space="preserve">
+    <value>Field '{0}' and '{1}' are mandatory for the object '{2}' in {3} when '{4}' field is present.</value>
+  </data>
+  <data name="DM_Help_Text" xml:space="preserve">
+    <value>Use the Data Migration Dashboard to create a new Data Migration App or update an existing App. The purpose of the Data Migration Wizard is to help you create a fully-formed app that you can use to easily move data from one Org to another. To build your app, take the following actions:
+
+1. Click on  Add Objects  to add one or more Objects to your App. Objects are added and assigned a sequence in the order you select them. Object Name and ID fields are automatically added.
+2. After you add an Object, click on the Field link to add more Fields from that Object to your data migration.
+3. Choose an External Field for your Object if one or more External Field’s exist. Click Not Set in the Object row to choose the External Field. Each Object must have an External Field set for Data Migration to execute. For help with creating External Field’s, consult relevant source documentation or use the Conga External Field Utility.
+4. Click on Add Lookups to add Lookup fields to one or more Objects in your App. All Objects referenced by a Lookup field must have already been added to the app.
+5. Choose a User Action (Search &amp; Select, or Query) for each Object. When the Data Migration app is executed and data is retrieved from the source org, these actions determine how that data is retrieved. You can also specify filter criteria and logic for each Object in the app.
+6. Copies an Object on the Dashboard, if you want to specify a separate set of filter criteria for the same Object. Make sure to change the Object Name on the Dashboard before you save (it must be unique).
+7. You can remove an Object from the App by clicking on the icon under the Remove column.
+8. Click Settings to configure any additional settings as required.
+9. Click Save App or Update App to save your changes. The app is created or updated. You can continue to use X-Author Designer to make further changes to the app before it is used.
+
+Note: Certain actions are restricted when you Update an app using the Data Migration Wizard. Refer to product documentation for a comprehensive list.
+
+For detailed step-by-step instructions for creating your Data Migration App, refer to the X-Author for Excel Designer &amp; Runtime Guide. To reach the guide, log in to the Conga community at: https://apttusportal.force.com/community,  and choose Resources , Product Docs and click on X-Author for Excel.</value>
+  </data>
+  <data name="DM_ObjectNameValidation_Text" xml:space="preserve">
+    <value>You must specify a Object name for each Object in the application before saving.</value>
+  </data>
+  <data name="DM_lookupSource_Text" xml:space="preserve">
+    <value>Lookup Source</value>
+  </data>
+  <data name="APPDEF_ObjectNotInSync_InfoMsg" xml:space="preserve">
+    <value>This object is not in sync so you will not be able to make further changes. Please use “Sync App” to sync this object.</value>
+  </data>
+  <data name="APPDEF_Object_Doesn't_Exist_Msg" xml:space="preserve">
+    <value>Object : {0} ({1}) doesn't exist or is inaccessible in logged-in org. Please remove the object from selected objects list.</value>
+  </data>
+  <data name="AppSync_lnkFieldsMismatch_Text" xml:space="preserve">
+    <value>Field Data Types</value>
+  </data>
+  <data name="AppSync_lnkMissingObjects_Text" xml:space="preserve">
+    <value>Objects</value>
+  </data>
+  <data name="FieldsMismatchViewer_InApp_Text" xml:space="preserve">
+    <value>In App</value>
+  </data>
+  <data name="FieldsMismatchViewer_lblFieldTypeMismatchDescription_Text" xml:space="preserve">
+    <value>The following field types in your app do not match with those in your {0} org. Sync field types here or update them in {0}.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="FieldsMismatchViewer_lblFieldTypeMismatch_Text" xml:space="preserve">
+    <value>Field Type Mismatch</value>
+  </data>
+  <data name="FieldsMismatchViewer_lnSalesforce_Text" xml:space="preserve">
+    <value>In {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="FieldsMissingViewer_lblMissingFieldsDescription_Text" xml:space="preserve">
+    <value>The following fields in your app do not match with those in your {0} org. Remove these fields from your app (using Designer), add them in {0}, or make sure you have the correct permissions in {0} to access them. Fields in filters must be removed manually.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="FieldsMissingViewer_lblMissingFields_Text" xml:space="preserve">
+    <value>Missing or Inaccessible Fields</value>
+  </data>
+  <data name="FieldsMissingViewer_SearchFilters_HeaderText" xml:space="preserve">
+    <value>Search Filters</value>
+  </data>
+  <data name="ObjectMissingViewer_lblMissingObjectDescription_Text" xml:space="preserve">
+    <value>The following objects in your app do not match with those in your {0} org. Remove these objects from your app (using Designer), add them in {0}, or make sure you have the correct permissions in {0} to access them.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="ObjectMissingViewer_lblMissingObjects_Text" xml:space="preserve">
+    <value>Missing or Inaccessible Objects</value>
+  </data>
+  <data name="ObjectMissingViewer_ObjectID_Text" xml:space="preserve">
+    <value>Object ID</value>
+  </data>
+  <data name="FieldsMismatchViewer_SyncFieldButton_Text" xml:space="preserve">
+    <value>Sync Fields</value>
+  </data>
+  <data name="AppSync_DoubleClickToViewDetails_Text" xml:space="preserve">
+    <value>Double click to view details</value>
+  </data>
+  <data name="AppSync_FieldMismatch_FieldInfo_Text" xml:space="preserve">
+    <value>The field "{0}" is used by the following app components.  If used in a filter, the data type must be corrected manually in the action definition.</value>
+  </data>
+  <data name="AppSync_FieldMissingViewer_FieldInfo_Text" xml:space="preserve">
+    <value>The field "{0}" is used by the following app components.  If used in a filter, the field must be removed manually in the action definition.</value>
+  </data>
+  <data name="AppSync_FieldsMismatchViewer_NoData_Text" xml:space="preserve">
+    <value>All field data types match those in {0}.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="AppSync_FieldsMissingViewer_NoData_Text" xml:space="preserve">
+    <value>All fields are in sync.</value>
+  </data>
+  <data name="AppSync_lblSummary_Text" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="AppSync_ObjectsMissingViewer_NoData_Text" xml:space="preserve">
+    <value>All objects are in sync.</value>
+  </data>
+  <data name="AppSync_Picklist_Text" xml:space="preserve">
+    <value>Picklists</value>
+  </data>
+  <data name="AppSync_Summary_lblSummaryDescription_Text" xml:space="preserve">
+    <value>The following app components do not match those in your {0} instance. Click a link to review or take action.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="AppSync_Summary_Mismatch_Text" xml:space="preserve">
+    <value>mismatches</value>
+  </data>
+  <data name="AppSync_Summary_Missing_Text" xml:space="preserve">
+    <value>missing/inaccessible</value>
+  </data>
+  <data name="AppSync_Summary_Synced_Text" xml:space="preserve">
+    <value>synced</value>
+  </data>
+  <data name="AppSyncBackgroundWorker_PleasewaitMsg" xml:space="preserve">
+    <value>Please Wait. Synchronizing App.....</value>
+  </data>
+  <data name="MSDynamics_MNUHOME_ChkShowDeleteRow" xml:space="preserve">
+    <value>Display Delete Row from Dynamics</value>
+  </data>
+  <data name="CHANGECRM_ApplyMessage_Text" xml:space="preserve">
+    <value>Please close all existing excel instances and restart excel for source changes to take effect.</value>
+  </data>
+  <data name="RIBBON_ChangeCRM_Text" xml:space="preserve">
+    <value>Change Source</value>
+  </data>
+  <data name="LookupObjectSelectionUI_btnCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="LookupObjectSelectionUI_btnSave_Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="LookupObjectSelectionUI_lblSelectObjectDesc_Text" xml:space="preserve">
+    <value>Select Objects that you want to include , Objects priority would be treated in order they have been selected</value>
+  </data>
+  <data name="LookupObjectSelectionUI_lblSelectObjects_Text" xml:space="preserve">
+    <value>Select Objects</value>
+  </data>
+  <data name="LOOKUPOBJECTSELECTION_LookupObjectSelection_ErrorMsg" xml:space="preserve">
+    <value>Alteast select one object to Add</value>
+  </data>
+  <data name="MSDynamics_QAAPPSETT_chkEditInExcel_Text" xml:space="preserve">
+    <value>Enable App Launch from Source CRM</value>
+  </data>
+  <data name="MSDynamics_ABOUT_lblAboutDescription_Text" xml:space="preserve">
+    <value>Conga X-Author for Excel intelligently interacts between Microsoft Excel and Dynamics CRM using embedded configurable ribbons. The technology allows all tasks performed within a Microsoft Excel Document to be shared and completely captured in any Structured Data System including Dynamics CRM, without the need to go into Dynamics.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RIBBON_SelectCRM_Text" xml:space="preserve">
+    <value>Select Source</value>
+  </data>
+  <data name="MSDynamics_COMMON_SalesforceObject_Text" xml:space="preserve">
+    <value>Data Objects</value>
+  </data>
+  <data name="AIC_COMMON_SalesforceObject_Text" xml:space="preserve">
+    <value>Data Objects</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="AIC_ABOUT_lblAboutDescription_Text" xml:space="preserve">
+    <value>Conga X-Author for Excel intelligently interacts between Microsoft Excel and AIC using embedded configurable ribbons. The technology allows all tasks performed within a Microsoft Excel Document to be shared and completely captured in any Structured Data System including AIC, without the need to go into AIC.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="ApttusObjectManager_HandleError_AIC_XAE_Config_Missing" xml:space="preserve">
+    <value>The tenant key for X-Author for Excel configuration is missing. Please contact your Conga Administrator.</value>
+  </data>
+  <data name="AppSync_lblRecordTypes_Text" xml:space="preserve">
+    <value>Record Types</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="AppSync_UpdateRecordTypes_Text" xml:space="preserve">
+    <value>{0} Added, {1} Updated, {2} Deleted</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RETRIEVEMAPCTL_DenyOverridingSameFieldInGrid_ErrMsg" xml:space="preserve">
+    <value>"{0}" already exists in the Display/Save map at location "{1}"</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LookAheadUI_gbRangeSelection_Text" xml:space="preserve">
+    <value>Range Selection</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LookAheadDesignerUI_PrimaryColumnSelected_text" xml:space="preserve">
+    <value>Selected Column: {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKAHEADPROPCTL_GetSingleColumn_InfoMsg" xml:space="preserve">
+    <value>Please select one column for Single Column Data Source properties.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKAHEADPROPCTL_Select2Rows_InfoMsg" xml:space="preserve">
+    <value>Please select at least 2 Rows</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="APPSYNC_SyncMessage_Info" xml:space="preserve">
+    <value>Please Click on Sync App button to start App Sync Process.</value>
+  </data>
+  <data name="LOOKUPOBJECTSELECTION_LookupObjectSelection__CkickCAP_ErrorMsg" xml:space="preserve">
+    <value>Lookup Object Selection</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LOOKUPOBJECTSELECTION_Success_ShowMsg" xml:space="preserve">
+    <value>Object selection saved successfully</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LookAhead_SearchandSelect_Text" xml:space="preserve">
+    <value>Search And Select (Online)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LookAheadDesigner_lblConfigureExcel_Text" xml:space="preserve">
+    <value>Configure a Excel (Offline) Look Ahead</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LookAheadDesigner_lblConfigureSS_Text" xml:space="preserve">
+    <value>Configure a Search and Select (Online) Look Ahead</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LookAheadDesignerController_ShowView_ScreenAlreadyOpen" xml:space="preserve">
+    <value>Lookahead screen is already open. Please close it first to configure another field</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LookAhead_lnkAddSearchAndSelect_LinkClicked_ObjectMissing" xml:space="preserve">
+    <value>X-Author will now add the “{0}” object in Salesforce Objects and will Create a new Search &amp; Select action.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LookAhead_CreateNew_Action" xml:space="preserve">
+    <value>Create New</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="LookAhead_CreateNew_Action_ToolTip" xml:space="preserve">
+    <value>Create a new Search &amp; Select action</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="Designer_chkDisableExcelEvents_Text" xml:space="preserve">
+    <value>Disable Excel Events during execution</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogForbiddenOperationTitle_InfoMs" xml:space="preserve">
+    <value>Insufficient privileges to complete the requested operation.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RETRIEVEMAPVALID_ValidateContentDocumentRepeatingGroup_ErrMsg" xml:space="preserve">
+    <value>Field '{0}','{1}' and '{2}' are mandatory for the object '{3}' in {4} when '{5}' field is present.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RIBBON_WhatNew_Text" xml:space="preserve">
+    <value>What's New</value>
+  </data>
+  <data name="ODWIZARD_btnBack_Text" xml:space="preserve">
+    <value>&lt; Back</value>
+  </data>
+  <data name="ODWIZARD_btnNext_Text" xml:space="preserve">
+    <value>Next &gt;</value>
+  </data>
+  <data name="ODWIZARD_lblExistingObject_Text" xml:space="preserve">
+    <value>Existing Object :</value>
+  </data>
+  <data name="lblRetrieveActionFlow_Text" xml:space="preserve">
+    <value>Retrieve Action Flow</value>
+  </data>
+  <data name="lblSaveActionFlow_Text" xml:space="preserve">
+    <value>Save Action Flow</value>
+  </data>
+  <data name="lblCreateNew_Text" xml:space="preserve">
+    <value>Create New</value>
+  </data>
+  <data name="lblAddToExisting_Text" xml:space="preserve">
+    <value>Add To Existing Action Flow</value>
+  </data>
+  <data name="lblMenuSettings_Text" xml:space="preserve">
+    <value>Menu Settings</value>
+  </data>
+  <data name="lblMenuGroupLabel_Text" xml:space="preserve">
+    <value>Group Label :</value>
+  </data>
+  <data name="lblMenuRetrieveDataButton_Text" xml:space="preserve">
+    <value>Retrieve Data Button Label :</value>
+  </data>
+  <data name="lblMenuSaveDataButton_Text" xml:space="preserve">
+    <value>Save Data Button Label :</value>
+  </data>
+  <data name="ActionFlowAlreadyExists_Text" xml:space="preserve">
+    <value>{0} Action Flow '{1}' already exists.</value>
+  </data>
+  <data name="ActionFlowNotSelected_Text" xml:space="preserve">
+    <value>Please select {0} Action Flow.</value>
+  </data>
+  <data name="ActionFlowNotEntered_Text" xml:space="preserve">
+    <value>Please enter {0} Action Flow Name.</value>
+  </data>
+  <data name="MenuGroupNotEntered_Text" xml:space="preserve">
+    <value>Please enter Menu Group.</value>
+  </data>
+  <data name="DataButtonNotEntered_Text" xml:space="preserve">
+    <value>Please enter {0} Data Button Label.</value>
+  </data>
+  <data name="MenuGroupAlreadyExists_Text" xml:space="preserve">
+    <value>Menu Group '{0}' already exists.</value>
+  </data>
+  <data name="RIBBON_ExpressDesigner_Text" xml:space="preserve">
+    <value>Express Designer</value>
+  </data>
+  <data name="AIC_CAD_SaveMessages" xml:space="preserve">
+    <value>AIC Messsages</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_App" xml:space="preserve">
+    <value>App</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment" xml:space="preserve">
+    <value>App Assignment</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_AddLineSepIds" xml:space="preserve">
+    <value>Add Line separated user record IDs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_AddRecordsById" xml:space="preserve">
+    <value>Add Records By Id</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_AddRecordsBySelection" xml:space="preserve">
+    <value>Add Records By Selection</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_AppAssignDetails" xml:space="preserve">
+    <value>App Assignment Destails</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_ClickToAdd" xml:space="preserve">
+    <value>New assignment mode - Click to add more assignments</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_ClickToEdit" xml:space="preserve">
+    <value>{0} Users and {1} Profiles - Click to edit current assignments</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_CreateNewAssign" xml:space="preserve">
+    <value>Create New Assignments</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_EditExisting" xml:space="preserve">
+    <value>Edit Existing Assignments</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_ProfileAssignments" xml:space="preserve">
+    <value>Profile Assignments</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_ProfileName" xml:space="preserve">
+    <value>Profile</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_SaveAssignment" xml:space="preserve">
+    <value>Save Assignment</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppAssignment_UserAssignments" xml:space="preserve">
+    <value>User Assignments</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppDetails_SaveApp" xml:space="preserve">
+    <value>Please save the App</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AppDetails_UniqueId" xml:space="preserve">
+    <value>Unique Id</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate" xml:space="preserve">
+    <value>Auto Update</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_AutoUpdateSettings" xml:space="preserve">
+    <value>Auto Update Settings</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_DelayTime" xml:space="preserve">
+    <value>Delay picking up new releases (Days)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_EnableAutoUpdate" xml:space="preserve">
+    <value>Enable Auto Update</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_LastUpdatedOn" xml:space="preserve">
+    <value>Conga X-Author for Excel was updated on {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_UpdateNow" xml:space="preserve">
+    <value>Update Proceeding will close all the running Excel.\nPlease save your work before proceeding \nAre you sure want to continue ?</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Connections" xml:space="preserve">
+    <value>Connections</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Connections_ConnectionHost" xml:space="preserve">
+    <value>Host</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Connections_ConnectionName" xml:space="preserve">
+    <value>Connection Name</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Connections_DeleteBTN" xml:space="preserve">
+    <value>Delete Connection</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo" xml:space="preserve">
+    <value>General Info</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_AvailableAddIns" xml:space="preserve">
+    <value>Available X-Author Add-ins</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_Edition" xml:space="preserve">
+    <value>Edition</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_OrganizationId" xml:space="preserve">
+    <value>Organization Id</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_OrganizationName" xml:space="preserve">
+    <value>Organization Name</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_ProductInformation" xml:space="preserve">
+    <value>Product Information</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_ProfileId" xml:space="preserve">
+    <value>Profile Id</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_Title" xml:space="preserve">
+    <value>General Information</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_UserEmail" xml:space="preserve">
+    <value>User Email</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_UserFullName" xml:space="preserve">
+    <value>Full Name</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_UserId" xml:space="preserve">
+    <value>User Id</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_UserName" xml:space="preserve">
+    <value>User Name</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck" xml:space="preserve">
+    <value>Health Check</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_AddInDisableCheck" xml:space="preserve">
+    <value>Add-In Disable Check</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_ClearLogFile" xml:space="preserve">
+    <value>Clear Log File &gt; 20 Mb</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_Diagnostics" xml:space="preserve">
+    <value>Diagnostics</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_FreqAddInDisableCheck" xml:space="preserve">
+    <value>Frequency (In Minutes)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_FrequencyClearLog" xml:space="preserve">
+    <value>Frequency (In Days)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_HealthCheckRules" xml:space="preserve">
+    <value>Health Check Rules</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_TurnOnDiagnostics" xml:space="preserve">
+    <value>Turn On Diagnostics Mode</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_LicenseInfo" xml:space="preserve">
+    <value>License Info</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs" xml:space="preserve">
+    <value>Product Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_ClearLog" xml:space="preserve">
+    <value>Clear Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_CompleteLog" xml:space="preserve">
+    <value>Complete Log</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_DesignerLogs" xml:space="preserve">
+    <value>Designer Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_LastLog" xml:space="preserve">
+    <value>Last Log</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_NoLogsFound" xml:space="preserve">
+    <value>No Logs Found</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_OpenFile" xml:space="preserve">
+    <value>Open File</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_RuntimeLogs" xml:space="preserve">
+    <value>Runtime Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_SwitchToDesigner" xml:space="preserve">
+    <value>Switch to Designer Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_SwitchToRuntime" xml:space="preserve">
+    <value>Switch to Runtime Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_SaveMessages" xml:space="preserve">
+    <value>Salesforce Messages</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ServiceLogs" xml:space="preserve">
+    <value>Service Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_ActiveSource" xml:space="preserve">
+    <value>Select CRM</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_AppliesToInd" xml:space="preserve">
+    <value>Applies to Individual Fields</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_AppliesToRep" xml:space="preserve">
+    <value>Applies to List Fields</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_AppWizard" xml:space="preserve">
+    <value>App Wizard</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_AuthSettings" xml:space="preserve">
+    <value>Authentication Settings</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_DisplayData" xml:space="preserve">
+    <value>Display Data</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_DisplayLabel" xml:space="preserve">
+    <value>Display Label</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_HideFormulaRowDisplayMap" xml:space="preserve">
+    <value>Hide Formula Row in Display Map</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_MinDisplayWidth" xml:space="preserve">
+    <value>Minimum Display Fields Width</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_SaveData" xml:space="preserve">
+    <value>Save Data</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_SaveLabel" xml:space="preserve">
+    <value>Save Label</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_SequentialActionFlowDesigner" xml:space="preserve">
+    <value>Enable Sequential Action Flow Designer (Classic Mode)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_StoreToken" xml:space="preserve">
+    <value>Remember Me</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_StoreToken_Info" xml:space="preserve">
+    <value>This setting will keep your session active, as defined by your CRM administrator</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="MSDynamics_CAD_SaveMessages" xml:space="preserve">
+    <value>Dynamics CRM Messages</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_CheckForUpdate_InstallNow" xml:space="preserve">
+    <value>X-Author for Excel ({0}) is available for download. Do you want to install now ?</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_CheckForUpdate_UpToDate" xml:space="preserve">
+    <value>X-Author for Excel is already up to date</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_CheckForUpdate_CheckingForUpdate" xml:space="preserve">
+    <value>Checking for update.Please wait..</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="InvalidCellLocation_ExpressDesigner_Text" xml:space="preserve">
+    <value>Please enter valid cell location</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="InvalidCellLocation_ExpressDesigner_Cap" xml:space="preserve">
+    <value>Child Object Record Selection</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="EDAPPSEL_lblSingleObject_Text" xml:space="preserve">
+    <value>List</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="EDAPPSEL_lblListAppDescription_Text" xml:space="preserve">
+    <value>Allows for displaying and updating records in a list format. You can very quickly select a single {0} and fields, define criteria to pull down the records and much more.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="EDAPPSEL_lblParentChild_Text" xml:space="preserve">
+    <value>Parent Child</value>
+  </data>
+  <data name="EDAPPSEL_lblPCDescription_Text" xml:space="preserve">
+    <value>Allows for displaying and updating records in both a form layout for parent {0} and a list layout for child {0}. You can very quickly select a parent {0}, a child {0}  and fields, define criteria to pull down the both parent and child records and much more.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="EDOBJSEL_lblPageTitle_Text" xml:space="preserve">
+    <value>Express Configuration : {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="EDPARENTOBJSEL_lblPageTitle_Text" xml:space="preserve">
+    <value>Express Configuration : Parent {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="EDCHILDOBJSEL_lblPageTitle_Text" xml:space="preserve">
+    <value>Express Configuration : Child {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="EDOBJSEL_lblPageSubTitle_Text" xml:space="preserve">
+    <value>Select an {0} and fields. It can be a new or existing {0}.</value>
+  </data>
+  <data name="EDPARENTOBJSEL_lblPageSubTitle_Text" xml:space="preserve">
+    <value>Select a Parent {0} and fields. It can be a new or existing {0}.</value>
+  </data>
+  <data name="EDCHILDOBJSEL_lblPageSubTitle_Text" xml:space="preserve">
+    <value>Select a Child {0} and Fields. It can be a new or existing {0}.</value>
+  </data>
+  <data name="EDFieldLayout_lblPageTitle_Text" xml:space="preserve">
+    <value>Express Configuration : Field Layout </value>
+  </data>
+  <data name="EDFieldLayout_lblPageSubTitle_Text" xml:space="preserve">
+    <value>You can drag and drop the fields in order of the layout. </value>
+  </data>
+  <data name="EDSettings_lblPageTitle_Text" xml:space="preserve">
+    <value>Express Configuration : Additional Options </value>
+  </data>
+  <data name="PainlessDisabled_Message" xml:space="preserve">
+    <value>Edit mode is not available because the field layout is changed by the user. Please perform the mapping individually.</value>
+  </data>
+  <data name="ExpressDesignerCreated_Text" xml:space="preserve">
+    <value>'{0}' Express Configuration created successfully.</value>
+  </data>
+  <data name="ExpressDesignerUpdated_Text" xml:space="preserve">
+    <value>'{0}' Express Configuration updated successfully.</value>
+  </data>
+  <data name="ExpressDesigner_UpdateMenu_Msg" xml:space="preserve">
+    <value>Updating MenuItems ...</value>
+  </data>
+  <data name="ExpressDesigner_FilterLogicSet_Msg" xml:space="preserve">
+    <value>Please remove filter logic to add or remove any field</value>
+  </data>
+  <data name="ExpressDesigner_Creating_Error_Title" xml:space="preserve">
+    <value>Error while creating Express Designer Configuration</value>
+  </data>
+  <data name="ExpressDesigner_Creating_Error_Text" xml:space="preserve">
+    <value>Configuration failed while creating {0}.</value>
+  </data>
+  <data name="ExpressDesigner_Creating_ErrorDetails_Text" xml:space="preserve">
+    <value>The following artefacts are successfully created : {0}</value>
+  </data>
+  <data name="ExpressDesigner_Updating_Error_Title" xml:space="preserve">
+    <value>Error while updating Express Designer Configuration</value>
+  </data>
+  <data name="ExpressDesigner_Updating_Error_Text" xml:space="preserve">
+    <value>Configuration failed while updating {0}.</value>
+  </data>
+  <data name="ExpressDesigner_Updating_ErrorDetails_Text" xml:space="preserve">
+    <value>The following artefacts are successfully updated : {0}</value>
+  </data>
+  <data name="ApttusFieldView_SelectAll_Text" xml:space="preserve">
+    <value>Select All will be available when the fields are {0} or less</value>
+  </data>
+  <data name="Common_Obj_Text" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="Common_ParentObj_Text" xml:space="preserve">
+    <value>Parent Object</value>
+  </data>
+  <data name="Common_ChildObj_Text" xml:space="preserve">
+    <value>Child Object</value>
+  </data>
+  <data name="Common_DataGetterAction_Text" xml:space="preserve">
+    <value>Data Getter Action</value>
+  </data>
+  <data name="Common_ParentDataGetterAction_Text" xml:space="preserve">
+    <value>Parent Data Getter Action</value>
+  </data>
+  <data name="Common_ChildDataGetterAction_Text" xml:space="preserve">
+    <value>Child Data Getter Action</value>
+  </data>
+  <data name="ExpressDesignerEditView_Error_Text" xml:space="preserve">
+    <value>Edit mode is not available for '{0}'. The following artefacts are not found : {1}</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_DenyOverridingAlreadyMappedField_ErrMsg" xml:space="preserve">
+    <value>The cell is already mapped with different field</value>
+  </data>
+  <data name="RETRIEVEMAPCTL_DenyOverriding_ErrMsg" xml:space="preserve">
+    <value>The cell(s) "{0}" is/are already mapped with different field(s). Try new location to avoid override.</value>
+  </data>
+  <data name="Painless_SaveOnlyFound_Message" xml:space="preserve">
+    <value>Edit mode is not available because we have detected Save Only field(s) for the associated Save Map. Please perform the mapping individually.</value>
+  </data>
+  <data name="Painless_EditModeFailed_Message" xml:space="preserve">
+    <value>Existing Fields have been moved to new locations. You may try to add new locations.</value>
+  </data>
+  <data name="ExpressDesigner_UpdateActionFlow_Msg" xml:space="preserve">
+    <value>Updating Action flows ...</value>
+  </data>
+  <data name="PainlessWizard_Title" xml:space="preserve">
+    <value>Field Mapping</value>
+  </data>
+  <data name="PainlessWizard_SubTitle" xml:space="preserve">
+    <value>field mapping</value>
+  </data>
+  <data name="RowsPerColumn_Text" xml:space="preserve">
+    <value>Rows per column</value>
+  </data>
+  <data name="ColumnSpacing_Text" xml:space="preserve">
+    <value>Column spacing</value>
+  </data>
+  <data name="StartLocation_Text" xml:space="preserve">
+    <value>Start Location</value>
+  </data>
+  <data name="Type_Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="CommonSrNo_Text" xml:space="preserve">
+    <value>Sr.No.</value>
+  </data>
+  <data name="CommonResult_Text" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="AutoCreateActions_Text" xml:space="preserve">
+    <value>Auto Create Actions</value>
+  </data>
+  <data name="MultipleSaveMapsFound_Title" xml:space="preserve">
+    <value>Select a Save Map to update</value>
+  </data>
+  <data name="MultipleSaveMapsFoundTooltip_Text" xml:space="preserve">
+    <value>We detected multiple SaveMaps associated with this Display.
+
+Only the selected SaveMap will be affected.</value>
+  </data>
+  <data name="PainlessWizard_UnSavedChanges_Msg" xml:space="preserve">
+    <value>There are some unsaved changes,please click on Apply to Save changes</value>
+  </data>
+  <data name="RemoveFields_Title" xml:space="preserve">
+    <value>Remove Fields</value>
+  </data>
+  <data name="RemoveFieldsConfirm_Msg" xml:space="preserve">
+    <value>Are you sure you want to remove the fields ?</value>
+  </data>
+  <data name="Common_ExistsIn_Text" xml:space="preserve">
+    <value> Exists in </value>
+  </data>
+  <data name="FeatureWalkthrough_Title" xml:space="preserve">
+    <value>What's New in X-Author for Excel</value>
+  </data>
+  <data name="Common_LearnMore_Text" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
+  <data name="Common_DontShowDialog_Text" xml:space="preserve">
+    <value>Don't show this dialog again</value>
+  </data>
+</root>

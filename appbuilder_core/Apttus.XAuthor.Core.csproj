@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FF19B34-4D89-4631-8353-E685F72EE577}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apttus.XAuthor.Core</RootNamespace>
+    <AssemblyName>Apttus.XAuthor.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <ApplicationManifest>Apttus.XAuthor.Core.dll.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Apttus.Common, Version=3.0.9.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Apttus.Common.AnyCPU.3.0.9.1\lib\net462\Apttus.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.DataAccess.Common, Version=3.0.9.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Apttus.Common.AnyCPU.3.0.9.1\lib\net462\Apttus.DataAccess.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.Metadata.Client, Version=2.0.4.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Apttus.Metadata.Client.AnyCPU.2.0.4.2\lib\net462\Apttus.Metadata.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.Metadata.Common, Version=2.0.4.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Apttus.Metadata.Client.AnyCPU.2.0.4.2\lib\net462\Apttus.Metadata.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.ProgressIndicator, Version=7.2.1117.2014, Culture=neutral, PublicKeyToken=f34d47135ea7baa5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libaries\Apttus.ProgressIndicator.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.Security.Common, Version=3.0.9.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Apttus.Common.AnyCPU.3.0.9.1\lib\net462\Apttus.Security.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Apttus.SettingsManager">
+      <HintPath>ControlLib\Apttus.SettingsManager.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Libaries\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.5\lib\net452\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Microsoft.IdentityModel.6.1.7600.16394\lib\net35\Microsoft.IdentityModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.5.2.9\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>Libaries\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.5\lib\net452\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\appbuilder_main\packages\Expression.Blend.Sdk.1.0.2\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\ABAICAAdapter.cs" />
+    <Compile Include="Adapter\ABAICV2Adapter.cs" />
+    <Compile Include="Adapter\ABDynamicsCRMAdapter.cs" />
+    <Compile Include="Adapter\ABSalesforceMetadataAdapter.cs" />
+    <Compile Include="Base\Action.cs" />
+    <Compile Include="Base\IAdapter.cs" />
+    <Compile Include="Controller\Actions\RuntimeAction\AddCustomRowsController.cs" />
+    <Compile Include="Controller\Application\AICApplicationController.cs" />
+    <Compile Include="Controller\Application\ApplicationBrowserController.cs" />
+    <Compile Include="Controller\Application\BaseApplicationController.cs" />
+    <Compile Include="Controller\Application\DynamicsApplicationController.cs" />
+    <Compile Include="Controller\Application\SalesforceApplicationController.cs" />
+    <Compile Include="Controller\ExpressionBuilder\MultiLineCaptureController.cs" />
+    <Compile Include="DataStructures\ApplicationField.cs" />
+    <Compile Include="DataStructures\ApplicationInstance.cs" />
+    <Compile Include="DataStructures\ApplicationObject.cs" />
+    <Compile Include="DataStructures\ApttusCrossTabDataSet.cs" />
+    <Compile Include="DataStructures\ApttusDataTracker.cs" />
+    <Compile Include="DataStructures\ApttusRecordType.cs" />
+    <Compile Include="DataStructures\DocumentObject.cs" />
+    <Compile Include="DataStructures\DependentPicklistItem.cs" />
+    <Compile Include="DataStructures\ExternalDataSet.cs" />
+    <Compile Include="DataStructures\ExternalDataSets.cs" />
+    <Compile Include="DataStructures\PicklistKeyValuePair.cs" />
+    <Compile Include="DataStructures\QuickApp.cs" />
+    <Compile Include="DataStructures\RangeMap.cs" />
+    <Compile Include="Helpers\AICExpressionBuilder.cs" />
+    <Compile Include="Helpers\Chunking.cs" />
+    <Compile Include="DataStructures\RowHighLighting.cs" />
+    <Compile Include="Helpers\ActivationContextHelper.cs" />
+    <Compile Include="Helpers\DataTableExpressionBuilder.cs" />
+    <Compile Include="Helpers\EncryptionHelper.cs" />
+    <Compile Include="Helpers\ExceptionLogHelper.cs" />
+    <Compile Include="Helpers\ExpressionBuilderHelperDynamics.cs" />
+    <Compile Include="Interfaces\DesignerInterfaces.cs" />
+    <Compile Include="Interfaces\XAuthorQuery.cs" />
+    <Compile Include="Managers\ApplicationConfigManager.cs" />
+    <Compile Include="Managers\ApplicationManager.cs" />
+    <Compile Include="Managers\ApttusRegistryManager.cs" />
+    <Compile Include="Managers\ApttusResourceManager.cs" />
+    <Compile Include="Managers\CRMManager.cs" />
+    <Compile Include="Managers\FieldLevelSecurityManager.cs" />
+    <Compile Include="Model\Actions\AddRowAction\AddRowAction.cs" />
+    <Compile Include="Managers\LicenseActivationManager.cs" />
+    <Compile Include="Model\Actions\CheckInAction\CheckInModel.cs" />
+    <Compile Include="Model\Actions\CheckInOutCommonAttributes.cs" />
+    <Compile Include="Model\Actions\CheckOutAction\CheckOutModel.cs" />
+    <Compile Include="Model\Actions\ClearAction\ClearActionModel.cs" />
+    <Compile Include="Model\Actions\CPQAction\CreateCartModel.cs" />
+    <Compile Include="Model\Actions\DataMigration\DataSetAction.cs" />
+    <Compile Include="Model\Actions\DeleteAction\DeleteActionModel.cs" />
+    <Compile Include="Model\Actions\InputAction\InputActionModel.cs" />
+    <Compile Include="Model\Actions\MacroAction\MacroActionModel.cs" />
+    <Compile Include="Model\Actions\PasteRowAction\PasteRowActionModel.cs" />
+    <Compile Include="Model\Actions\PasteSourceDataAction\PasteSourceDataActionModel.cs" />
+    <Compile Include="Model\Actions\RuntimeAction\AppChange.cs" />
+    <Compile Include="Model\Actions\RuntimeAction\DataProtectionModel.cs" />
+    <Compile Include="Model\Actions\RuntimeAction\PicklistTrackerEntry.cs" />
+    <Compile Include="Model\Actions\SaveAction\ApttusSaveAttachment.cs" />
+    <Compile Include="Model\Actions\SaveAction\ApttusSaveSummary.cs" />
+    <Compile Include="Model\Actions\SaveAttachmentAction\SaveAttachmentModel.cs" />
+    <Compile Include="Model\Actions\SearchAndSelectAction\SearchAndSelectData.cs" />
+    <Compile Include="Model\Actions\SwitchConnectionAction\SwitchConnectionActionModel.cs" />
+    <Compile Include="Model\AppAssignment\AppAssignmentModel.cs" />
+    <Compile Include="Model\AppSettings\AppSettingsModel.cs" />
+    <Compile Include="Model\AppSettings\QuickAppSettings.cs" />
+    <Compile Include="Model\CPQ\CPQBase.cs" />
+    <Compile Include="Model\DataMigration\DataMigration.cs" />
+    <Compile Include="Model\DataTransfer\DataTransferModel.cs" />
+    <Compile Include="Model\ExpressionBuilder\InputData.cs" />
+    <Compile Include="Model\ExpressionBuilder\QueryObject.cs" />
+    <Compile Include="Model\External Library\ExternalLibrary.cs" />
+    <Compile Include="Model\FieldAttributes\LookAheadProperty.cs" />
+    <Compile Include="Model\GoogleActions\googleAction.cs" />
+    <Compile Include="Model\GoogleActions\GoogleActionController.cs" />
+    <Compile Include="Model\GoogleActions\googleWorkflow.cs" />
+    <Compile Include="Model\MatrixMap\MatrixModel.cs" />
+    <Compile Include="Model\SavedFilters\SavedFilters.cs" />
+    <Compile Include="Model\SaveMap\SaveMapMatrixField.cs" />
+    <Compile Include="Model\SaveMap\SaveCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SaveMap\SaveGroup.cs" />
+    <Compile Include="Model\SaveMap\SaveMapRepeatingObject.cs" />
+    <Compile Include="Model\Startup\StartupParameters.cs" />
+    <Compile Include="Modules\ApttusGlobals.cs" />
+    <Compile Include="Provider\AICLookupIdAndNameProvider.cs" />
+    <Compile Include="Provider\DynamicsLookupIdAndNameProvider.cs" />
+    <Compile Include="Provider\SalesforceLookupIdAndNameProvider.cs" />
+    <Compile Include="Utilities\EnumExtension.cs" />
+    <Compile Include="Utilities\LocalizedDisplayName.cs" />
+    <Compile Include="Utilities\PropertyComparer.cs" />
+    <Compile Include="Utilities\SortableBindingList.cs" />
+    <Compile Include="Helpers\ExpressionBuilderHelper.cs" />
+    <Compile Include="Helpers\JsonHelper.cs" />
+    <Compile Include="Model\Actions\CallProcedureAction\CallProcedureModel.cs" />
+    <Compile Include="Model\Actions\QueryAction\QueryActionModel.cs" />
+    <Compile Include="Model\Actions\RetrieveAction\RetrieveActionModel.cs" />
+    <Compile Include="Model\Actions\SaveAction\ApttusSaveField.cs" />
+    <Compile Include="Model\Actions\SaveAction\ApttusSaveRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Actions\SaveAction\SaveActionModel.cs" />
+    <Compile Include="Model\Actions\SearchAndSelectAction\SearchAndSelect.cs" />
+    <Compile Include="Base\Workflow.cs" />
+    <Compile Include="Model\ExpressionBuilder\SearchFilter.cs" />
+    <Compile Include="Model\ExpressionBuilder\SearchFilterGroup.cs" />
+    <Compile Include="Model\ApplicationDefinition\ApttusFieldDS.cs" />
+    <Compile Include="DataStructures\ApplicationStructure.cs" />
+    <Compile Include="DataStructures\ApttusDataSet.cs" />
+    <Compile Include="DataStructures\ApttusUserInfo.cs" />
+    <Compile Include="Adapter\ABSalesforceAdapter.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Model\Actions\ActionResult.cs" />
+    <Compile Include="DataStructures\ApttusField.cs" />
+    <Compile Include="DataStructures\ApttusObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataStructures\ApttusObjectTree.cs" />
+    <Compile Include="DataStructures\ChildItemCollection.cs" />
+    <Compile Include="Model\GenericListUI\GenericListUIModel.cs" />
+    <Compile Include="Model\Menus\AbstractMenu.cs" />
+    <Compile Include="Model\Menus\IActionable.cs" />
+    <Compile Include="Model\Menus\MenuGroup.cs" />
+    <Compile Include="Model\Menus\MenuItem.cs" />
+    <Compile Include="Model\Menus\Menus.cs" />
+    <Compile Include="Model\RetrieveMap\CrossTab\CrossTabRetrieveMap.cs" />
+    <Compile Include="Model\RetrieveMap\RetrieveField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\RetrieveMap\RetrieveMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SaveMap\SaveField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SaveMap\SaveFieldBound.cs" />
+    <Compile Include="Model\SaveMap\SaveMap.cs" />
+    <Compile Include="Model\SaveMap\SaveMapRetrieveField.cs" />
+    <Compile Include="Model\SaveMap\SaveMapRetrieveMap.cs" />
+    <Compile Include="Model\Workflow\WorkflowStructure.cs" />
+    <Compile Include="Managers\ApplicationDefinitionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Managers\ConfigurationManager.cs" />
+    <Compile Include="Managers\DataManager.cs" />
+    <Compile Include="Managers\ObjectManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ApttusFormValidator.cs" />
+    <Compile Include="Utilities\ApttusMessageUtil.cs" />
+    <Compile Include="Utilities\ApttusXmlSerializerUtil.cs" />
+    <Compile Include="Utilities\Utils.cs" />
+    <Compile Include="View\Actions\RuntimeAction\AddCustomRowsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Actions\RuntimeAction\AddCustomRowsView.Designer.cs">
+      <DependentUpon>AddCustomRowsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Application\ApplicationBrowserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Application\ApplicationBrowserView.Designer.cs">
+      <DependentUpon>ApplicationBrowserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\CentralAdmin.xaml.cs">
+      <DependentUpon>CentralAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\AppAssignment.xaml.cs">
+      <DependentUpon>AppAssignment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\AppDetails.xaml.cs">
+      <DependentUpon>AppDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\Connections.xaml.cs">
+      <DependentUpon>Connections.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\GeneralInformation.xaml.cs">
+      <DependentUpon>GeneralInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\GeneralSettings.xaml.cs">
+      <DependentUpon>GeneralSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\Logs.xaml.cs">
+      <DependentUpon>Logs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\AppMessageBox.xaml.cs">
+      <DependentUpon>AppMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\TimePicker.xaml.cs">
+      <DependentUpon>TimePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\XAEAppSettings.xaml.cs">
+      <DependentUpon>XAEAppSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\XAENumericUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CentralAdmin\UserControls\XAENumericUpDown.Designer.cs">
+      <DependentUpon>XAENumericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CRMSwitcher\CRMSwitcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CRMSwitcher\CRMSwitcher.Designer.cs">
+      <DependentUpon>CRMSwitcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExpressionBuilder\MultiLineCaptureView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExpressionBuilder\MultiLineCaptureView.Designer.cs">
+      <DependentUpon>MultiLineCaptureView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShadowWindowForm\ShadowWindowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WaitWindowView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WaitWindowView.designer.cs">
+      <DependentUpon>WaitWindowView.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libaries\Apttus.ProgressIndicator.dll" />
+    <Content Include="Libaries\Apttus.ProgressIndicator.xml" />
+    <Content Include="Libaries\Apttus.XAuthor.SalesforceAdapter.dll" />
+    <None Include="Resources\%24this.Icon.ico" />
+    <Resource Include="Resources\Decision.png" />
+    <Resource Include="Resources\Menu.png" />
+    <Resource Include="Resources\UpDown.png" />
+    <Resource Include="Resources\Info.png" />
+    <Resource Include="Resources\x-author.ico" />
+    <Resource Include="Resources\XALogo.png" />
+    <Resource Include="Resources\DownImage.png" />
+    <Resource Include="Resources\UpImage.png" />
+    <Resource Include="Resources\AppAssignment.png" />
+    <Resource Include="Resources\HealthCheck.png" />
+    <Resource Include="Resources\AutoUpdate.png" />
+    <Resource Include="Resources\LicenseDetails.png" />
+    <Resource Include="Resources\AppDetails.png" />
+    <Resource Include="Resources\AppSettings.png" />
+    <Resource Include="Resources\Connections.png" />
+    <Resource Include="Resources\Logs.png" />
+    <Resource Include="Resources\GeneralSettings.png" />
+    <Resource Include="Resources\GeneralInformationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="appbuilder_core.licenseheader" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Actions\RuntimeAction\AddCustomRowsView.resx">
+      <DependentUpon>AddCustomRowsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Application\ApplicationBrowserView.resx">
+      <DependentUpon>ApplicationBrowserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CentralAdmin\UserControls\XAENumericUpDown.resx">
+      <DependentUpon>XAENumericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CRMSwitcher\CRMSwitcher.resx">
+      <DependentUpon>CRMSwitcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExpressionBuilder\MultiLineCaptureView.resx">
+      <DependentUpon>MultiLineCaptureView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WaitWindowView.resx">
+      <DependentUpon>WaitWindowView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\appbuilder_adapters\AICAdapter\Apttus.XAuthor.AICAdapter.csproj">
+      <Project>{f58b81ad-d6e8-4167-b513-734e6f277ed8}</Project>
+      <Name>Apttus.XAuthor.AICAdapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\appbuilder_adapters\DynamicsAdapter\Apttus.XAuthor.DynamicsAdapter.csproj">
+      <Project>{55180e68-95e7-4fdc-bbdf-2496c965e369}</Project>
+      <Name>Apttus.XAuthor.DynamicsAdapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\appbuilder_adapters\SalesforceAdapter\Apttus.XAuthor.SalesforceAdapter.csproj">
+      <Project>{053ea96a-7b55-4e82-b2b1-b05667cdaebe}</Project>
+      <Name>Apttus.XAuthor.SalesforceAdapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\appbuilder_main\Apttus.XAuthor.ExtensionLib\Apttus.XAuthor.ExtensionLib.csproj">
+      <Project>{6b50bc68-4471-42d4-972c-40986ad065bf}</Project>
+      <Name>Apttus.XAuthor.ExtensionLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\common_oauthlogin\ApttusOAuthLogin\ApttusOAuthLoginControl.csproj">
+      <Project>{f76d1067-5956-40a6-b1e7-b46299823051}</Project>
+      <Name>ApttusOAuthLoginControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="View\Assets\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Page Include="View\CentralAdmin\CentralAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CentralAdmin\UserControls\AppAssignment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CentralAdmin\UserControls\AppDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CentralAdmin\UserControls\Connections.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CentralAdmin\UserControls\GeneralInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CentralAdmin\UserControls\GeneralSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CentralAdmin\UserControls\Logs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CentralAdmin\UserControls\AppMessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CentralAdmin\UserControls\TimePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CentralAdmin\UserControls\XAEAppSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,3 @@
+﻿Release Notes for Apttus.Metadata.Client
+---------------------------------------------
+

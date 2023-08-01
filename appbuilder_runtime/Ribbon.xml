@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="Ribbon_Load">
+
+  <commands>
+    <!--Repurpose Sort Commands-->
+    <command idMso="SortAscendingExcel" onAction="ApttusSortAscending"/>
+    <command idMso="SortDescendingExcel" onAction="ApttusSortDescending"/>
+    <command idMso="SortCustomExcel" onAction="ApttusSortCustom"/>
+    <command idMso="SortDialog" onAction="ApttusSortDialog"/>
+    <command idMso="FileSendAsAttachment" onAction="ApttusFileSendAsAttachment"/>
+    <!--Repurpose Sort Commands-->
+    <!--<command idMso="Copy" onAction="ApttusCopy"/>
+    <command idMso="Paste" onAction="ApttusPaste"/>
+    <command idMso="NamePasteName" onAction="ApttusPaste"/>
+    <command idMso="PasteFormatting" onAction="ApttusPaste"/>
+    <command idMso="PasteFormulasAndNumberFormatting" onAction="ApttusPaste"/>
+    <command idMso="PasteValuesAndNumberFormatting" onAction="ApttusPaste"/>
+    <command idMso="PasteTextOnly" onAction="ApttusPaste"/>
+    <command idMso="PasteValuesAndSourceFormatting" onAction="ApttusPaste"/>
+    <command idMso="PasteFormulas" onAction="ApttusPaste"/>
+    <command idMso="PasteValues" onAction="ApttusPaste"/>
+    <command idMso="PasteNoBorders" onAction="ApttusPaste"/>
+    <command idMso="PasteTranspose" onAction="ApttusPaste"/>
+    <command idMso="PasteLink" onAction="ApttusPaste"/>
+    <command idMso="PasteAsHyperlink" onAction="ApttusPaste"/>
+    <command idMso="PasteMenu" onAction="ApttusPaste"/>-->
+    <command idMso="CellsDelete" onAction="ApttusSheetCellsInsert"/>
+    <command idMso="CellsInsertDialog" onAction="ApttusSheetCellsInsert"/>
+
+  </commands>
+  <ribbon>
+    <tabs>
+      <tab id="tabAppBuilderRuntime" label="X-Author for Excel" keytip="XAE" >
+        <group id="ApplicationGroup" getLabel="OnGetLabelResource">
+          <dynamicMenu id="mnuApplication" imageMso="AnimationPreview" getLabel="OnGetLabelResource" size="large" getEnabled="GetLoginEnabled" getContent="mnuApplication_GetContent" />
+        </group>
+        <group id="ABGroup1" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button1" size="large" getScreentip="OnSreenTip"  tag="btn" showImage="true" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button2" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button3" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button4" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button5" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button7" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button6" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button8" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button9" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button10" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="ABGroup2" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button11" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button12" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button13" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button14" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button15" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button16" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button17" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button18" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button19" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button20" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="ABGroup3" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button21" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button22" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button23" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button24" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button25" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button26" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button27" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button28" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button29" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button30" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="ABGroup4" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button31" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button32" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button33" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button34" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button35" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button36" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button37" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button38" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button39" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button40" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="ABGroup5" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button41" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button42" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button43" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button44" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button45" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button46" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button47" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button48" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button49" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button50" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="ABGroup6" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button51" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button52" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button53" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button54" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button55" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button56" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button57" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button58" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button59" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button60" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="ABGroup7" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button61" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button62" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button63" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button64" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button65" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button66" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button67" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button68" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button69" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button70" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="ABGroup8" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button71" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button72" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button73" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button74" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button75" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button76" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button77" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button78" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button79" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button80" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="ABGroup9" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button81" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button82" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button83" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button84" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button85" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button86" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button87" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button88" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button89" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button90" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="ABGroup10" tag ="group" getVisible="GetVisible" getLabel="OnGetLabel">
+          <button id="button91" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button92" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button93" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button94" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button95" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button96" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button97" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button98" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button99" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+          <button id="button100" size="large" getScreentip="OnSreenTip" tag ="btn" showImage="false" getVisible="GetVisible" getEnabled ="GetEnabled"
+                  getLabel="OnGetLabel" onAction="OnMenuclick" getImage="GetImage" />
+        </group>
+        <group id="EditGroup" getLabel="OnGetLabelResource" getVisible="GetEditVisible">
+
+          <splitButton id="btnAddRow" size="large" getEnabled="GetAddRowEnabled" getVisible="GetAddRowEnabled">
+            <button id="btnAddRow__btn" imageMso="CellsInsertDialog" onAction ="btnAddRow_Click" getLabel="OnGetLabelResource" />
+            <menu id="btnAddRow__mnu">
+              <button id="Add3Rows" onAction="Add3Rows_Click" getLabel="OnGetLabelResource" tag="3 Rows" />
+              <button id="Add5Rows" onAction="Add5Rows_Click" getLabel="OnGetLabelResource" tag="5 Rows" />
+              <button id="Add10Rows" onAction="Add10Rows_Click" getLabel="OnGetLabelResource" tag="10 Rows" />
+              <button id="AddCustomRows" onAction="AddCustomRows_Click" getLabel="OnGetLabelResource" tag="Custom Rows" />
+            </menu>
+          </splitButton>
+          <button id="btnAddMatrixColumn" imageMso="QueryInsertColumns" onAction="btnAddMatrixColumn_Click" getLabel="OnGetLabelResource" size="large" getEnabled="GetAddMatrixColumnEnabled" getVisible="GetAddMatrixColumnEnabled" />
+          <menu id="mnuPaste" imageMso="PasteByAppendingTable" size="large" getLabel="OnGetLabelResource" getEnabled="GetPasteEnabled" getVisible="GetPasteEnabled">
+            <!--
+            <checkBox id="chkIncludeBlankRows" label="Include Blank Rows" />
+            <menuSeparator id="sepPaste" /> 
+            -->
+            <button id="btnPasteValuesOnly" onAction="PasteValuesOnly_Click" imageMso="PasteTextOnly"  getLabel="OnGetLabelResource" tag="PasteValuesOnly"/>
+            <button id="btnPasteAll" onAction="PasteAll_Click" imageMso="Paste"  getLabel="OnGetLabelResource" tag="PasteAll"/>
+            <button id="btnPasteWithMapping" onAction="PasteWithMapping_Click" imageMso="MailMergeMatchFields"  getLabel="OnGetLabelResource" tag="PasteFromMapping" getVisible="GetPasteWithMappingEnabled"/>
+          </menu>
+
+          <button id="btnRemoveRow" imageMso="CellsDelete" onAction="btnRemoveRow_Click" getLabel="OnGetLabelResource" size="large" getEnabled="GetDelRowEnabled" getVisible="GetDelRowEnabled" />
+
+        </group>
+
+        <group id="SocialGroup" getLabel="OnGetLabelResource" getVisible="GetSocialVisible">
+          <toggleButton id="btnChatterFeed" onAction="btnChatterFeed_Click" getLabel="OnGetLabelResource" size="large" getPressed="GetSocialPressed" getVisible="GetSocialVisible" getImage="GetSocialImage" getEnabled="GetSocialVisible" />
+        </group>
+
+        <group id="AccessGroup" getLabel="OnGetLabelResource">
+          <button id="btnConnect" imageMso="DatabasePermissionsMenu" onAction="btnConnect_Click"  getEnabled="GetLoginDisabled" getLabel="OnGetLabelResource" size="large" />
+          <dynamicMenu id="mnuSwitchConnection" imageMso="DirectRepliesTo" getLabel="OnGetLabelResource" size="large" getContent="mnuSwitchConnection_GetContent" />
+          <separator id="separator8" visible="false" />
+          <button id="btnSettings" imageMso="TagsCustomize" onAction="btnSettings_Click" getLabel="OnGetLabelResource" size="large" />
+
+          <menu id="btnGallerySupport" imageMso="TentativeAcceptInvitation" getLabel="OnGetLabelResource" size="large" visible="false">
+            <button id="btnGeneral" onAction="AccessGroup_DialogLauncherClick" imageMso="ViewDocumentActionsPane"  getLabel="OnGetLabelResource" />
+            <button id="btnCRMSwitcher" onAction="btnCRMSwitcher_Click" imageMso="ViewDocumentActionsPane"  getEnabled="GetCRMSwitcherDisabled" getLabel="OnGetLabelResource" />
+            <menuSeparator id="separator9" />
+            <button id="btnAbout" onAction="btnAbout_Click" getImage="GetAboutImage" getLabel="OnGetLabelResource" />
+          </menu >
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

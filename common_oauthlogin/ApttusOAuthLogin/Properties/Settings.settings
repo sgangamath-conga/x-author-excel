@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Apttus.OAuthLoginControl.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="app_Data" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">QXB0dHVzWC1BdXRob3JGb3JDaGF0dGVy</Value>
+    </Setting>
+    <Setting Name="app_Value" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EjRWeJCrze8=</Value>
+    </Setting>
+    <Setting Name="clientId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3MVG9rFJvQRVOvk4Cdn_X9wzEjVqO.HF6AGYyJy6Wxm1Ja98Uaj3alP7yyBVqlMoiLqlcUD3DyDvyeOm3UE_7</Value>
+    </Setting>
+    <Setting Name="clientSecret" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1620934967837602739</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

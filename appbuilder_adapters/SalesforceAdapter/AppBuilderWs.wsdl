@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Web Services API : Apttus_XApps.AppBuilderWS
+-->
+<definitions targetNamespace="http://soap.sforce.com/schemas/class/Apttus_XApps/AppBuilderWS" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://soap.sforce.com/schemas/class/Apttus_XApps/AppBuilderWS" xmlns:ActionParams="http://soap.sforce.com/schemas/class/Apttus_XApps/CustomClass">
+ <types>
+  <xsd:schema elementFormDefault="qualified" targetNamespace="http://soap.sforce.com/schemas/class/Apttus_XApps/CustomClass">
+   <xsd:complexType name="ActionParams">
+    <xsd:sequence>
+     <xsd:element name="SessionId" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SessionUrl" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+  </xsd:schema>
+  <xsd:schema elementFormDefault="qualified" targetNamespace="http://soap.sforce.com/schemas/class/Apttus_XApps/AppBuilderWS">
+   <xsd:import namespace="http://soap.sforce.com/schemas/class/Apttus_XApps/CustomClass"/>
+   <xsd:element name="AllowFieldTruncationHeader">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="allowFieldTruncation" type="xsd:boolean"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="CallOptions">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="client" type="xsd:string"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="DebuggingHeader">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="categories" minOccurs="0" maxOccurs="unbounded" type="tns:LogInfo"/>
+      <xsd:element name="debugLevel" type="tns:LogType"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:complexType name="LogInfo">
+    <xsd:sequence>
+     <xsd:element name="category" type="tns:LogCategory"/>
+     <xsd:element name="level" type="tns:LogCategoryLevel"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:simpleType name="LogCategory">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="Db"/>
+     <xsd:enumeration value="Workflow"/>
+     <xsd:enumeration value="Validation"/>
+     <xsd:enumeration value="Callout"/>
+     <xsd:enumeration value="Apex_code"/>
+     <xsd:enumeration value="Apex_profiling"/>
+     <xsd:enumeration value="Visualforce"/>
+     <xsd:enumeration value="System"/>
+     <xsd:enumeration value="All"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="LogCategoryLevel">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="None"/>
+     <xsd:enumeration value="Internal"/>
+     <xsd:enumeration value="Finest"/>
+     <xsd:enumeration value="Finer"/>
+     <xsd:enumeration value="Fine"/>
+     <xsd:enumeration value="Debug"/>
+     <xsd:enumeration value="Info"/>
+     <xsd:enumeration value="Warn"/>
+     <xsd:enumeration value="Error"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="LogType">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="None"/>
+     <xsd:enumeration value="Debugonly"/>
+     <xsd:enumeration value="Db"/>
+     <xsd:enumeration value="Profiling"/>
+     <xsd:enumeration value="Callout"/>
+     <xsd:enumeration value="Detail"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:element name="DebuggingInfo">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="debugLog" type="xsd:string"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="SessionHeader">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="sessionId" type="xsd:string"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:simpleType name="ID">
+    <xsd:restriction base="xsd:string">
+     <xsd:length value="18"/>
+     <xsd:pattern value="[a-zA-Z0-9]{18}"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:complexType name="CreateAppRequest">
+    <xsd:sequence>
+     <xsd:element name="name" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="uniqueId" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="LoadAppRequest">
+    <xsd:sequence>
+     <xsd:element name="id" minOccurs="0" type="tns:ID" nillable="true"/>
+     <xsd:element name="uniqueId" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="LoadAppResult">
+    <xsd:sequence>
+     <xsd:element name="config" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="edition" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="schema" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="templateName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="xlstemplate" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="SaveAppRequest">
+    <xsd:sequence>
+     <xsd:element name="config" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="edition" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="googleSheetSchema" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="id" minOccurs="0" type="tns:ID" nillable="true"/>
+     <xsd:element name="schema" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="template" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="templateName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="uniqueId" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="UpsertAppRequest">
+    <xsd:sequence>
+     <xsd:element name="config" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="edition" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="googleSheetSchema" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="id" minOccurs="0" type="tns:ID" nillable="true"/>
+     <xsd:element name="name" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="schema" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="template" minOccurs="0" type="xsd:base64Binary" nillable="true"/>
+     <xsd:element name="templateName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="uniqueId" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="UpsertAppResult">
+    <xsd:sequence>
+     <xsd:element name="id" minOccurs="0" type="tns:ID" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="licenseResponse">
+    <xsd:sequence>
+     <xsd:element name="licenseDetailXML" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="licenseFeatureDetailXML" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="address">
+    <xsd:complexContent>
+     <xsd:extension base="tns:location">
+      <xsd:sequence>
+       <xsd:element name="city" type="xsd:string"/>
+       <xsd:element name="country" type="xsd:string"/>
+       <xsd:element name="countryCode" type="xsd:string"/>
+       <xsd:element name="geocodeAccuracy" type="xsd:string"/>
+       <xsd:element name="postalCode" type="xsd:string"/>
+       <xsd:element name="state" type="xsd:string"/>
+       <xsd:element name="stateCode" type="xsd:string"/>
+       <xsd:element name="street" type="xsd:string"/>
+      </xsd:sequence>
+     </xsd:extension>
+    </xsd:complexContent>
+   </xsd:complexType>
+   <xsd:complexType name="location">
+    <xsd:sequence>
+     <xsd:element name="latitude" type="xsd:double"/>
+     <xsd:element name="longitude" type="xsd:double"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:element name="checkRuntimeLicense">
+    <xsd:complexType>
+     <xsd:sequence/>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="checkRuntimeLicenseResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:boolean" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="createApp">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="name" type="xsd:string" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="createAppResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="tns:ID" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="createApplication">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="req" type="tns:CreateAppRequest" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="createApplicationResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="tns:ID" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="deactivateApp">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="req" type="tns:SaveAppRequest" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="deactivateAppResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:boolean" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getClientVersion">
+    <xsd:complexType>
+     <xsd:sequence/>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getClientVersionResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:string" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getFeatureDetail">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="params" type="ActionParams:ActionParams" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getFeatureDetailResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:string" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getLicenseAndFeatureDetail">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="params" type="ActionParams:ActionParams" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getLicenseAndFeatureDetailResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="tns:licenseResponse" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getLicenseDetail">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="params" type="ActionParams:ActionParams" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getLicenseDetailResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:string" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getLocalFeatureDetail">
+    <xsd:complexType>
+     <xsd:sequence/>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getLocalFeatureDetailResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:string" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getLocalLicenseDetail">
+    <xsd:complexType>
+     <xsd:sequence/>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="getLocalLicenseDetailResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:string" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="isAdmin">
+    <xsd:complexType>
+     <xsd:sequence/>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="isAdminResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:boolean" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="isDesigner">
+    <xsd:complexType>
+     <xsd:sequence/>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="isDesignerResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:boolean" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="loadApp">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="id" type="tns:ID" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="loadAppResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="tns:LoadAppResult" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="loadApplication">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="req" type="tns:LoadAppRequest" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="loadApplicationResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="tns:LoadAppResult" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="runningInASandbox">
+    <xsd:complexType>
+     <xsd:sequence/>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="runningInASandboxResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:boolean" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="saveApp">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="id" type="tns:ID" nillable="true"/>
+      <xsd:element name="config" type="xsd:base64Binary" nillable="true"/>
+      <xsd:element name="template" type="xsd:base64Binary" nillable="true"/>
+      <xsd:element name="templateName" type="xsd:string" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="saveAppResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:boolean" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="saveApplication">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="req" type="tns:SaveAppRequest" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="saveApplicationResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:boolean" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="submitSyncLicenseAndFeatureDetail">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="params" type="ActionParams:ActionParams" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="submitSyncLicenseAndFeatureDetailResponse">
+    <xsd:complexType>
+     <xsd:sequence/>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="syncLicenseAndFeatureDetail">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="params" type="ActionParams:ActionParams" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="syncLicenseAndFeatureDetailResponse">
+    <xsd:complexType>
+     <xsd:sequence/>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="upsertApplication">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="req" type="tns:UpsertAppRequest" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="upsertApplicationResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="tns:UpsertAppResult" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="validateAppAccess">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="appUniqueId" type="xsd:string" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="validateAppAccessResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="xsd:boolean" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+  </xsd:schema>
+ </types>
+ <!-- Message for the header parts -->
+ <message name="Header">
+  <part name="AllowFieldTruncationHeader" element="tns:AllowFieldTruncationHeader"/>
+  <part name="CallOptions" element="tns:CallOptions"/>
+  <part name="DebuggingHeader" element="tns:DebuggingHeader"/>
+  <part name="DebuggingInfo" element="tns:DebuggingInfo"/>
+  <part name="SessionHeader" element="tns:SessionHeader"/>
+ </message>
+ <!-- Operation Messages -->
+ <message name="checkRuntimeLicenseRequest">
+  <part element="tns:checkRuntimeLicense" name="parameters"/>
+ </message>
+ <message name="checkRuntimeLicenseResponse">
+  <part element="tns:checkRuntimeLicenseResponse" name="parameters"/>
+ </message>
+ <message name="createAppRequest">
+  <part element="tns:createApp" name="parameters"/>
+ </message>
+ <message name="createAppResponse">
+  <part element="tns:createAppResponse" name="parameters"/>
+ </message>
+ <message name="createApplicationRequest">
+  <part element="tns:createApplication" name="parameters"/>
+ </message>
+ <message name="createApplicationResponse">
+  <part element="tns:createApplicationResponse" name="parameters"/>
+ </message>
+ <message name="deactivateAppRequest">
+  <part element="tns:deactivateApp" name="parameters"/>
+ </message>
+ <message name="deactivateAppResponse">
+  <part element="tns:deactivateAppResponse" name="parameters"/>
+ </message>
+ <message name="getClientVersionRequest">
+  <part element="tns:getClientVersion" name="parameters"/>
+ </message>
+ <message name="getClientVersionResponse">
+  <part element="tns:getClientVersionResponse" name="parameters"/>
+ </message>
+ <message name="getFeatureDetailRequest">
+  <part element="tns:getFeatureDetail" name="parameters"/>
+ </message>
+ <message name="getFeatureDetailResponse">
+  <part element="tns:getFeatureDetailResponse" name="parameters"/>
+ </message>
+ <message name="getLicenseAndFeatureDetailRequest">
+  <part element="tns:getLicenseAndFeatureDetail" name="parameters"/>
+ </message>
+ <message name="getLicenseAndFeatureDetailResponse">
+  <part element="tns:getLicenseAndFeatureDetailResponse" name="parameters"/>
+ </message>
+ <message name="getLicenseDetailRequest">
+  <part element="tns:getLicenseDetail" name="parameters"/>
+ </message>
+ <message name="getLicenseDetailResponse">
+  <part element="tns:getLicenseDetailResponse" name="parameters"/>
+ </message>
+ <message name="getLocalFeatureDetailRequest">
+  <part element="tns:getLocalFeatureDetail" name="parameters"/>
+ </message>
+ <message name="getLocalFeatureDetailResponse">
+  <part element="tns:getLocalFeatureDetailResponse" name="parameters"/>
+ </message>
+ <message name="getLocalLicenseDetailRequest">
+  <part element="tns:getLocalLicenseDetail" name="parameters"/>
+ </message>
+ <message name="getLocalLicenseDetailResponse">
+  <part element="tns:getLocalLicenseDetailResponse" name="parameters"/>
+ </message>
+ <message name="isAdminRequest">
+  <part element="tns:isAdmin" name="parameters"/>
+ </message>
+ <message name="isAdminResponse">
+  <part element="tns:isAdminResponse" name="parameters"/>
+ </message>
+ <message name="isDesignerRequest">
+  <part element="tns:isDesigner" name="parameters"/>
+ </message>
+ <message name="isDesignerResponse">
+  <part element="tns:isDesignerResponse" name="parameters"/>
+ </message>
+ <message name="loadAppRequest">
+  <part element="tns:loadApp" name="parameters"/>
+ </message>
+ <message name="loadAppResponse">
+  <part element="tns:loadAppResponse" name="parameters"/>
+ </message>
+ <message name="loadApplicationRequest">
+  <part element="tns:loadApplication" name="parameters"/>
+ </message>
+ <message name="loadApplicationResponse">
+  <part element="tns:loadApplicationResponse" name="parameters"/>
+ </message>
+ <message name="runningInASandboxRequest">
+  <part element="tns:runningInASandbox" name="parameters"/>
+ </message>
+ <message name="runningInASandboxResponse">
+  <part element="tns:runningInASandboxResponse" name="parameters"/>
+ </message>
+ <message name="saveAppRequest">
+  <part element="tns:saveApp" name="parameters"/>
+ </message>
+ <message name="saveAppResponse">
+  <part element="tns:saveAppResponse" name="parameters"/>
+ </message>
+ <message name="saveApplicationRequest">
+  <part element="tns:saveApplication" name="parameters"/>
+ </message>
+ <message name="saveApplicationResponse">
+  <part element="tns:saveApplicationResponse" name="parameters"/>
+ </message>
+ <message name="submitSyncLicenseAndFeatureDetailRequest">
+  <part element="tns:submitSyncLicenseAndFeatureDetail" name="parameters"/>
+ </message>
+ <message name="submitSyncLicenseAndFeatureDetailResponse">
+  <part element="tns:submitSyncLicenseAndFeatureDetailResponse" name="parameters"/>
+ </message>
+ <message name="syncLicenseAndFeatureDetailRequest">
+  <part element="tns:syncLicenseAndFeatureDetail" name="parameters"/>
+ </message>
+ <message name="syncLicenseAndFeatureDetailResponse">
+  <part element="tns:syncLicenseAndFeatureDetailResponse" name="parameters"/>
+ </message>
+ <message name="upsertApplicationRequest">
+  <part element="tns:upsertApplication" name="parameters"/>
+ </message>
+ <message name="upsertApplicationResponse">
+  <part element="tns:upsertApplicationResponse" name="parameters"/>
+ </message>
+ <message name="validateAppAccessRequest">
+  <part element="tns:validateAppAccess" name="parameters"/>
+ </message>
+ <message name="validateAppAccessResponse">
+  <part element="tns:validateAppAccessResponse" name="parameters"/>
+ </message>
+ <portType name="AppBuilderWSPortType">
+  <operation name="checkRuntimeLicense">
+   <input message="tns:checkRuntimeLicenseRequest"/>
+   <output message="tns:checkRuntimeLicenseResponse"/>
+  </operation>
+  <operation name="createApp">
+   <input message="tns:createAppRequest"/>
+   <output message="tns:createAppResponse"/>
+  </operation>
+  <operation name="createApplication">
+   <input message="tns:createApplicationRequest"/>
+   <output message="tns:createApplicationResponse"/>
+  </operation>
+  <operation name="deactivateApp">
+   <input message="tns:deactivateAppRequest"/>
+   <output message="tns:deactivateAppResponse"/>
+  </operation>
+  <operation name="getClientVersion">
+   <input message="tns:getClientVersionRequest"/>
+   <output message="tns:getClientVersionResponse"/>
+  </operation>
+  <operation name="getFeatureDetail">
+   <input message="tns:getFeatureDetailRequest"/>
+   <output message="tns:getFeatureDetailResponse"/>
+  </operation>
+  <operation name="getLicenseAndFeatureDetail">
+   <input message="tns:getLicenseAndFeatureDetailRequest"/>
+   <output message="tns:getLicenseAndFeatureDetailResponse"/>
+  </operation>
+  <operation name="getLicenseDetail">
+   <input message="tns:getLicenseDetailRequest"/>
+   <output message="tns:getLicenseDetailResponse"/>
+  </operation>
+  <operation name="getLocalFeatureDetail">
+   <input message="tns:getLocalFeatureDetailRequest"/>
+   <output message="tns:getLocalFeatureDetailResponse"/>
+  </operation>
+  <operation name="getLocalLicenseDetail">
+   <input message="tns:getLocalLicenseDetailRequest"/>
+   <output message="tns:getLocalLicenseDetailResponse"/>
+  </operation>
+  <operation name="isAdmin">
+   <input message="tns:isAdminRequest"/>
+   <output message="tns:isAdminResponse"/>
+  </operation>
+  <operation name="isDesigner">
+   <input message="tns:isDesignerRequest"/>
+   <output message="tns:isDesignerResponse"/>
+  </operation>
+  <operation name="loadApp">
+   <input message="tns:loadAppRequest"/>
+   <output message="tns:loadAppResponse"/>
+  </operation>
+  <operation name="loadApplication">
+   <input message="tns:loadApplicationRequest"/>
+   <output message="tns:loadApplicationResponse"/>
+  </operation>
+  <operation name="runningInASandbox">
+   <input message="tns:runningInASandboxRequest"/>
+   <output message="tns:runningInASandboxResponse"/>
+  </operation>
+  <operation name="saveApp">
+   <input message="tns:saveAppRequest"/>
+   <output message="tns:saveAppResponse"/>
+  </operation>
+  <operation name="saveApplication">
+   <input message="tns:saveApplicationRequest"/>
+   <output message="tns:saveApplicationResponse"/>
+  </operation>
+  <operation name="submitSyncLicenseAndFeatureDetail">
+   <input message="tns:submitSyncLicenseAndFeatureDetailRequest"/>
+   <output message="tns:submitSyncLicenseAndFeatureDetailResponse"/>
+  </operation>
+  <operation name="syncLicenseAndFeatureDetail">
+   <input message="tns:syncLicenseAndFeatureDetailRequest"/>
+   <output message="tns:syncLicenseAndFeatureDetailResponse"/>
+  </operation>
+  <operation name="upsertApplication">
+   <input message="tns:upsertApplicationRequest"/>
+   <output message="tns:upsertApplicationResponse"/>
+  </operation>
+  <operation name="validateAppAccess">
+   <input message="tns:validateAppAccessRequest"/>
+   <output message="tns:validateAppAccessResponse"/>
+  </operation>
+ </portType>
+ <binding name="AppBuilderWSBinding" type="tns:AppBuilderWSPortType">
+  <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="checkRuntimeLicense">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="createApp">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="createApplication">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="deactivateApp">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="getClientVersion">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="getFeatureDetail">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="getLicenseAndFeatureDetail">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="getLicenseDetail">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="getLocalFeatureDetail">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="getLocalLicenseDetail">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="isAdmin">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="isDesigner">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="loadApp">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="loadApplication">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="runningInASandbox">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="saveApp">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="saveApplication">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="submitSyncLicenseAndFeatureDetail">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="syncLicenseAndFeatureDetail">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="upsertApplication">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+  <operation name="validateAppAccess">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+ </binding>
+ <service name="AppBuilderWSService">
+  <documentation></documentation>
+  <port binding="tns:AppBuilderWSBinding" name="AppBuilderWS">
+   <soap:address location="https://na15.salesforce.com/services/Soap/class/Apttus_XApps/AppBuilderWS"/>
+  </port>
+ </service>
+</definitions>

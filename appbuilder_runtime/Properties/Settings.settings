@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Apttus.XAuthor.AppRuntime.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Apttus_XAuthor_AppRuntime_CPQAPI_CPQWebServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://na15.salesforce.com/services/Soap/class/Apttus_CPQApi/CPQWebService</Value>
+    </Setting>
+    <Setting Name="Apttus_XAuthor_AppRuntime_CPQSupport_AppBuilderCPQSupportService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://na15.salesforce.com/services/Soap/class/AppBuilderCPQSupport</Value>
+    </Setting>
+    <Setting Name="Apttus_XAuthor_AppRuntime_PricingWebService_PricingWebServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://na30.salesforce.com/services/Soap/class/Apttus_Config2/PricingWebService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

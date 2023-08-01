@@ -1,0 +1,1691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="COMMON_btnClose_Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ABOUT_lblAboutDescription_Text" xml:space="preserve">
+    <value>Conga X-Author for Excel intelligently interacts between Microsoft Excel, Chatter, and Salesforce using embedded configurable ribbons. The technology allows all tasks performed within a Microsoft Excel Document to be shared and completely captured in any Structured Data System including Salesforce, without the need to go into Salesforce or Chatter.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="ABOUT_lblCopyrightInfo_Text" xml:space="preserve">
+    <value>Copyright ©2022 Conga. All Rights Reserved.</value>
+  </data>
+  <data name="COMMON_Version_Text" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="OPTIONSFORM_btnApply_Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="OPTIONSFORM_btnDone_Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="OPTIONSFORM_chkProxyAuthenticated_Text" xml:space="preserve">
+    <value>Authenticated?</value>
+  </data>
+  <data name="OPTIONSFORM_chkSaveTokenLocally_Text" xml:space="preserve">
+    <value>Store session token locally?</value>
+  </data>
+  <data name="OPTIONSFORM_groupBox1_Text" xml:space="preserve">
+    <value>Proxy Settings</value>
+  </data>
+  <data name="OPTIONSFORM_groupBox3_Text" xml:space="preserve">
+    <value>Session Settings</value>
+  </data>
+  <data name="OPTIONSFORM_label4_Text" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="OPTIONSFORM_lblChatterDuration_Text" xml:space="preserve">
+    <value>Chatter Refresh Duration:</value>
+  </data>
+  <data name="OPTIONSFORM_lblProxyHost_Text" xml:space="preserve">
+    <value>Proxy address to use:</value>
+  </data>
+  <data name="OPTIONSFORM_lblProxyPassword_Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="OPTIONSFORM_lblProxyPort_Text" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="OPTIONSFORM_lblProxyUserName_Text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="OPTIONSFORM_rbManualProxy_Text" xml:space="preserve">
+    <value>Manual proxy configuration</value>
+  </data>
+  <data name="OPTIONSFORM_rbNoProxy_Text" xml:space="preserve">
+    <value>No proxy</value>
+  </data>
+  <data name="OPTIONSFORM_rbSystemProxy_Text" xml:space="preserve">
+    <value>Use system proxy </value>
+  </data>
+  <data name="OPTIONSFORM_tabChatter_Text" xml:space="preserve">
+    <value>Chatter</value>
+  </data>
+  <data name="COMMON_General_Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="CHECKOUTVIEW_AppName_HeaderText" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="CHECKOUTVIEW_btnCancel_Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="CHECKOUTVIEW_btnSelect_Text" xml:space="preserve">
+    <value>&amp;Select</value>
+  </data>
+  <data name="CHECKOUTVIEW_DocId_HeaderText" xml:space="preserve">
+    <value>DocId</value>
+  </data>
+  <data name="CHECKOUTVIEW_LastModifiedBy_HeaderText" xml:space="preserve">
+    <value>Last Modified By</value>
+  </data>
+  <data name="CHECKOUTVIEW_LastModifiedById_HeaderText" xml:space="preserve">
+    <value>LastModifiedById</value>
+  </data>
+  <data name="CHECKOUTVIEW_lblSearch_Text" xml:space="preserve">
+    <value>Select Application File :</value>
+  </data>
+  <data name="CHECKOUTVIEW_Locked_HeaderText" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+  <data name="CHECKOUTVIEW_ModifiedOn_HeaderText" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="INPUTACTLOOKUP_btnGo_Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="INPUTACTLOOKUP_IDColumn_HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="INPUTACTLOOKUP_label1_Text" xml:space="preserve">
+    <value>Lookup</value>
+  </data>
+  <data name="USERINPUTFORM_btnCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="USERINPUTFORM_btnNext_Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="SAVEATTFILENAMEVIEW_btnOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="SAVEATTFILENAMEVIEW_label1_Text" xml:space="preserve">
+    <value>Filename :</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_btnCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_btnClear_Text" xml:space="preserve">
+    <value>&amp;Clear</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_btnNext_Text" xml:space="preserve">
+    <value>&amp;Next</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_btnSearch_Text" xml:space="preserve">
+    <value>&amp;Search</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_chkSelectAll_Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_lblSearch_Text" xml:space="preserve">
+    <value>Search Across Filters :</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_llShowFilters_Text" xml:space="preserve">
+    <value>Show Filters</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_rbSelectAllGrid_Text" xml:space="preserve">
+    <value>in Grid</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_rbSelectAllSalesforce_Text" xml:space="preserve">
+    <value>in {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CONNENTRY_btnConnect_Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="CONNENTRY_label1_Text" xml:space="preserve">
+    <value>Examples:</value>
+  </data>
+  <data name="CONNENTRY_lblConnectStatus_Text" xml:space="preserve">
+    <value>Not connected</value>
+  </data>
+  <data name="SWITCHCONNVIEW_btnClose_Text" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="SWITCHCONNVIEW_groupBox1_Text" xml:space="preserve">
+    <value>Connections</value>
+  </data>
+  <data name="SWITCHCONNVIEW_lblTopMessage_Text" xml:space="preserve">
+    <value>Please establish a valid connection for each Connection Name below. You can click on the URL example links to paste them into the URL field.</value>
+  </data>
+  <data name="FILEINPUTDIALOG_label1_Text" xml:space="preserve">
+    <value>Source File :</value>
+  </data>
+  <data name="LOOKUPSUPPORT_lblSearchFields_Text" xml:space="preserve">
+    <value>Search Fields :</value>
+  </data>
+  <data name="LOOKUPSUPPORT_linkLabel1_Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="LOOKUPSUPPORT_lnkClear_Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="COMMONRUNTIME_LookUpSupport_Text" xml:space="preserve">
+    <value>Type ahead</value>
+  </data>
+  <data name="COREWAITWINDOWVIEW_MessageLabel_Text" xml:space="preserve">
+    <value>Processing...</value>
+  </data>
+  <data name="COREADDCUSTROWVIEW_btnAdd_Text" xml:space="preserve">
+    <value>&amp;Add</value>
+  </data>
+  <data name="CORECOMMON_btnCancel_Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="COREADDCUSTROWVIEW_lblMessage_Text" xml:space="preserve">
+    <value>Range [1 - 10,000]</value>
+  </data>
+  <data name="COREADDCUSTROWVIEW_lblRows_Text" xml:space="preserve">
+    <value>Number of rows</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_AppName_HeaderText" xml:space="preserve">
+    <value>App Name</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_btnSearch_Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_btnSelect_Text" xml:space="preserve">
+    <value>&amp;Select</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_chkMyApps_Text" xml:space="preserve">
+    <value>My Apps</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_Id_HeaderText" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_lblSearch_Text" xml:space="preserve">
+    <value>Search by App Name :</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_ModifiedOn_HeaderText" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_ResultHeader_HeaderText" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="COREMULTILINEVIEW_btnCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="COREMULTILINEVIEW_btnSave_Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="COREMULTILINEVIEW_lblValue_Text" xml:space="preserve">
+    <value>Values:
+- one per line
+- no commas 
+   required</value>
+  </data>
+  <data name="ADDIMIMPL_LoginFailedCap_ErrorMsg" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="ADDIMIMPL_LoginFailedInstr_ErrorMsg" xml:space="preserve">
+    <value>Login failed</value>
+  </data>
+  <data name="ADDIMIMPL_LoginFailed_ErrorMsg" xml:space="preserve">
+    <value>An error occurred during login.</value>
+  </data>
+  <data name="ADDINIMPL_DownloadCap_ErrorMsg" xml:space="preserve">
+    <value>Update available</value>
+  </data>
+  <data name="ADDINIMPL_Download_ErrorMsg" xml:space="preserve">
+    <value>A newer version of {0} is available for download.\n\nThis may cause compatibility issues when running apps.\n\nPlease contact your administrator to update.</value>
+  </data>
+  <data name="ADDINIMPL_UnableLoadCap_ErrorMsg" xml:space="preserve">
+    <value>Load App</value>
+  </data>
+  <data name="ADDINIMPL_UnableLoad_ErrorMsg" xml:space="preserve">
+    <value>Unable to load App</value>
+  </data>
+  <data name="ADDINIMP_SetupMissing_ShowMsg" xml:space="preserve">
+    <value>Setup is missing prerequisites :\n\n\nThis add-in requires .Net framework 4.5. You must install .Net framework 4.5 version.\nGo to http://msdn.microsoft.com/en-us/vstudio/hh487283.aspx?fwLinkID=224419</value>
+  </data>
+  <data name="APTTUSCMDBARMAN_OpenTemplateCAP_WarnMsg" xml:space="preserve">
+    <value>App Open</value>
+  </data>
+  <data name="APTTUSCMDBARMAN_OpenTemplate_WarnMsg" xml:space="preserve">
+    <value>App " {0} " is already open.\nDo you want to close it?</value>
+  </data>
+  <data name="CALLPROC_ActionCap_ErrorMsg" xml:space="preserve">
+    <value>Conga Workflow Execution Message : Salesforce Method Action</value>
+  </data>
+  <data name="CALLPROC_Action_ErrorMsg" xml:space="preserve">
+    <value>Error Occured: {0}</value>
+  </data>
+  <data name="CARTCTL_ExecuteCAP_InfoMsg" xml:space="preserve">
+    <value>Finalize</value>
+  </data>
+  <data name="CARTCTL_Execute_InfoMsg" xml:space="preserve">
+    <value>Cart Finalized</value>
+  </data>
+  <data name="CHATTERMGR_PostCap_ShowMsg" xml:space="preserve">
+    <value>Share via chatter</value>
+  </data>
+  <data name="CHATTERMGR_Post_ShowMsg" xml:space="preserve">
+    <value>Your post can't have more than 1000 characters.</value>
+  </data>
+  <data name="CHECKOUTCTL_ExecuteCAP_WarnMsg" xml:space="preserve">
+    <value>Check-out File Message</value>
+  </data>
+  <data name="CHECKOUTCTL_Execute_WarnMsg" xml:space="preserve">
+    <value>Application " {0} " is already open. \nDo you want to close it?</value>
+  </data>
+  <data name="COMMON_FileCheckedOutCap_ErrorMsg" xml:space="preserve">
+    <value>Check Out File as attachment</value>
+  </data>
+  <data name="CHECKOUTCTL_FileCheckedOut_ErrorMsg" xml:space="preserve">
+    <value>Selected File is already Checked Out by {0} hence cannot be opened.</value>
+  </data>
+  <data name="CHECKOUTCTL_FileDeleted_ErrorMsg" xml:space="preserve">
+    <value>Selected File is not available for Check-Out and has been deleted from Notes &amp; Attachments section.</value>
+  </data>
+  <data name="CHECKOUTCTL_NoAttachment_ErrorMsg" xml:space="preserve">
+    <value>No Record available to Check Out file as Attachment.</value>
+  </data>
+  <data name="CLEARACTCTL_ClearSaveMapCAP_InfoMsg" xml:space="preserve">
+    <value>Clear Action</value>
+  </data>
+  <data name="CLEARACTCTL_ClearSaveMap_InfoMsg" xml:space="preserve">
+    <value>Preloaded Grid Row Count in excel doesn't match with the original row count. Clear Action will not perform any action for Preloaded Grid.</value>
+  </data>
+  <data name="COREADDROW_CustomRowCap_ErrorMsg" xml:space="preserve">
+    <value>Add Custom Rows</value>
+  </data>
+  <data name="COREADDROW_CustomRow_ErrorMsg" xml:space="preserve">
+    <value>Please enter a number between 1 and 10,000</value>
+  </data>
+  <data name="COREAPPCONTL_AppCreatCap_ErrorMsg" xml:space="preserve">
+    <value>Application Create : Save Error</value>
+  </data>
+  <data name="COREAPPCONTL_AppExists_ErrorMsg" xml:space="preserve">
+    <value>App name already exists, please select a different name.</value>
+  </data>
+  <data name="COREAPPCONTL_AppInsertErr_ErrorMsg" xml:space="preserve">
+    <value>INSERT Error - Message: {0} </value>
+    <comment>{0} Value will be retrieved from salesforce</comment>
+  </data>
+  <data name="COREAPPCONTL_CloneCaption_ErrorMsg" xml:space="preserve">
+    <value>Clone App Error</value>
+  </data>
+  <data name="COREAPPCONTL_ExtractCaption_ErrorMsg" xml:space="preserve">
+    <value>Extraction Error</value>
+  </data>
+  <data name="COREAPPCONTL_InternalError_ErrorMsg" xml:space="preserve">
+    <value>Internal Error due to unique id mismatch, please try again.</value>
+  </data>
+  <data name="COREAPPCONTL_LoadCaption_ErrorMsg" xml:space="preserve">
+    <value>Load Application Error</value>
+  </data>
+  <data name="COREAPPCONTL_CloneAppCAP_InfoMsg" xml:space="preserve">
+    <value>App Clone</value>
+  </data>
+  <data name="COREAPPCONTL_CloneApp_InfoMsg" xml:space="preserve">
+    <value>App cloned successfully</value>
+  </data>
+  <data name="CORECARTMODEL_InputObjCap_ErrorMsg" xml:space="preserve">
+    <value>Action flow Input</value>
+  </data>
+  <data name="CORECARTMODEL_InputObj_ErrorMsg" xml:space="preserve">
+    <value>Required object {0} is missing. Please select it from Sales Force Objects UI</value>
+  </data>
+  <data name="COREEXPREBUILDHELPER_InputFiltCap_ErrorMsg" xml:space="preserve">
+    <value>Query Dependency Validation</value>
+  </data>
+  <data name="COREEXPREBUILDHELPER_InputFilt_ErrorMsg" xml:space="preserve">
+    <value>No records retrieved for {0}\n\n Reason: No records retrieved for the dependent object ( {1} )</value>
+  </data>
+  <data name="CORESEARCHNSELECT_SaveActionCap_ErrorMsg" xml:space="preserve">
+    <value>Save Action</value>
+  </data>
+  <data name="CORESEARCHNSELECT_SaveAction_ErrorMsg" xml:space="preserve">
+    <value>You cannot save search action without selecting search and result fields. Please select atleast one search and result field.</value>
+  </data>
+  <data name="COREUTILS_ConvertFontCap_ErrorMsg" xml:space="preserve">
+    <value>Convert Font</value>
+  </data>
+  <data name="EDITACTIONCTL_ActivatingCap_ErrorMsg" xml:space="preserve">
+    <value>Add Row Action</value>
+  </data>
+  <data name="EDITACTIONCTL_Activating_ErrorMsg" xml:space="preserve">
+    <value>For Activating this feature \n\n - Ensure that user selection is within the X-Author Grid.\n - Contact X-Author App Designer to ensure (Grid is associated with a Save Map, Layout is vertical, Data is not grouped).</value>
+  </data>
+  <data name="EDITACTIONCTL_DelActionCap_Msg" xml:space="preserve">
+    <value>Delete Row Action</value>
+  </data>
+  <data name="EDITACTIONCTL_DelAction_Msg" xml:space="preserve">
+    <value>Record(s) deletion failed with following error message. \n</value>
+  </data>
+  <data name="EDITACTIONCTL_GrpHeaderRowCap_Msg" xml:space="preserve">
+    <value>Delete Failed</value>
+  </data>
+  <data name="EDITACTIONCTL_GrpHeaderRow_Msg" xml:space="preserve">
+    <value>Grouped Row(s) and Header Row cannot be deleted. Please exclude grouped row(s) or header row(s) from selected rows</value>
+  </data>
+  <data name="MATRIXEDITACTIONCTL_ProtectedCol_ErrorMsg" xml:space="preserve">
+    <value>This worksheet is protected. Columns cannot be added.</value>
+  </data>
+  <data name="COMMONRUNTIME_Protected_ErrorMsg" xml:space="preserve">
+    <value>This worksheet is protected. Rows cannot be added.</value>
+  </data>
+  <data name="LOOKAHDLAUNCH_LauchUICAP_InfoMsg" xml:space="preserve">
+    <value>Field Mapping</value>
+  </data>
+  <data name="LOOKAHDLAUNCH_LauchUI_InfoMsg" xml:space="preserve">
+    <value>Mapping Failed as one or more mapped fields doesn't exist.</value>
+  </data>
+  <data name="MATRIXACTVIEW_FillDataNOCOLCAP_InfoMsg" xml:space="preserve">
+    <value>Matrix Column</value>
+  </data>
+  <data name="MATRIXACTVIEW_FillDataNOCOL_InfoMsg" xml:space="preserve">
+    <value>No Column Data Found</value>
+  </data>
+  <data name="MATRIXACTVIEW_FillDataNOROWCAP_InfoMsg" xml:space="preserve">
+    <value>Matrix Row</value>
+  </data>
+  <data name="MATRIXACTVIEW_FillDataNOROW_InfoMsg" xml:space="preserve">
+    <value>No Row Data Found</value>
+  </data>
+  <data name="MATRIXACTVIEW_FillData_InfoMsg" xml:space="preserve">
+    <value>The query cannot be executed because some fields used in Matrix (such as " {0} ") are not visible to " {1} ". Contact your {2} administrator to gain access to these fields.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="MATRIXEDITACTCTL_AddColumnCAP_InfoMsg" xml:space="preserve">
+    <value>{1}</value>
+    <comment>Value is retrieved from constant</comment>
+  </data>
+  <data name="MATRIXEDITACTCTL_AddColumnSAVECAP_InfoMsg" xml:space="preserve">
+    <value>{1}</value>
+    <comment>Value is retrieved from constant</comment>
+  </data>
+  <data name="MATRIXEDITACTCTL_AddColumnSAVE_InfoMsg" xml:space="preserve">
+    <value>Save is not enabled for this field. Please contact your System Administrator.</value>
+  </data>
+  <data name="MATRIXEDITACTCTL_AddColumn_InfoMsg" xml:space="preserve">
+    <value>Column cannot be added. Please contact your System Administrator.</value>
+  </data>
+  <data name="MATRIXEDITACTCTL_AddRowCAP_InfoMsg" xml:space="preserve">
+    <value>{1}</value>
+    <comment>Value is retrieved from constant</comment>
+  </data>
+  <data name="MATRIXEDITACTCTL_AddRow_InfoMsg" xml:space="preserve">
+    <value>Row cannot be added. Please contact your System Administrator.</value>
+  </data>
+  <data name="COMMONRUNTIME_SaveHelper_ErrorMsg" xml:space="preserve">
+    <value>Conga Workflow Execution Message : Save Action</value>
+  </data>
+  <data name="MATRIXSAVEHLP_LookVal_ErrorMsg" xml:space="preserve">
+    <value>Following lookup values were not found in {1}. Please correct the errors and retry."\n\n{0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="OFFLINEHELPER_DisableRunLocal_ErrorMsg" xml:space="preserve">
+    <value>This file has been restricted by the App template creator from being saved locally or sent via email.</value>
+  </data>
+  <data name="OFFLINEHELPER_DisableRuntimePrint_ErrorMsg" xml:space="preserve">
+    <value>This file has been restricted by the App template creator from being printed.</value>
+  </data>
+  <data name="OPTIONS_OptionsCap_ShowMsg" xml:space="preserve">
+    <value>- Apply changes</value>
+  </data>
+  <data name="OPTIONS_Options_ShowMsg" xml:space="preserve">
+    <value>Are you sure you want to close without saving the changes?</value>
+  </data>
+  <data name="PASTEHELPER_NotMatchDesFLCap_ErrorMsg" xml:space="preserve">
+    <value>WorkSheet Mismatch</value>
+  </data>
+  <data name="PASTEHELPER_NotMatchDesFL_ErrorMsg" xml:space="preserve">
+    <value>Source worksheets do not match with destination worksheets. Either the mapping is incorrect, or incorrect source file selected.</value>
+  </data>
+  <data name="PASTEHELPER_PasteMapCap_ShowMsg" xml:space="preserve">
+    <value>Paste from Mapping</value>
+  </data>
+  <data name="PASTEHELPER_PasteMapInstr_ShowMsg" xml:space="preserve">
+    <value>Paste from Mapping completed successfully.</value>
+  </data>
+  <data name="PASTEHELPER_PasteMap_ShowMsg" xml:space="preserve">
+    <value>Please review the below messages collected during Paste</value>
+  </data>
+  <data name="PASTEHELPER_SourceFileCap_ErrorMsg" xml:space="preserve">
+    <value>File Not Found</value>
+  </data>
+  <data name="PASTEHELPER_SourceFile_ErrorMsg" xml:space="preserve">
+    <value>Source file not found at specified path.</value>
+  </data>
+  <data name="PASTEHELPER_StartPasteMappingCAP_InfoMsg" xml:space="preserve">
+    <value>Data Mapping</value>
+  </data>
+  <data name="PASTEHELPER_StartPasteMapping_InfoMsg" xml:space="preserve">
+    <value>No Data Mapping(s) available</value>
+  </data>
+  <data name="PASTEROWACTCTL_ExecuteCAP_InfoMsg" xml:space="preserve">
+    <value>Paste Row Action</value>
+  </data>
+  <data name="COMMONRUNTIME_NoDataCopied_ErrorMsg" xml:space="preserve">
+    <value>No data copied for paste. Please make sure that the data is copied from Excel.</value>
+  </data>
+  <data name="QUERYACTCTL_ExecuteFILTER_InfoMsg" xml:space="preserve">
+    <value>The query cannot be executed because some fields used in Filters (such as "{0}") are not visible to "{1} ". Contact your {2} administrator to gain access to these fields.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="QUERYACTCTL_Execute_InfoMsg" xml:space="preserve">
+    <value>Filter Field(s) like : {0} are invisible for the logged-in user, hence cannot execute the query.</value>
+  </data>
+  <data name="RETRIEVEACTVIEW_FillDataCAP_InfoMsg" xml:space="preserve">
+    <value>Conga Workflow Execution Message : Display Action</value>
+  </data>
+  <data name="RETRIEVEACTVIEW_FillData_InfoMsg" xml:space="preserve">
+    <value>No records retrieved for  {0}</value>
+  </data>
+  <data name="RETRIEVEACTVIEW_IsGroupByFieldVisible_InfoMsg" xml:space="preserve">
+    <value>The records cannot be displayed because the field " {0} " is used as a Group By field in the display map but is not visible to " {1} ". Contact your {2} administrator to gain access to these fields.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RETRIEVEACTVIEW_IsSortByFieldForVisible_InfoMsg" xml:space="preserve">
+    <value>The records cannot be displayed because the field " {0} " is used as a Sort By field in the display map but is not visible to " {1} ". Contact your {2} administrator to gain access to these fields.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RIBBON_InvalConnetionCap_ErrorMsg" xml:space="preserve">
+    <value>Switch Connection</value>
+  </data>
+  <data name="RIBBON_InvalConnetion_ErrorMsg" xml:space="preserve">
+    <value>Invalid connection URL, please provide valid URL and try again.</value>
+  </data>
+  <data name="RIBBON_MsgEditModeCap_ErrorMsg" xml:space="preserve">
+    <value>Excel Edit Mode</value>
+  </data>
+  <data name="RIBBON_MsgEditMode_ErrorMsg" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="RIBBON_NotLoadCap_ErrorMsg" xml:space="preserve">
+    <value>App Load : Missing Files</value>
+  </data>
+  <data name="RIBBON_NotLoad_ErrorMsg" xml:space="preserve">
+    <value>Unable to load App due to either bad connection or missing template or configuration files</value>
+  </data>
+  <data name="RIBBON_NotProtectSheet_ErrorMsg" xml:space="preserve">
+    <value>The password you supplied is not correct in protect sheet. Please provide correct password in AppSettings in designer app.</value>
+  </data>
+  <data name="RIBBON_PasteDataCap_ErrorMsg" xml:space="preserve">
+    <value>Paste Action</value>
+  </data>
+  <data name="RIBBON_PasteData_ErrorMsg" xml:space="preserve">
+    <value>Please select within a valid X-Author Grid to paste data.</value>
+  </data>
+  <data name="RIBBON_SheetProtectCap_ErrorMsg" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="RIBBON_SheetProtect_ErrorMsg" xml:space="preserve">
+    <value>This worksheet is protected. Rows cannot be pasted.</value>
+  </data>
+  <data name="SAVEACTCTL_ExecuteAsync_InfoMsg" xml:space="preserve">
+    <value>{0}</value>
+    <comment>Value is retrieved from variable</comment>
+  </data>
+  <data name="SAVEACTIONCTL_SaveFieldsCap_ErrorMsg" xml:space="preserve">
+    <value>Conga Workflow Execution Error : Save Action</value>
+  </data>
+  <data name="SAVEACTIONCTL_SaveFields_ErrorMsg" xml:space="preserve">
+    <value>Unable to Save as (independent) fields selected for saving were retrieved from different records\n\n</value>
+  </data>
+  <data name="SAVEACTION_DataIntegrityCap_ErrorMsg" xml:space="preserve">
+    <value>X-Author Save Validation : Data Integrity Check</value>
+  </data>
+  <data name="SAVEACTION_DataIntegrity_ErrorMsg" xml:space="preserve">
+    <value>Save operartion is canceled due to following reason: \n\n {0}</value>
+  </data>
+  <data name="SAVEACTION_SaveFieldsCap_ErrorMsg" xml:space="preserve">
+    <value>Save Action Validation : Record Mismatch</value>
+  </data>
+  <data name="SAVEACTION_SaveFields_ErrorMsg" xml:space="preserve">
+    <value>X-Author expected  {0}  {1}  records, however  {2}  records were found for the Save operation.\n\n Operation is canceled due to record count mismatch. Please use Add and Delete Row features of X-Author, instead of Excel's Add and Delete row</value>
+  </data>
+  <data name="SAVEATTCHFILENAMEVIEW_btnOK_ClickCAP_InfoMsg" xml:space="preserve">
+    <value>Save Attachment </value>
+  </data>
+  <data name="SAVEATTCHFILENAMEVIEW_btnOK_Click_InfoMsg" xml:space="preserve">
+    <value>File Name cannot be empty</value>
+  </data>
+  <data name="SAVEATTCTL_NoRecordCap_ErrorMsg" xml:space="preserve">
+    <value>Save File as attachment</value>
+  </data>
+  <data name="SAVEATTCTL_NoRecord_ErrorMsg" xml:space="preserve">
+    <value>No Record available to save file as Attachment.</value>
+  </data>
+  <data name="SAVEHELPER_RecordFailedCap_ErrorMsg" xml:space="preserve">
+    <value>Save Action</value>
+  </data>
+  <data name="SAVEHELPER_RecordFailedDetails_ErrorMsg" xml:space="preserve">
+    <value>Some record(s) saved successfully while some others failed..\n\n {0} \nClick on details for more details. All error messages are logged in Save Message Log.</value>
+  </data>
+  <data name="SAVEHELPER_RecordFailed_ErrorMsg" xml:space="preserve">
+    <value>Record(s) failed during save.\n\n {0} \nClick on details for more details.</value>
+  </data>
+  <data name="SAVEHELP_ProcessResultsDELETECAP_InfoMsg" xml:space="preserve">
+    <value>Delete Action</value>
+  </data>
+  <data name="SAVEHELP_ProcessResultsDELETE_InfoMsg" xml:space="preserve">
+    <value>Record(s) deleted successfully.</value>
+  </data>
+  <data name="SAVEHELP_ProcessResultsSAVE_InfoMsg" xml:space="preserve">
+    <value>Record(s) saved successfully.</value>
+  </data>
+  <data name="SEARCHNSELECTCTL_Execute_InfoMsg" xml:space="preserve">
+    <value>The query cannot be executed because some fields used in Filters (such as " {0} ") are not visible to " {1}  ". Contact your {2} administrator to gain access to these fields.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="SEARCHNSELECTVIEW_SelectRecordCap_ErrorMsg" xml:space="preserve">
+    <value>Search and Select</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_SelectRecord_ErrorMsg" xml:space="preserve">
+    <value>Please select at least one {0} record.</value>
+  </data>
+  <data name="SORTACTIONCTL_SortCancelCap_ErrorMsg" xml:space="preserve">
+    <value>X-Author Data Validation : Sort Check</value>
+  </data>
+  <data name="SORTACTIONCTL_SortCancel_ErrorMsg" xml:space="preserve">
+    <value>Sort cancelled due to following reason: \n\n {0}</value>
+  </data>
+  <data name="SWITCHCONLOGINVIEW_CheckConnections_WarnMsg" xml:space="preserve">
+    <value>Not all connections have been properly established and closing will stop execution. Do you still want to close?</value>
+  </data>
+  <data name="WBEVENTMAN_Application_SheetChange_InfoMsg" xml:space="preserve">
+    <value>To insert or delete rows in an X-Author data range, please use the ""Add Row"" or ""Delete Rows from {0}"" menu buttons.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="WORKFLOW_LicenseCheck_ErrorMsg" xml:space="preserve">
+    <value>Action {0} is not available in this Edition. Please contact your System Administrator.</value>
+  </data>
+  <data name="CONST_MESSAGE_EDITMODE" xml:space="preserve">
+    <value>X-Author detected that an Excel cell has focus and is being edited. Please exit editing the Excel cell before continuing with this action.</value>
+  </data>
+  <data name="COMMONRUNTIME_FieldSecurity_InfoMsg" xml:space="preserve">
+    <value>Field Level Security</value>
+  </data>
+  <data name="PASTEHELPER_ProgressOpen_Msg" xml:space="preserve">
+    <value>Opening source workbook ...</value>
+  </data>
+  <data name="PASTEHELPER_ProgressRead_Msg" xml:space="preserve">
+    <value>Reading source workbook data...</value>
+  </data>
+  <data name="SAVEACTCTL_ExecuteAsyncNoRecordFoundObj_InfoMsg" xml:space="preserve">
+    <value>No records found in the following object(s) for save operation.\n{0}</value>
+  </data>
+  <data name="SAVEACTCTL_ExecuteAsyncNoRecordFound_InfoMsg" xml:space="preserve">
+    <value>No records found for save operation</value>
+  </data>
+  <data name="SAVEACTION_ExecuteAsyncAddDelFeature_Msg" xml:space="preserve">
+    <value>\n\nPlease use Add and Delete Row features of X-Author, instead of Excel's Add and Delete row</value>
+  </data>
+  <data name="SAVEACTION_ExecuteAsyncColMissing_Msg" xml:space="preserve">
+    <value>X-Author detected a column missing while saving the data. In the " {0} " grid. Please restore the Record Id and try again.</value>
+  </data>
+  <data name="SAVEACTION_ExecuteAsyncDataValCheck_Msg" xml:space="preserve">
+    <value>Performing data validation checks for {0} records...</value>
+  </data>
+  <data name="SAVEACTION_ExecuteAsyncDupRecordId_Msg" xml:space="preserve">
+    <value>X-Author detected duplicate record ids in the " {0} " grid on following row numbers:\n</value>
+  </data>
+  <data name="SAVEACTION_ExecuteAsyncFoundOnRow_Msg" xml:space="preserve">
+    <value>found on rows:</value>
+  </data>
+  <data name="SAVEACTION_ExecuteAsyncIdMissing_Msg" xml:space="preserve">
+    <value>X-Author detected rows with following record ids missing in the " {0} " grid:\n</value>
+  </data>
+  <data name="SAVEACTION_ExecuteAsyncIdNotFound_Msg" xml:space="preserve">
+    <value>X-Author is not aware of some record ids in the " {0} " grid on following row numbers:\n</value>
+  </data>
+  <data name="SAVEACTION_ExecuteAsyncLookUpError_ErrorMsg" xml:space="preserve">
+    <value>Following lookup values were not found in {1}. Please correct the errors and retry.\n\n {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="SAVEACTION_ExecuteAsyncSavePrepare_Msg" xml:space="preserve">
+    <value>Preparing {0} records for save...</value>
+  </data>
+  <data name="SAVEACTION_WaitWindow_Msg" xml:space="preserve">
+    <value>Processing Save...</value>
+  </data>
+  <data name="SORTACTIONCTL_MoreCellAffected_ErrorMsg" xml:space="preserve">
+    <value>More than one X-Author cell affected by the Sort Range Selection.</value>
+  </data>
+  <data name="SORTACTIONCTL_RangeCannotSort_ErrorMsg" xml:space="preserve">
+    <value>The X-Author cell included in the Sort Range Selection cannot be sorted.</value>
+  </data>
+  <data name="SORTACTIONCTL_RangeSelectionRequired_ErrorMsg" xml:space="preserve">
+    <value>Complete X-Author range selection is required for the Sort operation. Please select the data contained within the X-Author range.\nThis check protects the data against potential data integrity issues during X-Author save operations.</value>
+  </data>
+  <data name="RIBBON_AccessGroup_Text" xml:space="preserve">
+    <value>Common</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RIBBON_ApplicationGroup_Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="RIBBON_btnAbout_Text" xml:space="preserve">
+    <value>About X-Author Excel...</value>
+  </data>
+  <data name="RIBBON_btnGallerySupport_Text" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="RIBBON_SocialGroup_Text" xml:space="preserve">
+    <value>Social</value>
+  </data>
+  <data name="RIBBON_Add10Rows_Text" xml:space="preserve">
+    <value>10 Rows</value>
+  </data>
+  <data name="RIBBON_Add3Rows_Text" xml:space="preserve">
+    <value>3 Rows</value>
+  </data>
+  <data name="RIBBON_Add5Rows_Text" xml:space="preserve">
+    <value>5 Rows</value>
+  </data>
+  <data name="RIBBON_AddCustomRows_Text" xml:space="preserve">
+    <value>Custom Rows</value>
+  </data>
+  <data name="RIBBON_btnAddMatrixColumn_Text" xml:space="preserve">
+    <value>Add Column</value>
+  </data>
+  <data name="RIBBON_btnAddRow_Text" xml:space="preserve">
+    <value>Add Row</value>
+  </data>
+  <data name="RIBBON_btnPasteAll_Text" xml:space="preserve">
+    <value>Paste All</value>
+  </data>
+  <data name="RIBBON_btnPasteValuesOnly_Text" xml:space="preserve">
+    <value>Paste Values Only</value>
+  </data>
+  <data name="RIBBON_btnPasteWithMapping_Text" xml:space="preserve">
+    <value>Paste from Mapping</value>
+  </data>
+  <data name="RIBBON_btnRemoveRow_Text" xml:space="preserve">
+    <value>Delete Row(s) from {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RIBBON_EditGroup_Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="RIBBON_mnuApplication_Text" xml:space="preserve">
+    <value>Apps</value>
+  </data>
+  <data name="RIBBON_mnuPaste_Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="FILEINPUT_lblTitle_Text" xml:space="preserve">
+    <value>File Input</value>
+  </data>
+  <data name="COREAPPBROWSEVIEW_lblTitle_Text" xml:space="preserve">
+    <value>Select App</value>
+  </data>
+  <data name="COMMON_SwitchConnection_Text" xml:space="preserve">
+    <value>Switch Connection</value>
+  </data>
+  <data name="CHATTMAN_ShareHighlightedContentViaChatter_InfoMsg" xml:space="preserve">
+    <value>Error while sharing document via chatter</value>
+  </data>
+  <data name="COREABSADAPTER_SetWaitMessage_Msg" xml:space="preserve">
+    <value>Performing " {0} " operation on {3}. Processing  {1}  of  {2} ...</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="EXCELHELP_AddCellRangeValidationBool_InfoMsg" xml:space="preserve">
+    <value>Please select either TRUE or FALSE from the dropdown.</value>
+  </data>
+  <data name="EXCELHELP_AddCellRangeValidationDateTime_InfoMsg" xml:space="preserve">
+    <value>Please enter a valid date/time.</value>
+  </data>
+  <data name="EXCELHELP_AddCellRangeValidationDate_InfoMsg" xml:space="preserve">
+    <value>Please enter a valid date.</value>
+  </data>
+  <data name="EXCELHELP_AddCellRangeValidationDecimal_InfoMsg" xml:space="preserve">
+    <value>Please enter a valid decimal value. Valid range for {0} is {1} to {2}.</value>
+  </data>
+  <data name="EXCELHELP_AddCellRangeValidationDouble_InfoMsg" xml:space="preserve">
+    <value>Please enter a valid numeric value. Valid range for {0} is {1} to {2}.</value>
+  </data>
+  <data name="EXCELHELP_AddCellRangeValidationEmail_InfoMsg" xml:space="preserve">
+    <value>Please enter valid Email.</value>
+  </data>
+  <data name="EXCELHELP_AddCellRangeValidationLookUp_InfoMsg" xml:space="preserve">
+    <value>Id and Lookup fields are not editable.</value>
+  </data>
+  <data name="EXCELHELP_AddCellRangeValidationPickList_InfoMsg" xml:space="preserve">
+    <value>Please select a value from the drop-down.</value>
+  </data>
+  <data name="EXCELHELP_AddCellRangeValidationRichText_InfoMsg" xml:space="preserve">
+    <value>Rich Text fields are not editable.</value>
+  </data>
+  <data name="PASTEHELPER_PasteFromMappingDest_InfoMsg" xml:space="preserve">
+    <value>Paste skipped for the worksheet '{0}' (Destination). Missing X-Author data range in destination worksheet.</value>
+  </data>
+  <data name="PASTEHELPER_PasteFromMappingProcess_InfoMsg" xml:space="preserve">
+    <value>Processing {0} worksheet ...</value>
+  </data>
+  <data name="PASTEHELPER_PasteFromMappingSource_InfoMsg" xml:space="preserve">
+    <value>Paste skipped for the worksheet '{0}' (Source). Missing data from the location '{1}'.</value>
+  </data>
+  <data name="PASTEHELPER_PasteFromMappingTransfer_InfoMsg" xml:space="preserve">
+    <value>Transferring data to {0} worksheet ...</value>
+  </data>
+  <data name="PASTEHELP_ClearPreviousMappings_InfoMsg" xml:space="preserve">
+    <value>Removing previously added rows ...</value>
+  </data>
+  <data name="RETACTVIEW_ProcessAttachments_Msg" xml:space="preserve">
+    <value>Processing Attachments data...</value>
+  </data>
+  <data name="RICHTEXTDATAMAN_ShowRichTextPane_Text" xml:space="preserve">
+    <value>Rich Text Viewer</value>
+  </data>
+  <data name="RUNTIMEEDITACT_RemoveRowCAP_WarnMsg" xml:space="preserve">
+    <value>Delete Confirmation</value>
+  </data>
+  <data name="RUNTIMEEDITACT_RemoveRowIntersect_WarnMsg" xml:space="preserve">
+    <value>\n\n {0} record(s) from the selection will be ignored. They are either filtered out or outside the data range.</value>
+  </data>
+  <data name="RUNTIMEEDITACT_RemoveRowNote_WarnMsg" xml:space="preserve">
+    <value>\n\nNote: Newly added row(s) will get deleted by this action.</value>
+  </data>
+  <data name="RUNTIMEEDITACT_RemoveRow_WarnMsg" xml:space="preserve">
+    <value>Are you sure you want to delete {0} record(s) from {1}?</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLog404_InfoMsg" xml:space="preserve">
+    <value>Conga Server Host could not be resolved. Check your settings in the options dialog.\n\nClick here to open Options dialog.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogConnFailedTitle_InfoMsg" xml:space="preserve">
+    <value>Check your internet connectivity!</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogConnFailed_InfoMsg" xml:space="preserve">
+    <value>Conga X-Author for Excel could not connect to {0}. Check whether your computer is online.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogExc_InfoMsg" xml:space="preserve">
+    <value>{2} returned the exception code {0}.\n {1}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogLoginCredTitle_InfoMsg" xml:space="preserve">
+    <value>Invalid login credentials!</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogLoginCred_InfoMsg" xml:space="preserve">
+    <value>Invalid username, password, security token; or user locked out.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogProxyTitle_InfoMsg" xml:space="preserve">
+    <value>Check your Conga proxy settings!</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogProxy_InfoMsg" xml:space="preserve">
+    <value>Your proxy requires authentication. Please provide credentials at the login dialog.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogSessionExpTitle_InfoMsg" xml:space="preserve">
+    <value>Session Expired</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogSessionExp_InfoMsg" xml:space="preserve">
+    <value>Your current session has expired. Please click Connect to login again.</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogSessionSettingTitle_InfoMsg" xml:space="preserve">
+    <value>Check your settings!</value>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogSessionSetting_InfoMsg" xml:space="preserve">
+    <value>Unable to send request to server. \rThe server name or address could not be resolved.</value>
+  </data>
+  <data name="SAVEHELPER_IgnoreSaveRecord_WarnMsg" xml:space="preserve">
+    <value>Record you were editing was modified by some other user during your edit session</value>
+  </data>
+  <data name="SAVEHELPER_IsRecordIgnored_WarnMsg" xml:space="preserve">
+    <value>Record you were trying to edit no longer exists and has been deleted. Please refresh the data.</value>
+  </data>
+  <data name="SAVEHELPER_ProcessResultsDeleteError_ErrMsg" xml:space="preserve">
+    <value>DELETE Error - Record No: {0}, Record Id: {1}, Error Message: {2} </value>
+  </data>
+  <data name="SAVEHELPER_ProcessResultsDetails_Text" xml:space="preserve">
+    <value>Save details:</value>
+  </data>
+  <data name="SAVEHELPER_ProcessResultsInsertError_ErrMsg" xml:space="preserve">
+    <value>INSERT Error - Record No: {0} , Error Message:  {1} </value>
+  </data>
+  <data name="SAVEHELPER_ProcessResultsSaveLogELSEIF_ErrMsg" xml:space="preserve">
+    <value>Some record(s) saved successfully while some others failed.\n\n{0} {1}</value>
+  </data>
+  <data name="SAVEHELPER_ProcessResultsSaveLogIF_ErrMsg" xml:space="preserve">
+    <value>Record(s) failed during save.\n\n {0}</value>
+  </data>
+  <data name="SAVEHELPER_ProcessResultsSummery_Text" xml:space="preserve">
+    <value>Object: {0} \n- No of records inserted:  {1}\n- No of records updated: {2}\n- No of records upserted:{3}\n- No of records deleted: {4}\n</value>
+  </data>
+  <data name="SAVEHELPER_ProcessResultsUpdateError_ErrMsg" xml:space="preserve">
+    <value>UPDATE Error - Record No: {0} , Record Id: {1} , Error Message:  {2} </value>
+  </data>
+  <data name="SAVEHELPER_ProcessResultsUpsertError_ErrMsg" xml:space="preserve">
+    <value>UPSERT Error - Record No: {0}, Record Id: {1}, Error Message: {2}</value>
+  </data>
+  <data name="SAVEHELPER_ProcessResults_ErrMsg" xml:space="preserve">
+    <value>Following errors for the object {0} :</value>
+  </data>
+  <data name="COMMON_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="MANAGECONNECTION_btn_Authorize" xml:space="preserve">
+    <value>Authorize</value>
+  </data>
+  <data name="MANAGECONNECTION_btn_CreateNew" xml:space="preserve">
+    <value>Create a new Connection</value>
+  </data>
+  <data name="MANAGECONNECTION_btn_revoke" xml:space="preserve">
+    <value>Revoke</value>
+  </data>
+  <data name="MANAGECONNECTION_lblAvailableConnections" xml:space="preserve">
+    <value>Available Connections</value>
+  </data>
+  <data name="MANAGECONNECTION_LoginURL_Text" xml:space="preserve">
+    <value>Login URL</value>
+  </data>
+  <data name="MANAGECONNECTION_Title" xml:space="preserve">
+    <value>Manage Connections</value>
+  </data>
+  <data name="OAUTHLOGINFORM_AuthorizationUri_ErrorMsg" xml:space="preserve">
+    <value> was not able to get authorization URI from the server. This may be due to a missing or mismatch with the authorization URI. Please contact Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_Denied_ErrorMsg" xml:space="preserve">
+    <value>You have been denied authorization to the application. You will be prompted again for authorization next time you try to login.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_InactiveOrg_ErrorMsg" xml:space="preserve">
+    <value>You have been denied authorization to the application. This may be due to the Org to which you're trying to connect is locked, closed, or suspended. Please contact your SFDC System Administrator or Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_InactiveUser_ErrorMsg" xml:space="preserve">
+    <value>You have been denied authorization to the application. This may be due to the User is inactive. Please contact your SFDC System Administrator or Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_InvalidClient_ErrorMsg" xml:space="preserve">
+    <value>You have an invalid client Id to access the application. Please contact Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_InvalidGrant_ErrorMsg" xml:space="preserve">
+    <value> was not able to get you authenticated due to invalid grant access. This may be due to either IP restriction or inavalid login hours in your Org. Please contact your SFDC System Administrator or Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_LimitExceed_ErrorMsg" xml:space="preserve">
+    <value>You have been denied authorization to the application. This may be due to number of logins exceeded. Please contact your SFDC System Administrator or Conga support for further updates and specify this error message.</value>
+  </data>
+  <data name="OAUTHLOGINFORM_ProgressBar_Label" xml:space="preserve">
+    <value>Connecting as {0}, Please wait…</value>
+  </data>
+  <data name="OAUTHLOGINFORM_ProgressStatus_Text" xml:space="preserve">
+    <value>Connected to Conga, Please wait...</value>
+  </data>
+  <data name="COMMON_Examples" xml:space="preserve">
+    <value>Examples:</value>
+  </data>
+  <data name="MANAGECONNECTION_ConnectionNameExists_ErrorMsg" xml:space="preserve">
+    <value>Connection name {0}  already exists, please choose another connection name.</value>
+  </data>
+  <data name="MANAGECONNECTION_ConnectionName_ErrorMsg" xml:space="preserve">
+    <value>Please enter a connection name.</value>
+  </data>
+  <data name="MANAGECONNECTION_QualifiedURL_ErrorMsg" xml:space="preserve">
+    <value>Please enter a valid fully qualified URL that starts with https://</value>
+  </data>
+  <data name="MANAGECONNECTION_RemoveListCap_ErrorMsg" xml:space="preserve">
+    <value>{0}  - Remove Connection</value>
+  </data>
+  <data name="MANAGECONNECTION_RemoveList_ErrorMsg" xml:space="preserve">
+    <value>Do you like to remove this connection from the list?</value>
+  </data>
+  <data name="MANAGECONNECTION_RevokeValCap_ErrorMsg" xml:space="preserve">
+    <value> - Revoke Access</value>
+  </data>
+  <data name="MANAGECONNECTION_RevokeVal_ErrorMsg" xml:space="preserve">
+    <value>If you revoke this user's access, this user must authenticate this installation of {0} again before logging in. Would you like to Continue?</value>
+  </data>
+  <data name="MANAGECONNECTION_UserRevoke_ErrorMsg" xml:space="preserve">
+    <value>User Access Revoked.</value>
+  </data>
+  <data name="MANAGECONNECTION_ValidURL_ErrorMsg" xml:space="preserve">
+    <value>Please enter a valid URL.</value>
+  </data>
+  <data name="CALLPROINVOKER_BuildServiceDescriptionImporter_ErrMsg" xml:space="preserve">
+    <value>Invalid Web Service Description </value>
+  </data>
+  <data name="CALLPROINVOKER_CompileAssemblyWSDL_ErrMsg" xml:space="preserve">
+    <value>Invalid WSDL TBT</value>
+  </data>
+  <data name="CALLPROINVOKER_EnumerateServiceMethods_ErrMsg" xml:space="preserve">
+    <value>Service Not Available</value>
+  </data>
+  <data name="CALLPRO_CompileAssembly_ErrMsg" xml:space="preserve">
+    <value>Compilation Error Creating Assembly</value>
+  </data>
+  <data name="CALLPRO_PersistOutput_Text" xml:space="preserve">
+    <value>Error Occured: </value>
+  </data>
+  <data name="CHECKINCTL_Execute_InfoMsg" xml:space="preserve">
+    <value>Check In as attachment error</value>
+  </data>
+  <data name="CHECKINCTL_NoAttachmentCap_ErrorMsg" xml:space="preserve">
+    <value>Check In as attachment</value>
+  </data>
+  <data name="CHECKINCTL_NoAttachment_ErrorMsg" xml:space="preserve">
+    <value>No Record available to Check In file as Attachment.</value>
+  </data>
+  <data name="CHECKOUTCTL_ExecuteCatch_InfoMsg" xml:space="preserve">
+    <value>Check Out file attachment error</value>
+  </data>
+  <data name="COMMON_AddValues_Text" xml:space="preserve">
+    <value>Add Value(s)</value>
+  </data>
+  <data name="COMMON_Disconnected_Msg" xml:space="preserve">
+    <value>Disconnected successfully!</value>
+  </data>
+  <data name="COMMON_LogOutCAP_InfoMsg" xml:space="preserve">
+    <value>You have been disconnected from Conga successfully.</value>
+  </data>
+  <data name="COMMON_LookUpInvalid_Msg" xml:space="preserve">
+    <value>Lookup field:  {0} \n\n Invalid Values:  {1} \n</value>
+  </data>
+  <data name="COMMON_ProcessUpdateResultsCode_Msg" xml:space="preserve">
+    <value>Error Status Code: </value>
+  </data>
+  <data name="COMMON_ProcessUpdateResultsField_Msg" xml:space="preserve">
+    <value>Fields affecting Error: </value>
+  </data>
+  <data name="COMMON_ProcessUpdateResultsMsg_Msg" xml:space="preserve">
+    <value>Error Message: </value>
+  </data>
+  <data name="COMMON_STARTMENU_OPENAPP" xml:space="preserve">
+    <value>Open App</value>
+  </data>
+  <data name="COMMON_UpdateValues_Text" xml:space="preserve">
+    <value>Update Value(s)</value>
+  </data>
+  <data name="CONNENTRY_btnConnect_Click_Text" xml:space="preserve">
+    <value>Connected...</value>
+  </data>
+  <data name="COREENCRYPTHELP_Encrypt_ErrMsg" xml:space="preserve">
+    <value>The specified element was not found TBT</value>
+  </data>
+  <data name="COREENCRYPTIONHELP_Doc_Text" xml:space="preserve">
+    <value>Doc</value>
+  </data>
+  <data name="COREMULTILINECAPTVIEW_IntializeAndBindView_Msg" xml:space="preserve">
+    <value>Enter values for {0}.{1}</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputBool_ErrMsg" xml:space="preserve">
+    <value>X-Author found following invalid boolean value(s) for this field:\n{0}\n\nPlease fix them before proceeding</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputDate_ErrMsg" xml:space="preserve">
+    <value>X-Author found following invalid date value(s) for this field:\n{0}\n\nPlease fix them before proceeding</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputInOp_ErrMsg" xml:space="preserve">
+    <value>'in' operator not supported for the selected field's datatype.</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputnumeric_ErrMsg" xml:space="preserve">
+    <value>X-Author found following non-numeric value(s) for this field:\n{0}\n\nPlease fix them before proceeding</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputStringCAP_ErrMsg" xml:space="preserve">
+    <value>Validation Warning</value>
+  </data>
+  <data name="MULTILINECAPTVIEW_ValidateInputString_ErrMsg" xml:space="preserve">
+    <value>Following values contain a comma: \n  {0}  \n\n  X-Author will assume that your actual value(s) have a comma. Are you sure you want to proceed?</value>
+  </data>
+  <data name="SAVEHELP_ValidatePicklistValues_Msg" xml:space="preserve">
+    <value>Invalid Pick-list option ' {0} ' for field ' {1} ' </value>
+  </data>
+  <data name="RUNTIMEDIT_Protect_ErrorMsg" xml:space="preserve">
+    <value>This worksheet is protected. Rows cannot be deleted.</value>
+  </data>
+  <data name="MANAGECONNECTION_Ribbon_Title" xml:space="preserve">
+    <value>Manage Connection...</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_llHideFilters_Text" xml:space="preserve">
+    <value>Hide Filters</value>
+  </data>
+  <data name="SEARCHNSELECTVIEW_RecordRet_Text" xml:space="preserve">
+    <value>record(s) retrieved</value>
+  </data>
+  <data name="COMMON_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="SAVEACTIONCTL_CellRefEmptyCap_InfoMsg" xml:space="preserve">
+    <value>Save Attachment Action</value>
+  </data>
+  <data name="SAVEACTIONCTL_CellRefEmptyInstruction_InfoMsg" xml:space="preserve">
+    <value>File name not found</value>
+  </data>
+  <data name="SAVEACTIONCTL_CellRefEmpty_InfoMsg" xml:space="preserve">
+    <value>Save Attachment action cannot be completed as no file name is present in the cell {0}</value>
+  </data>
+  <data name="CHECKINCTL_NoAttachmentCap_ErrorMsg2" xml:space="preserve">
+    <value>Check-in Action</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="CHECKINCTL_NoAttachmentFound_Msg" xml:space="preserve">
+    <value>Filename Not found! \n Check-in action cannot be completed as no file name is present in the cell reference {0}</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="CHECKINCTL_InvalidAtt_Msg" xml:space="preserve">
+    <value>Filename invalid! \n Check-in action cannot be completed as filename has invalid characters in the cell reference {0}</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="RIBBON_LoadAppCap_ErrorMsg" xml:space="preserve">
+    <value>Load Application Error</value>
+  </data>
+  <data name="RIBBON_LoadApp_ErrorMsg" xml:space="preserve">
+    <value>Failed to open app. Possible reasons could be :\n\n 1. You are trying to open the app designed with a higher version of X-Author Designer. Your client version: {0} \n\n 2. Template file for the application is missing. Please contact to your X-Author Designer. \n\n Check the product error log for more details.</value>
+  </data>
+  <data name="WORKFLOW_Invalid_Msg" xml:space="preserve">
+    <value>Invalid ActionFlow name - {0}. Please check the ActionFlow name and make sure it is correct.</value>
+  </data>
+  <data name="EDITION_TAMPER_MESSAGE" xml:space="preserve">
+    <value>App Type Edition has been changed. Please contact your {0} Administrator.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="EDITION_TAMPER_TITLE" xml:space="preserve">
+    <value>App Type Rule </value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="ThisAddInImpl_NotifyDataTypeChangeCAP_WarnMsg" xml:space="preserve">
+    <value>Some Field is Chnaged/Deleted</value>
+  </data>
+  <data name="ThisAddInImpl_NotifyDataTypeChange_WarnMsg" xml:space="preserve">
+    <value>Please see the log file for more details</value>
+  </data>
+  <data name="COREABSADAPTER_SetWaitMessage_Attachments_Msg" xml:space="preserve">
+    <value>Performing " {0} " operation on {3}. Processing  {1} Attachments of  {2} Attachments ...</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="COMMON_CellReference_Msg" xml:space="preserve">
+    <value>Cell Reference</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="COMMON_Proposal_Cap_ErrorMsg" xml:space="preserve">
+    <value>View Proposal</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="COMMON_Proposal_Execute_ErrorMsg" xml:space="preserve">
+    <value>Couldn't find Proposal. Please contact your Salesforce administrator</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="COMMON_SOQL_Limit_Msg" xml:space="preserve">
+    <value>SOQL Limit</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="CreateProposalController_ExecuteCap_ErrorMsg" xml:space="preserve">
+    <value>Create Proposal</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="CreateProposalController_Execute_ErrorMsg" xml:space="preserve">
+    <value>Couldn't find Price list Name or Opportunity. Please contact your Salesforce administrator</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="CreateProposalController_Execute_IsCellRef_ErrorMsg" xml:space="preserve">
+    <value>is invalid.</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="EditCartController_ExecuteCap_ErrorMsg" xml:space="preserve">
+    <value>Edit Cart</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="EditCartController_Execute_CartId_ErrorMsg" xml:space="preserve">
+    <value>Couldn't find Cart Id. Please contact your Salesforce administrator</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="EditCartController_IsInputValid_ErrorMsg" xml:space="preserve">
+    <value>Couldn't find data set for the input name. Please check the action flow</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="LookAheadLauncher_LauchUI_Cap_ErrorMsg" xml:space="preserve">
+    <value>Look Ahead Launcher</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="QueryActionController_Execute_SOQL_Chunking_Limit_ErrorMsg" xml:space="preserve">
+    <value>SOQL has crossed the salesforce query limit and chunking is not possible. Please use Dataset action</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="QueryActionController_Execute_SOQL_Limit_ErrorMsg" xml:space="preserve">
+    <value>SOQL has crossed the salesforce query limit. Please use Dataset action</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="RetrieveActionView_MapRepeatingCells_ErrorMsg" xml:space="preserve">
+    <value>Data Initialization</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="SAVEHELPER_CheckDataForCollisionDetectionIndAndRep_ErrorMsg" xml:space="preserve">
+    <value>Save failed during Collision Detection</value>
+    <comment>need jpn translation</comment>
+  </data>
+  <data name="OPTIONSFORM_grpBoxChatter_Text" xml:space="preserve">
+    <value>Chatter Refresh Settings</value>
+    <comment>need translation</comment>
+  </data>
+  <data name="MULTISELECTPICKLIST_btnCancel_Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="MULTISELECTPICKLIST_btnClear_Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="MULTISELECTPICKLIST_btnDeselect_Text" xml:space="preserve">
+    <value>&lt;&lt;</value>
+  </data>
+  <data name="MULTISELECTPICKLIST_btnGo_Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="MULTISELECTPICKLIST_btnSave_Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="MULTISELECTPICKLIST_btnSelect_Text" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="MULTISELECTPICKLIST_lblTitle_Text" xml:space="preserve">
+    <value>Select {0} Values</value>
+  </data>
+  <data name="MULTISELECTPICKLIST_lstDestination_Text" xml:space="preserve">
+    <value>Selected Values</value>
+  </data>
+  <data name="MULTISELECTPICKLIST_lstSource_Text" xml:space="preserve">
+    <value>Available Values</value>
+  </data>
+  <data name="OBJECTMANAGER_FetchingData_Msg" xml:space="preserve">
+    <value>Fetching {0} Data...</value>
+  </data>
+  <data name="RETACTVIEW_WritingData_Msg" xml:space="preserve">
+    <value>Writing Data...</value>
+  </data>
+  <data name="DISPLAYACTION_ShowFilterLength_Exceeded_Msg" xml:space="preserve">
+    <value>Query Filter exceeded excel limit for a cell (32,767 characters). Filter has been saved in the product error log.</value>
+  </data>
+  <data name="QueryActionController_EmptyFiltersText" xml:space="preserve">
+    <value>No Filters</value>
+  </data>
+  <data name="QueryActionController_FiltersText" xml:space="preserve">
+    <value>Filters :</value>
+  </data>
+  <data name="OPTIONSFORM_grpLanguage_Text" xml:space="preserve">
+    <value>Language Preference</value>
+  </data>
+  <data name="OPTIONSFORM_lblLanguage_Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="OPTIONSFORM_ExcelCloseMessage_Text" xml:space="preserve">
+    <value>Please Close existing all excel instance and restart Excel for Langauge changes to take effect.</value>
+  </data>
+  <data name="CAD_Settings_Title" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="InputDlg_txtFiltersetName_Validating_ErrorMsg" xml:space="preserve">
+    <value>Filter name cannot be empty.</value>
+  </data>
+  <data name="CHANGECRM_ApplyMessage_Text" xml:space="preserve">
+    <value>Please close all existing excel instances and restart excel for source changes to take effect.</value>
+  </data>
+  <data name="RIBBON_ChangeCRM_Text" xml:space="preserve">
+    <value>Change Source</value>
+  </data>
+  <data name="ADDINIMP_SetupMissingCap_ShowMsg" xml:space="preserve">
+    <value>X-Auhor for excel</value>
+  </data>
+  <data name="ADDIN_Login_ErrorMsg" xml:space="preserve">
+    <value>An error occurred during login.</value>
+  </data>
+  <data name="ADDIN_PermissionCap_ErrorMsg" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="COMMON_LoginFailed_ErrorMsg" xml:space="preserve">
+    <value>Login failed</value>
+  </data>
+  <data name="ERR_ResourceIdNotFound" xml:space="preserve">
+    <value>Resource Id Not Found</value>
+  </data>
+  <data name="MSDynamics_SEARCHNSELECTVIEW_rbSelectAllSalesforce_Text" xml:space="preserve">
+    <value>In Dynamics</value>
+  </data>
+  <data name="MSDynamics_ABOUT_lblAboutDescription_Text" xml:space="preserve">
+    <value>Conga X-Author for Excel intelligently interacts between Microsoft Excel and Dynamics CRM using embedded configurable ribbons. The technology allows all tasks performed within a Microsoft Excel Document to be shared and completely captured in any Structured Data System including Dynamics CRM, without the need to go into Dynamics.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RIBBON_SelectCRM_Text" xml:space="preserve">
+    <value>Select Source</value>
+  </data>
+  <data name="MSDynamics_SAVEACTION_ExecuteAsyncLookUpError_ErrorMsg" xml:space="preserve">
+    <value>Following lookup values were not found in Dynamics. Please correct the errors and retry.\n\n {0}</value>
+  </data>
+  <data name="SAVEACTCTL_ExecuteAsyncCAP_InfoMsg" xml:space="preserve">
+    <value>Conga Workflow Execution Message : Save Action</value>
+  </data>
+  <data name="MSDynamics_RUNTIMEEXCELOGHELP_ErrorLogConnFailed_InfoMsg" xml:space="preserve">
+    <value>Conga X-Author for Excel could not connect to Microsoft Dynamics. Check whether your computer is online.</value>
+  </data>
+  <data name="ADDINIMP_NotifyLoginConnected_ShowMsg" xml:space="preserve">
+    <value>Connected to Conga</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="ADDINIMP_NotifyLoginWelcome_ShowMsg" xml:space="preserve">
+    <value>Welcome Back {0}! \nConnected to {1} as {2}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="AIC_ABOUT_lblAboutDescription_Text" xml:space="preserve">
+    <value>Conga X-Author for Excel intelligently interacts between Microsoft Excel and AIC using embedded configurable ribbons. The technology allows all tasks performed within a Microsoft Excel Document to be shared and completely captured in any Structured Data System including AIC, without the need to go into AIC.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RichTextEditor_browser_ResponseRecieved" xml:space="preserve">
+    <value>Your Rich Text edits have been saved to Excel. You are still need to save this to Salesforce.</value>
+  </data>
+  <data name="RichTextEditor_browser_ResponseRecieved_CAP" xml:space="preserve">
+    <value>Rich Text</value>
+  </data>
+  <data name="ApttusObjectManager_HandleError_AIC_XAE_Config_Missing" xml:space="preserve">
+    <value>The tenant key for X-Author for Excel configuration is missing. Please contact your Conga Administrator.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="DELETERECORDS_WaitWindow_InfoMsg" xml:space="preserve">
+    <value>Processing Delete...</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RUNTIMEEXCELOGHELP_ErrorLogForbiddenOperationTitle_InfoMs" xml:space="preserve">
+    <value>Insufficient privileges to complete the requested operation.</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="RIBBON_WhatNew_Text" xml:space="preserve">
+    <value>What's New</value>
+  </data>
+  <data name="AIC_CAD_SaveMessages" xml:space="preserve">
+    <value>AIC Messsages</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate" xml:space="preserve">
+    <value>Auto Update</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_AutoUpdateSettings" xml:space="preserve">
+    <value>Auto Update Settings</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_DelayTime" xml:space="preserve">
+    <value>Delay picking up new releases (Days)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_EnableAutoUpdate" xml:space="preserve">
+    <value>Enable Auto Update</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_LastUpdatedOn" xml:space="preserve">
+    <value>Conga X-Author for Excel was updated on {0}</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_UpdateNow" xml:space="preserve">
+    <value>Update Proceeding will close all the running Excel.\nPlease save your work before proceeding \nAre you sure want to continue ?</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Connections" xml:space="preserve">
+    <value>Connections</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Connections_ConnectionHost" xml:space="preserve">
+    <value>Host</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Connections_ConnectionName" xml:space="preserve">
+    <value>Connection Name</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Connections_DeleteBTN" xml:space="preserve">
+    <value>Delete Connection</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo" xml:space="preserve">
+    <value>General Info</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_AvailableAddIns" xml:space="preserve">
+    <value>Available X-Author Add-ins</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_Edition" xml:space="preserve">
+    <value>Edition</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_OrganizationId" xml:space="preserve">
+    <value>Organization Id</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_OrganizationName" xml:space="preserve">
+    <value>Organization Name</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_ProductInformation" xml:space="preserve">
+    <value>Product Information</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_ProfileId" xml:space="preserve">
+    <value>Profile Id</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_Title" xml:space="preserve">
+    <value>General Information</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_UserEmail" xml:space="preserve">
+    <value>User Email</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_UserFullName" xml:space="preserve">
+    <value>Full Name</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_UserId" xml:space="preserve">
+    <value>User Id</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_UserName" xml:space="preserve">
+    <value>User Name</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck" xml:space="preserve">
+    <value>Health Check</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_AddInDisableCheck" xml:space="preserve">
+    <value>Add-In Disable Check</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_ClearLogFile" xml:space="preserve">
+    <value>Clear Log File &gt; 20 Mb</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_Diagnostics" xml:space="preserve">
+    <value>Diagnostics</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_FreqAddInDisableCheck" xml:space="preserve">
+    <value>Frequency (In Minutes)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_FrequencyClearLog" xml:space="preserve">
+    <value>Frequency (In Days)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_HealthCheckRules" xml:space="preserve">
+    <value>Health Check Rules</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_HealthCheck_TurnOnDiagnostics" xml:space="preserve">
+    <value>Turn On Diagnostics Mode</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_LicenseInfo" xml:space="preserve">
+    <value>License Info</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs" xml:space="preserve">
+    <value>Product Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_ClearLog" xml:space="preserve">
+    <value>Clear Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_CompleteLog" xml:space="preserve">
+    <value>Complete Log</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_DesignerLogs" xml:space="preserve">
+    <value>Designer Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_LastLog" xml:space="preserve">
+    <value>Last Log</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_NoLogsFound" xml:space="preserve">
+    <value>No Logs Found</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_OpenFile" xml:space="preserve">
+    <value>Open File</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_RuntimeLogs" xml:space="preserve">
+    <value>Runtime Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_SwitchToDesigner" xml:space="preserve">
+    <value>Switch to Designer Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ProductLogs_SwitchToRuntime" xml:space="preserve">
+    <value>Switch to Runtime Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_SaveMessages" xml:space="preserve">
+    <value>Salesforce Messages</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_ServiceLogs" xml:space="preserve">
+    <value>Service Logs</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_ActiveSource" xml:space="preserve">
+    <value>Select CRM</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_AppliesToInd" xml:space="preserve">
+    <value>Applies to Individual Fields</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_AppliesToRep" xml:space="preserve">
+    <value>Applies to List Fields</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_AppWizard" xml:space="preserve">
+    <value>App Wizard</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_AuthSettings" xml:space="preserve">
+    <value>Authentication Settings</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_DisplayData" xml:space="preserve">
+    <value>Display Data</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_DisplayLabel" xml:space="preserve">
+    <value>Display Label</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_HideFormulaRowDisplayMap" xml:space="preserve">
+    <value>Hide Formula Row in Display Map</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_MinDisplayWidth" xml:space="preserve">
+    <value>Minimum Display Fields Width</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_SaveData" xml:space="preserve">
+    <value>Save Data</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_SaveLabel" xml:space="preserve">
+    <value>Save Label</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_SequentialActionFlowDesigner" xml:space="preserve">
+    <value>Enable Sequential Action Flow Designer (Classic Mode)</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_StoreToken" xml:space="preserve">
+    <value>Remember Me</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_Settings_StoreToken_Info" xml:space="preserve">
+    <value>This setting will keep your session active, as defined by your CRM administrator</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="COMMON_Delete_Text" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Delete Button caption</comment>
+  </data>
+  <data name="COMMON_Display_Text" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="COMMON_Password_Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="COMMON_Settings_Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="MSDynamics_CAD_SaveMessages" xml:space="preserve">
+    <value>Dynamics CRM Messages</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_DataUsage" xml:space="preserve">
+    <value>Data Usage</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_DataUsed" xml:space="preserve">
+    <value>{0} Mb of {1} Mb used (Renews on {2})</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_EndDate" xml:space="preserve">
+    <value>End Date</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_LicenseType" xml:space="preserve">
+    <value>License Type</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_GeneralInfo_StartDate" xml:space="preserve">
+    <value>Start Date</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_LicenseInfo_Title" xml:space="preserve">
+    <value>License Details</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_CheckForUpdate_InstallNow" xml:space="preserve">
+    <value>X-Author for Excel ({0}) is available for download. Do you want to install now ?</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_CheckForUpdate_UpToDate" xml:space="preserve">
+    <value>X-Author for Excel is already up to date</value>
+    <comment>TBT</comment>
+  </data>
+  <data name="CAD_AutoUpdate_CheckForUpdate_CheckingForUpdate" xml:space="preserve">
+    <value>Checking for update.Please wait..</value>
+    <comment>TBT</comment>
+  </data>
+</root>

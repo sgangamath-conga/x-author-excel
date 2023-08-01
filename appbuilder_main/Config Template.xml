@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<App>
+  <Definition id ="">
+    <Name>ABC</Name>
+    <Version>1.0</Version>
+    <Clients>
+      <Client Name="Excel2010">
+        <Layout>
+          <File>
+            <FileName>ABC-1.0.xlsx</FileName>
+          </File>
+        </Layout>
+      </Client>
+      <Client Name="HTML">
+      </Client>
+    </Clients>
+    <AppObjects>
+      <ApttusObject>
+        <UniqueId>2837ba5e-662e-4728-ba41-e94927a2227e</UniqueId>
+        <Id>opportunity</Id>
+        <Name>Opportunity</Name>
+        <Fields>
+          <ApttusField>
+            <Id>id</Id>
+            <Name>Id</Name>
+            <Datatype>String</Datatype>
+          </ApttusField>
+          <ApttusField>
+            <Id>name</Id>
+            <Name>Name</Name>
+            <Datatype>String</Datatype>
+          </ApttusField>
+          <ApttusField>
+            <Id>nbr</Id>
+            <Name>Number</Name>
+            <Datatype>Double</Datatype>
+          </ApttusField>
+        </Fields>
+        <Childs>
+          <ApttusObject>
+            <UniqueId>91403c36-34c6-43ef-a127-69a9729bde7f</UniqueId>
+            <Id>OpportunityLineItem</Id>
+            <Name>Opportunity Line Item</Name>
+            <Childs />
+          </ApttusObject>
+        </Childs>
+      </ApttusObject>
+    </AppObjects>
+  </Definition>
+  <Menus>
+    <MenuGroups>
+      <MenuGroup></MenuGroup>
+    </MenuGroups>
+    <MenuItems>
+      <MenuItem>
+        <Availability></Availability>
+        <Security>
+          <Profiles>
+            <Profile>
+            </Profile>
+          </Profiles>
+        </Security>
+      </MenuItem>
+    </MenuItems>
+  </Menus>
+  <Actions>
+
+    <Action Type="SearchAndSelect" Name="SS" Id="">
+      <TargetObject>Opportunity</TargetObject>
+      <RecordType></RecordType>
+      <SearchFields>
+        <SearchField Id="Active__c">
+          <Label>Active jjj</Label>
+          <DataType></DataType>
+          <DefaultValue></DefaultValue>
+          <SequenceNo></SequenceNo>
+        </SearchField>
+      </SearchFields>
+      <ResultFields PageSize="">
+        <ResultField Id="">
+          <Label></Label>
+          <VisibleInResults></VisibleInResults>
+          <IsSortField></IsSortField>
+          <SequenceNo></SequenceNo>
+        </ResultField>
+      </ResultFields>
+      <SearchFilters>
+        <SearchFilterGroup Condition="And">
+          <SearchFilterGroup Condition="Or">
+            <SearchFilter>
+              <RelatedObject Name="Account">
+                <Field>Region</Field>
+                <Criteria>Equals</Criteria>
+                <Value>USA</Value>
+              </RelatedObject>
+            </SearchFilter>
+            <SearchFilter>
+              <Field>Name</Field>
+              <Criteria>Equals</Criteria>
+              <Value>Test</Value>
+            </SearchFilter>
+          </SearchFilterGroup>
+          <SearchFilter>
+            <RelatedObject Name="Account">
+              <RelatedObject Name="Contact">
+                <Field>FName</Field>
+                <Criteria>Equals</Criteria>
+                <Value>Refeekh</Value>
+              </RelatedObject>
+            </RelatedObject>
+          </SearchFilter>
+        </SearchFilterGroup>
+      </SearchFilters>
+    </Action>
+
+    <Action Type="Form" Name="FA" Id = "">
+      <TargetObject>SalesForce_Object</TargetObject>
+      <FormFields>
+        <FormField>SalesForce_Object_Field1</FormField>
+        <FormField>SalesForce_Object_Field2</FormField>
+      </FormFields>
+      <SearchAndSelect Id="" />
+    </Action>
+
+    <Action Type="Retrieve" Name="RT" Id="">
+      <RetrieveMap Id = ""/>
+    </Action>
+
+    <Action Type="CallProcedure" Name="CP" Id="">
+      <ClassName>SalesForce_Global_Class</ClassName>
+      <MethodName>SalesForce_Global_Class_Static_Method</MethodName>
+      <Params>
+        <Param Name="ParameterName1" Type="SalesForce_DataType" />
+        <Param Name="ParameterName2" Type="SalesForce_DataType" />
+      </Params>
+    </Action>
+
+    <Action Type="ExecuteQuery" Name="EQ" Id="">
+      <SOQLQuery>Any_SalesForce_Query</SOQLQuery>
+    </Action>
+
+    <Action Type="Save" Name ="SV" Id="">
+    </Action>
+
+  </Actions>
+  <Workflows>
+    <Workflow Name="Workflow One" Id="00000-00000-0000-000000000">
+      <Step Name="Step One" Id="10000-00000-000-000000000">
+        <SequenceNo>1</SequenceNo>
+        <Conditions>
+          <Condition>
+            <SequenceNo>1</SequenceNo>
+            <Criteria>
+              Opportunity.Stage <> "Rejected"
+            </Criteria>
+            <Action Name="Opp Select" Id="ActionID">
+              <SequenceNo>1</SequenceNo>
+            </Action>
+            <Action Name="Retrieve Data" Id="ActionID">
+              <SequenceNo>2</SequenceNo>
+            </Action>
+          </Condition>
+        </Conditions>
+      </Step>
+      <Step Name="Step Two" Id="20000-00000-000-000000000">
+        <SequenceNo>1</SequenceNo>
+        <Conditions>
+          <Condition>
+            <SequenceNo>1</SequenceNo>
+            <Criteria></Criteria>
+            <Action Name="Submit For Approval" Id="ActionID">
+              <SequenceNo>1</SequenceNo>
+            </Action>
+          </Condition>
+        </Conditions>
+      </Step>
+    </Workflow>
+  </Workflows>
+  
+  <RetrieveMaps>
+    <RetrieveMap Id="">
+      <RetrieveFields>
+        <RetrieveField type="IndependentCell">
+          <AppObject>2837ba5e-662e-4728-ba41-e94927a2227e</AppObject>
+          <AppField>Nbr</AppField>
+          <TargetLocation>2,2</TargetLocation>
+        </RetrieveField>
+        <RetrieveField type="IndependentCell">
+          <AppObject></AppObject>
+          <AppField></AppField>
+          <TargetLocation></TargetLocation>
+        </RetrieveField>
+      </RetrieveFields>
+      <RetrieveList></RetrieveList>
+    </RetrieveMap>
+  </RetrieveMaps>
+  <SaveMap>
+
+  </SaveMap>
+</App>

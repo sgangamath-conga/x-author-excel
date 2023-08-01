@@ -1,0 +1,10 @@
+diff a/Apttus.XAuthor.Core.csproj b/Apttus.XAuthor.Core.csproj	(rejected hunks)
+@@ -403,6 +403,8 @@
+   </ItemGroup>
+   <ItemGroup>
+     <None Include="appbuilder_core.licenseheader" />
++    <Resource Include="Resources\RuntimeFeatures.json" />
++    <Resource Include="Resources\DesignerFeatures.json" />
+     <None Include="packages.config" />
+     <None Include="Properties\Settings.settings">
+       <Generator>SettingsSingleFileGenerator</Generator>
